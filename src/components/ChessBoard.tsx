@@ -1,4 +1,3 @@
-// ChessBoard.tsx
 import { Chessboard } from 'react-chessboard';
 import type { PieceDropHandlerArgs, Square } from '../types';
 
@@ -9,14 +8,16 @@ interface ChessBoardProps {
 
 export function ChessBoard({ position, onPieceDrop }: ChessBoardProps) {
   return (
-    <div style={{ maxWidth: '600px', width: '100%' }}>
-      <Chessboard 
-        options={{
-          position,
-          onPieceDrop,
-          id: 'playable-board'
-        }} 
-      />
-    </div>
+
+      <div style={{ maxWidth: '450px' }}>
+        <Chessboard 
+          options={{
+            position,
+            onPieceDrop,
+            id: 'playable-board'
+          }} 
+        />
+
+      </div>
   );
 }
