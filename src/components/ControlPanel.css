@@ -1,0 +1,53 @@
+.control-panel {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.control-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.control-btn.reset {
+  background-color: #3e3b38;
+  color: #ececec;
+}
+
+.control-btn.reset:hover {
+  background-color: #4a4743;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.control-btn.hint {
+  background-color: #e6a03c;
+  color: #262522;
+}
+
+.control-btn.hint:hover {
+  background-color: #f0b04f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 160, 60, 0.4);
+}
+
+.control-btn.next {
+  background-color: #81b64c;
+  color: #262522;
+}
+
+.control-btn.next:hover {
+  background-color: #91c65c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(129, 182, 76, 0.4);
+}
