@@ -11,7 +11,6 @@ export default function App() {
     chessPosition,
     onPieceDrop,
     resetGame,
-    isCheck,
     isCheckmate,
     isGameOver,
   } = useChessGame();
@@ -25,7 +24,6 @@ export default function App() {
             <ChessBoard position={chessPosition} onPieceDrop={onPieceDrop} />
             <ControlPanel onReset={resetGame} />
             <GameStatus
-              isCheck={isCheck}
               isCheckmate={isCheckmate}
               isGameOver={isGameOver}
             />

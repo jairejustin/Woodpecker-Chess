@@ -16,7 +16,6 @@ export function ControlPanel({ onReset, onHint, onNext }: ControlPanelProps) {
         title="Reset Puzzle"
       >
         <RotateCcw size={20} />
-        <span>Reset</span>
       </button>
       <button 
         className="control-btn hint" 
@@ -24,14 +23,12 @@ export function ControlPanel({ onReset, onHint, onNext }: ControlPanelProps) {
         title="Get Hint"
       >
         <Lightbulb size={20} />
-        <span>Hint</span>
       </button>
       <button 
         className="control-btn next" 
         onClick={onNext}
         title="Next Puzzle"
       >
-        <span>Next Puzzle</span>
         <ChevronRight size={20} />
       </button>
     </div>

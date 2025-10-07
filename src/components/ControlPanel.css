@@ -3,6 +3,7 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 0.25rem;
 }
 
 .control-btn {

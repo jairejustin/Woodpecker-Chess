@@ -1,5 +1,5 @@
 import './Header.css';
-
+import { Puzzle, ChartNoAxesCombinedIcon, Cog } from 'lucide-react';
 export function Header() {
   return (
     <header className="header">
@@ -9,9 +9,9 @@ export function Header() {
           <h1>Chess Puzzles</h1>
         </div>
         <nav className="nav">
-          <button className="nav-btn">Puzzles</button>
-          <button className="nav-btn">Statistics</button>
-          <button className="nav-btn">Settings</button>
+          <button className="nav-btn"><Puzzle /></button>
+          <button className="nav-btn"><ChartNoAxesCombinedIcon /></button>
+          <button className="nav-btn"><Cog /></button>
         </nav>
       </div>
     </header>
