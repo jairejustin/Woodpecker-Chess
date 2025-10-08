@@ -1,4 +1,4 @@
-.sidebar {
+.infocard {
   width: 300px;
   background-color: #262522;
   border-right: 2px solid #3e3b38;
@@ -22,7 +22,7 @@
   }
 }
 
-.sidebar-title {
+.infocard-title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1rem;

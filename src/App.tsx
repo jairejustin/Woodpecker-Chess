@@ -1,4 +1,4 @@
-import { Sidebar } from "./components/Sidebar";
+import { InfoCard } from "./components/InfoCard";
 import { Header } from "./components/Header";
 import { ChessBoard } from "./components/ChessBoard";
 import { GameStatus } from "./components/GameStatus";
@@ -30,7 +30,7 @@ export default function App() {
             
           </div>
         </div>
-        <Sidebar />
+        <InfoCard />
       </div>
     </div>
   );

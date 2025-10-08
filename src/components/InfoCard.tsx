@@ -1,10 +1,10 @@
-import './Sidebar.css';
+import './InfoCard.css';
 
-export function Sidebar() {
+export function InfoCard() {
   return (
-    <aside className="sidebar">
-    <div className="sidebar-content">
-        <h2 className="sidebar-title">Puzzle Info</h2>
+    <aside className="infocard">
+    <div className="infocard-content">
+        <h2 className="infocard-title">Puzzle Info</h2>
         <div className="puzzle-stats">
         <div className="stat-item">
             <span className="stat-label">Rating</span>
