@@ -59,47 +59,13 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.puzzle-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 600px;
-}
-
-.puzzle-header {
-  text-align: center;
-  background-color: #262522;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 2px solid #3e3b38;
-}
-
-.puzzle-header h2 {
-  color: #ececec;
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.move-indicator {
-  color: #81b64c;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
 @media (max-width: 768px) {
   .main-layout {
-    flex-direction: column;
     align-items: center;
     padding: 1.5rem;
   }
 
   .chessBoardContainer {
-    padding: 20px;
-    margin: 0 10px;
-  }
-
-  .puzzle-container {
-    padding: 1rem;
+    margin: 0%;
   }
 }
