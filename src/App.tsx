@@ -1,5 +1,5 @@
 import { InfoCard } from "./components/InfoCard";
-import { Header } from "./components/Header";
+import { Sidebar } from "./components/Sidebar";
 import { ChessBoard } from "./components/ChessBoard";
 import { GameStatus } from "./components/GameStatus";
 import { useChessGame } from "./useChessGame";
@@ -17,7 +17,7 @@ export default function App() {
 
   return (
     <div className="layout">
-      <Header />
+      <Sidebar />
       <div className="main-layout">
         <div className="main-content">
           <div className="chessBoardContainer">

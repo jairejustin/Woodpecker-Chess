@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #312e2b;
+  overflow-y: hidden;
 }
 
 .main-layout {
