@@ -1,37 +1,26 @@
-import { InfoCard } from "./components/InfoCard";
 import { Sidebar } from "./components/Sidebar";
-import { ChessBoard } from "./components/ChessBoard";
-import { GameStatus } from "./components/GameStatus";
-import { useChessGame } from "./useChessGame";
-import { ControlPanel } from './components/ControlPanel';
+import { Route, Routes } from "react-router-dom";
+import PuzzleExplorerPage from "./pages/PuzzleExplorerPage";
+import SettingsPage from "./pages/SettingsPage";
+import StatsPage from "./pages/StatsPage";
+import ProfilePage from "./pages/ProfilePage";
+import HomePage from "./pages/HomePage";
 import './App.css';
 
 export default function App() {
-  const {
-    chessPosition,
-    onPieceDrop,
-    resetGame,
-    isCheckmate,
-    isGameOver,
-  } = useChessGame();
-
   return (
     <div className="layout">
       <Sidebar />
-      <div className="main-layout">
-        <div className="main-content">
-          <div className="chessBoardContainer">
-            <ChessBoard position={chessPosition} onPieceDrop={onPieceDrop} />
-            <ControlPanel onReset={resetGame} />
-            <GameStatus
-              isCheckmate={isCheckmate}
-              isGameOver={isGameOver}
-            />
-            
-          </div>
-        </div>
-        <InfoCard />
-      </div>
+      <main className="page-container">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/explore" element={<PuzzleExplorerPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/stats" element={<StatsPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="*" element={<div>404 Not Found</div>} />
+        </Routes>
+      </main>
     </div>
   );
 }
