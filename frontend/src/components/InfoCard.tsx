@@ -1,38 +1,31 @@
 import './InfoCard.css';
 
-export function InfoCard() {
+export function InfoCard({Rating, Themes, Feedback}:
+   {
+    Rating: number,
+    Themes: string, 
+    Feedback: string }) 
+  {
+
   return (
     <aside className="infocard">
     <div className="infocard-content">
         <h2 className="infocard-title">Puzzle Info</h2>
+        <div className="puzzle-progress">
+          <h3 className="progress-title">{Feedback}</h3>
+        </div>
         <div className="puzzle-stats">
         <div className="stat-item">
             <span className="stat-label">Rating</span>
-            <span className="stat-value">0</span>
+            <span className="stat-value">{Rating}</span>
         </div>
         <div className="stat-item">
             <span className="stat-label">Theme</span>
-            <span className="stat-value">None</span>
+            <span className="stat-value">{Themes}</span>
         </div>
         </div>
 
-        <div className="puzzle-progress">
-        <h3 className="progress-title">Your Progress</h3>
-        <div className="progress-stats">
-            <div className="progress-item">
-            <span>Solved Today</span>
-            <strong>None</strong>
-            </div>
-            <div className="progress-item">
-            <span>Success Rate</span>
-            <strong>0%</strong>
-            </div>
-            <div className="progress-item">
-            <span>Current Streak</span>
-            <strong>None</strong>
-            </div>
-        </div>
-        </div>
+
 
     </div>
     </aside>

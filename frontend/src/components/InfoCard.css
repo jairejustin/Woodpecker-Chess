@@ -51,23 +51,18 @@
 }
 
 .stat-value {
-  color: #81b64c;
+  color: #ececec;
   font-weight: 600;
   font-size: 1rem;
 }
-.puzzle-progress,
-.puzzle-themes {
+.puzzle-progress {
   background-color: #1f1f1f;
   padding: 1rem;
   border-radius: 8px;
   border: 1px solid #3e3b38;
-  margin-top: 1rem;
-}
-
-.progress-title,
-.themes-title {
+  margin: 1rem 0;
+  text-align: center;
   font-size: 1rem;
-  margin-bottom: 1rem;
   color: #ececec;
 }
 
