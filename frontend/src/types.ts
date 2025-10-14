@@ -15,5 +15,5 @@ export interface Move {
 export interface GameState {
   position: Square;
   history: Move[];
-  turn: 'w' | 'b';
+  turn: 'white' | 'black';
 }

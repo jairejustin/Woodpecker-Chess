@@ -1,9 +1,34 @@
+.chessBoardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #262522;
+  padding: 30px;
+  border: 2px solid #3e3b38;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  max-width: 700px;
+  width: 100%;
+}
+
+.chessBoardContainer > div {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+
 .control-panel {
   display: flex;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 0.25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 
 .control-btn {
@@ -12,10 +37,9 @@
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   border: none;
-  border-radius: 8px;
+  border-radius:20px;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 500;
   transition: all 0.2s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
