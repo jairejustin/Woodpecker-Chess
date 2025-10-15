@@ -1,9 +1,9 @@
 import './InfoCard.css';
 
-export function InfoCard({Rating, Themes, Feedback}:
+export function InfoCard({Rating, Opening, Feedback}:
    {
     Rating: number,
-    Themes: string, 
+    Opening: string | undefined, 
     Feedback: string }) 
   {
 
@@ -20,8 +20,8 @@ export function InfoCard({Rating, Themes, Feedback}:
             <span className="stat-value">{Rating}</span>
         </div>
         <div className="stat-item">
-            <span className="stat-label">Theme</span>
-            <span className="stat-value">{Themes}</span>
+            <span className="stat-label">Opening</span>
+            <span className="stat-value">{Opening}</span>
         </div>
         </div>
 
