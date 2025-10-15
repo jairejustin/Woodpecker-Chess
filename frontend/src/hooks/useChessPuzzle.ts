@@ -1,9 +1,9 @@
 // useChessPuzzle.ts
-import { useState, useRef, useEffect } from 'react';
-import { Chess } from 'chess.js';
-import type { PieceDropHandlerArgs } from './types';
-import type { LichessPuzzle } from './types';
-import type { PuzzleEvent } from './types';
+import { useState, useRef, useEffect } from "react";
+import { Chess } from "chess.js";
+import type { PieceDropHandlerArgs } from "../types";
+import type { LichessPuzzle } from "../types";
+import type { PuzzleEvent } from "../types";
 
 /**
  * Lichess Puzzle Database Format
@@ -11,12 +11,13 @@ import type { PuzzleEvent } from './types';
  * - FEN is the position BEFORE the opponent makes their move
  * - The first move in Moves is the opponent's move (setup move)
  * - The second move starts the solution (player's first move)
- * - Moves are in UCI format (e.g., "e2e4" not "e4")
+ * - Moves are in UCI format ( "e2e4" not "e4")
  */
 
+// types
 interface UseChessPuzzleReturn {
   chessPosition: string;
-  turn: 'w' | 'b';
+  turn: "w" | "b";
   onPieceDrop: (args: PieceDropHandlerArgs) => boolean;
   resetPuzzle: () => void;
   currentMoveIndex: number;
@@ -24,7 +25,6 @@ interface UseChessPuzzleReturn {
   totalPlayerMoves: number;
   isSolved: boolean;
   lastEvent: PuzzleEvent | null;
-  progress: number; // 0-100
   puzzleInfo: {
     id: string;
     rating: number;
@@ -39,24 +39,23 @@ export function useChessPuzzle(
 ): UseChessPuzzleReturn {
   const chessGameRef = useRef(new Chess());
   const chessGame = chessGameRef.current;
-  
-  // Parse moves from UCI format
-  const movesArray = puzzle.Moves.split(' ').filter(m => m.length > 0);
-  const themesArray = puzzle.Themes.split(' ').filter(t => t.length > 0);
-  
+
+  // parse moves from UCI format
+  const movesArray = puzzle.Moves.split(" ").filter((m) => m.length > 0);
+  const themesArray = puzzle.Themes.split(" ").filter((t) => t.length > 0);
+
+  // initialize state hooks
   const [chessPosition, setChessPosition] = useState(puzzle.FEN);
   const [currentMoveIndex, setCurrentMoveIndex] = useState(0);
   const [isSolved, setIsSolved] = useState(false);
   const [lastEvent, setLastEvent] = useState<PuzzleEvent | null>(null);
-  const [turn, setTurn] = useState<'w' | 'b'>(chessGame.turn());
+  const [turn, setTurn] = useState<"w" | "b">(chessGame.turn());
 
-
-  // Initialize puzzle
+  // initialize and load puzzle
   useEffect(() => {
-    // Load the starting position
     chessGame.load(puzzle.FEN);
-    
-    // Make the first move (opponent's setup move)
+
+    // check if there are moves, then make a setup move
     if (movesArray.length > 0) {
       const setupMove = movesArray[0];
       try {
@@ -64,25 +63,28 @@ export function useChessPuzzle(
         setChessPosition(chessGame.fen());
         setTurn(chessGame.turn());
       } catch (error) {
-        console.error('Invalid setup move:', setupMove);
+        console.error("Invalid setup move:", setupMove);
       }
     }
-    
-    setCurrentMoveIndex(1); // Start at index 1 (first player move)
+
+    // update states
+    setCurrentMoveIndex(1);
     setIsSolved(false);
-    
-    const startEvent: PuzzleEvent = { type: 'puzzle_started' };
+
+    // initialize this state
+    const startEvent: PuzzleEvent = { type: "puzzle_started" };
     setLastEvent(startEvent);
     onEvent?.(startEvent);
   }, [puzzle.PuzzleId]);
 
+  // function to emit events
   const emitEvent = (event: PuzzleEvent) => {
     setLastEvent(event);
     onEvent?.(event);
   };
 
+  // arrow function to make the response from the solution
   const makeComputerMove = () => {
-    // After player makes correct move, make the computer's response if there is one
     const nextMoveIndex = currentMoveIndex + 1;
     if (nextMoveIndex < movesArray.length) {
       const computerMove = movesArray[nextMoveIndex];
@@ -91,17 +93,20 @@ export function useChessPuzzle(
         setChessPosition(chessGame.fen());
         setCurrentMoveIndex(nextMoveIndex + 1);
       } catch (error) {
-        console.error('Invalid computer move in puzzle:', computerMove);
+        console.error("Invalid computer move in puzzle:", computerMove);
       }
     }
   };
 
-  const onPieceDrop = ({ sourceSquare, targetSquare }: PieceDropHandlerArgs): boolean => {
+  // arrow function for handling the moves played by the user
+  const onPieceDrop = ({
+    sourceSquare,
+    targetSquare,
+  }: PieceDropHandlerArgs): boolean => {
     if (!targetSquare || isSolved) {
       return false;
     }
 
-    // Check if we've completed all moves
     if (currentMoveIndex >= movesArray.length) {
       return false;
     }
@@ -109,35 +114,34 @@ export function useChessPuzzle(
     const expectedMove = movesArray[currentMoveIndex];
 
     try {
-      // Try to make the move
       const move = chessGame.move({
         from: sourceSquare,
         to: targetSquare,
-        promotion: 'q' // Auto-promote to queen
+        promotion: "q",
       });
 
-      // Convert move to UCI format for comparison
-      const moveUCI = sourceSquare + targetSquare + (move.promotion || '');
+      // convert move to UCI format for comparison
+      const moveUCI = sourceSquare + targetSquare + (move.promotion || "");
 
-      // Check if this matches the expected move
+      // check if this matches the expected move
       if (moveUCI === expectedMove) {
         setChessPosition(chessGame.fen());
         const newMoveIndex = currentMoveIndex + 1;
         setCurrentMoveIndex(newMoveIndex);
 
-        // Check if puzzle is solved (all moves completed)
+        // check if puzzle is solved 
         const puzzleSolved = newMoveIndex >= movesArray.length;
-        
+
         if (puzzleSolved) {
           setIsSolved(true);
-          emitEvent({ type: 'puzzle_solved' });
+          emitEvent({ type: "puzzle_solved" });
         } else {
-          emitEvent({ 
-            type: 'correct_move', 
+          emitEvent({
+            type: "correct_move",
             moveNumber: Math.floor(newMoveIndex / 2),
-            move: move.san 
+            move: move.san,
           });
-          
+
           setTimeout(() => {
             makeComputerMove();
           }, 500);
@@ -145,26 +149,24 @@ export function useChessPuzzle(
 
         return true;
       } else {
-        // Wrong move - undo it
+        // wrong move, undo it
         chessGame.undo();
-        emitEvent({ 
-          type: 'wrong_move', 
+        emitEvent({
+          type: "wrong_move",
           attempted: move.san,
-          expected: expectedMove 
+          expected: expectedMove,
         });
         return false;
       }
     } catch {
-      // Invalid move
       return false;
     }
   };
 
+  // arrow function for resetting puzzle
   const resetPuzzle = () => {
-    // Load the starting position
     chessGame.load(puzzle.FEN);
-    
-    // Make the first move (opponent's setup move)
+
     if (movesArray.length > 0) {
       const setupMove = movesArray[0];
       try {
@@ -172,23 +174,20 @@ export function useChessPuzzle(
         setChessPosition(chessGame.fen());
         setTurn(chessGame.turn());
       } catch (error) {
-        console.error('Invalid setup move:', setupMove);
+        console.error("Invalid setup move:", setupMove);
       }
     }
-    
+
     setCurrentMoveIndex(1);
     setIsSolved(false);
-    
-    const resetEvent: PuzzleEvent = { type: 'puzzle_reset' };
+
+    const resetEvent: PuzzleEvent = { type: "puzzle_reset" };
     emitEvent(resetEvent);
   };
 
-  // Calculate player moves (every odd index after setup)
+  // get number of moves, moves completed are floored and total turns are rounded up
   const totalPlayerMoves = Math.ceil((movesArray.length - 1) / 2);
   const playerMovesCompleted = Math.floor((currentMoveIndex - 1) / 2);
-  const progress = totalPlayerMoves > 0 
-    ? Math.round((playerMovesCompleted / totalPlayerMoves) * 100) 
-    : 0;
 
   return {
     chessPosition,
@@ -200,12 +199,11 @@ export function useChessPuzzle(
     totalPlayerMoves,
     isSolved,
     lastEvent,
-    progress,
     puzzleInfo: {
       id: puzzle.PuzzleId,
       rating: puzzle.Rating,
       themes: themesArray,
-      popularity: puzzle.Popularity
-    }
+      popularity: puzzle.Popularity,
+    },
   };
 }
