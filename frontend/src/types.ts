@@ -1,4 +1,3 @@
-// types.ts
 export type Square = string;
 
 export interface PieceDropHandlerArgs {
@@ -22,13 +21,20 @@ export interface GameState {
 export interface LichessPuzzle {
   PuzzleId: string;
   FEN: string;
-  Moves: string; // Space-separated UCI moves (e.g., "f2g3 e6e7 b2b1 e7e1")
+  Moves: string;
   Rating: number;
   RatingDeviation: number;
   Popularity: number;
   NbPlays: number;
-  Themes: string; // Space-separated themes
+  Themes: string;
   GameUrl?: string;
   OpeningFamily?: string;
   OpeningVariation?: string;
 }
+
+export type PuzzleEvent = 
+  | { type: 'correct_move'; moveNumber: number; move: string }
+  | { type: 'wrong_move'; attempted: string; expected: string }
+  | { type: 'puzzle_solved' }
+  | { type: 'puzzle_started' }
+  | { type: 'puzzle_reset' };

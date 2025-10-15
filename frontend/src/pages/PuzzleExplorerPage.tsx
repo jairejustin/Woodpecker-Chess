@@ -3,7 +3,7 @@ import { ChessBoard } from '../components/ChessBoard';
 import { InfoCard } from '../components/InfoCard';
 import { useChessPuzzle } from '../useChessPuzzle';
 import type { LichessPuzzle } from '../types';
-import type { PuzzleEvent } from '../useChessPuzzle';
+import type { PuzzleEvent } from '../types';
 import { samplePuzzle } from '../api/mockChessPuzzles';
 
 export default function PuzzleExplorerPage() {

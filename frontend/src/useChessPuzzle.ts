@@ -3,24 +3,16 @@ import { useState, useRef, useEffect } from 'react';
 import { Chess } from 'chess.js';
 import type { PieceDropHandlerArgs } from './types';
 import type { LichessPuzzle } from './types';
+import type { PuzzleEvent } from './types';
 
 /**
  * Lichess Puzzle Database Format
  * CSV columns: PuzzleId,FEN,Moves,Rating,RatingDeviation,Popularity,NbPlays,Themes,GameUrl,OpeningFamily,OpeningVariation
- * 
- * Important notes from Lichess:
  * - FEN is the position BEFORE the opponent makes their move
  * - The first move in Moves is the opponent's move (setup move)
  * - The second move starts the solution (player's first move)
  * - Moves are in UCI format (e.g., "e2e4" not "e4")
  */
-
-export type PuzzleEvent = 
-  | { type: 'correct_move'; moveNumber: number; move: string }
-  | { type: 'wrong_move'; attempted: string; expected: string }
-  | { type: 'puzzle_solved' }
-  | { type: 'puzzle_started' }
-  | { type: 'puzzle_reset' };
 
 interface UseChessPuzzleReturn {
   chessPosition: string;
