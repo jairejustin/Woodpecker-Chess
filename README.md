@@ -1,7 +1,9 @@
 # Woodpecker Chess
 [![Tech used](https://skillicons.dev/icons?i=react,typescript,vite&theme=dark)](https://skillicons.dev)
 
-> **Short description**: Woodpecker is a personal project: a lightweight chess puzzle repetition trainer built with React + TypeScript and a chessboard UI. It’s created to be a practical learning project for frontend + fullstack skills while producing a usable puzzle trainer (mock-data first, Lichess puzzles DB integration later on.Thats If I got to that point which is unlikely).
+The Woodpecker Method, introduced by Axel Smith in his book The Woodpecker Method, is a chess training approach that involves repeatedly solving the same set of tactical puzzles to strengthen pattern recognition and calculation speed through spaced repetition.
+
+Woodpecker is a personal project: a chess puzzle repetition trainer built with React + TypeScript and `react-chessboard` UI. Just something I did for fun. While the project is very far from the projected application below shows my progress so far.
 
 ---
 
@@ -17,53 +19,14 @@
 
 ### Planned (near term)
 
-* Import real puzzles from Lichess puzzle database (CSV → internal JSON mapping).
+* Import real puzzles from [Lichess puzzle database](https://database.lichess.org/#puzzles) (CSV to JSON).
 * Doing the get hint feature.
-* Basic user results tracking (local → Supabase for persistence if chosen).
+* Basic user results tracking.
 * Simple spaced‑repetition queue: mark puzzles as `learned` / `needs review` and requeue them.
 * Allow users to save a puzzle into their playlists.
 * Some minimal analytics like per‑puzzle success rate and average solve time.
 * Make a seperate mobile responsive version of the UI.
-
-### Stretch (future)
-
-* User accounts + cross‑device sync (Supabase or equivalent).
-* Adaptive difficulty and theme suggestion.
-* Sharing / export of study sets, leaderboards, or challenge modes.
-
----
-
-## Tech Stack & Libraries
-
-* Frontend: **React** + **TypeScript** + **Vite**
-* Chess UI: **react‑chessboard** (or equivalent interactive chessboard component)
-* Data source: Lichess puzzle CSV (official puzzle DB) → mapped to local puzzle type
-
----
-
-## Install & Run (example)
-
-> These are generic commands; adjust accordingly
-
-```bash
-# clone
-git clone <repo-url>
-cd woodpecker
-
-# install
-npm install
-
-# dev server
-npm run dev    # or `npm start` depending on your setup
-
-# build for production
-npm run build
-
-# run tests (if present)
-npm run test
-```
-
----
+* Users
 
 ## Puzzle data format (example)
 
@@ -85,17 +48,27 @@ This is the internal format used for mock puzzles. When wiring Lichess CSV, map 
   "openingVariation": "King's Pawn"
 }
 ```
-
-**Notes:**
-
-* `fen` is the board position before the puzzle starts.
-* `solution` is an array of moves in SAN (or algebraic SAN/long algebraic depending on how you validate).
-
 ---
 
-## Practical next steps
-* Add a small script and map 50 real Lichess puzzles into some json file to mock data from a server.
-* Implement a simple `Review` queue that adds puzzles you miss to a `needsReview` list.
-* Add basic local persistence (localStorage) for progress.
-* Implement spaced repetition scheduling and a UI to review mistakes.
-* Adaptive difficulty, social features, or mobile offline mode. Polish UX and package for public deploy (Vercel + Supabase).
+## Install & Run (example)
+These are generic commands; adjust accordingly
+
+```bash
+# clone
+git clone <repo-url>
+cd woodpecker
+
+# install
+npm install
+
+# dev server
+npm run dev    # or `npm start` depending on your setup
+
+# build for production
+npm run build
+
+# run tests (if present)
+npm run test
+```
+
+---
