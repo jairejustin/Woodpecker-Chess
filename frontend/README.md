@@ -1,6 +1,0 @@
-# Woodpecker Chess
-This is a chess training application. Inspired by the **Woodpecker Method** books by Axel Smith. Basically, it is a chess training method where you solve a large set of puzzles. After the completing the set, you would replay the same set of puzzles but with the aim to achieve a better completion time every replay of the set. A training method with emphasis on strengthening your pattern recognition to such themes and motifs, as well as the subconcious ability to make decisions based on these patterns.
-
-It is a method such that it requires the puzzles to have distinct thematics and motifs for it to be an effective training method. For example in the second book of **Woodpecker Method**, the puzzles were specifically themed around positional concepts such that it trains you to internalize these positional patterns to your pattern recognition therefore making it more likely for you to spot such advantages and incorporate them in your winning formulas in a real game.
-
-## Features
