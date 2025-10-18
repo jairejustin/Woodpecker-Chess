@@ -2,14 +2,17 @@ import { Chessboard } from "react-chessboard";
 import type { PieceDropHandlerArgs } from "../types";
 import { RotateCcw, Lightbulb, ChevronRight } from "lucide-react";
 import "./ChessBoard.css";
+import { useState } from "react";
 
 interface ChessBoardProps {
+  key: string;
   position: string | { [square: string]: { pieceType: string } };
   onPieceDrop: (args: PieceDropHandlerArgs) => boolean;
   boardOrientation?: "white" | "black";
   onReset?: () => void;
   onHint?: () => void;
   onNext?: () => void;
+  showAnimations?: boolean;
 }
 
 export function ChessBoard({
@@ -19,6 +22,7 @@ export function ChessBoard({
   onReset,
   onHint,
   onNext,
+  showAnimations,
 }: ChessBoardProps) {
   return (
     <div style={{ maxWidth: "450px" }}>
@@ -27,6 +31,7 @@ export function ChessBoard({
           position,
           boardOrientation,
           onPieceDrop,
+          showAnimations
         }}
       />
 

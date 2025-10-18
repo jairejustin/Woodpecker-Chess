@@ -3,7 +3,7 @@
 
 The Woodpecker Method, introduced by Axel Smith in his book The Woodpecker Method, is a chess training approach that involves repeatedly solving the same set of tactical puzzles to strengthen pattern recognition and calculation speed through spaced repetition.
 
-Woodpecker is a personal project: a chess puzzle repetition trainer built with React + TypeScript and `react-chessboard` UI. Just something I did for fun. While the project is very far from the projected application below shows my progress so far.
+Woodpecker is a personal project: a chess puzzle repetition trainer built with React + TypeScript and `react-chessboard` UI. Just something I did for fun. While the project is very far from the projected application, below shows my progress so far.
 
 ---
 

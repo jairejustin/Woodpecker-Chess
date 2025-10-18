@@ -7,10 +7,10 @@ import type { PuzzleEvent } from '../types';
 import { mockLichessPuzzles } from '../api/mockChessPuzzles';
 
 export default function PuzzleExplorerPage() {
+  const [showAnimations, setShowAnimations] = useState(false);
   const [puzzleIndex, setPuzzleIndex] = useState(0);
   const [currentPuzzle, setCurrentPuzzle] = useState<LichessPuzzle>(mockLichessPuzzles[0]);
   const [isWrong, setIsWrong] = useState(false);
-
   const handlePuzzleEvent = useCallback((event: PuzzleEvent) => {
     switch (event.type) {
       case 'wrong_move':
@@ -38,11 +38,14 @@ export default function PuzzleExplorerPage() {
   } = useChessPuzzle(currentPuzzle, handlePuzzleEvent);
 
   const handleNextPuzzle = useCallback(() => {
+    setShowAnimations(false);
     const nextIndex = (puzzleIndex + 1) % mockLichessPuzzles.length;
     setPuzzleIndex(nextIndex);
     setCurrentPuzzle(mockLichessPuzzles[nextIndex]);
     setIsWrong(false);
+    setTimeout(() => setShowAnimations(true), 500);
   }, [puzzleIndex]);
+
 
   const handleResetPuzzle = useCallback(() => {
     resetPuzzle();
@@ -53,16 +56,19 @@ export default function PuzzleExplorerPage() {
   const feedback = isWrong ? 'Wrong' : isSolved ? 'Solved' : `${humanTurn} to move`;
   const boardOrientation = turn === 'w' ? 'white' : 'black';
 
+
   return (
     <div className="main-layout">
       <div className="main-content">
         <div className="chessBoardContainer">
-          <ChessBoard 
+          <ChessBoard
+            key={currentPuzzle.PuzzleId}
             position={chessPosition}
             onPieceDrop={onPieceDrop}
             onReset={handleResetPuzzle}
             onNext={handleNextPuzzle}
             boardOrientation={boardOrientation}
+            showAnimations={showAnimations}
           />
         </div>
       </div>
