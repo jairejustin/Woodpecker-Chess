@@ -60,7 +60,6 @@ export default function PuzzleExplorerPage() {
   return (
     <div className="main-layout">
       <div className="main-content">
-        <div className="chessBoardContainer">
           <ChessBoard
             key={currentPuzzle.PuzzleId}
             position={chessPosition}
@@ -70,7 +69,6 @@ export default function PuzzleExplorerPage() {
             boardOrientation={boardOrientation}
             showAnimations={showAnimations}
           />
-        </div>
       </div>
 
       <InfoCard 

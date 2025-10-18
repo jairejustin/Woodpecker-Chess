@@ -1,4 +1,4 @@
-import { Puzzle, BarChart3, Cog } from 'lucide-react'
+import { Puzzle, BarChart3, Cog, Home } from 'lucide-react'
 import './Sidebar.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,6 +12,10 @@ export function Sidebar() {
           <h1>Chess Puzzles</h1>
         </div>
         <nav className="nav">
+          <button className="nav-btn" onClick={() => navigate('/')}>
+            <Home />
+            <span>Home</span>
+          </button>
           <button className="nav-btn" onClick={() => navigate('/explore')}>
             <Puzzle />
             <span>Puzzles</span>

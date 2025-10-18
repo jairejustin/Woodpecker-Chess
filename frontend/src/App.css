@@ -42,10 +42,6 @@ body {
 @media (max-width: 768px) {
   .main-layout {
     align-items: center;
-    padding: 1.5rem;
-  }
-
-  .chessBoardContainer {
-    margin: 0%;
+    padding: 1rem;
   }
 }
