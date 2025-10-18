@@ -7,6 +7,8 @@ Woodpecker is a personal project: a chess puzzle repetition trainer built with R
 
 ---
 
+![alt text](image.png)
+
 ## Features
 
 ### Implemented
