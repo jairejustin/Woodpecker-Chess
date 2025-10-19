@@ -1,0 +1,4002 @@
+[
+  {
+    "PuzzleId": "000Pw",
+    "FEN": "6k1/5p1p/4p3/4q3/3nN3/2Q3P1/PP3P1P/6K1 w - - 2 37",
+    "Moves": "e4d2 d4e2 g1f1 e2c3",
+    "Rating": 1598,
+    "Themes": "crushing endgame fork short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "000Vc",
+    "FEN": "8/8/4k1p1/2KpP2p/5PP1/8/8/8 w - - 0 53",
+    "Moves": "g4h5 g6h5 f4f5 e6e5 f5f6 e5f6",
+    "Rating": 1615,
+    "Themes": "crushing endgame long pawnEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "000hf",
+    "FEN": "r1bqk2r/pp1nbNp1/2p1p2p/8/2BP4/1PN3P1/P3QP1P/3R1RK1 b kq - 0 19",
+    "Moves": "e8f7 e2e6 f7f8 e6f7",
+    "Rating": 1562,
+    "Themes": "mate mateIn2 middlegame short",
+    "OpeningTags": "Horwitz_Defense Horwitz_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00143",
+    "FEN": "r2q1rk1/5ppp/1np5/p1b5/2p1B3/P7/1P3PPP/R1BQ1RK1 b - - 1 17",
+    "Moves": "d8f6 d1h5 h7h6 h5c5",
+    "Rating": 1785,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Scotch_Game Scotch_Game_Mieses_Variation"
+  },
+  {
+    "PuzzleId": "0017R",
+    "FEN": "r2qk2r/pp2ppbp/1n1p2p1/3Pn3/2P5/2NBBP1P/PP3P2/R2QK2R b KQkq - 0 12",
+    "Moves": "e5c4 d3c4 b6c4 d1a4 d8d7 a4c4",
+    "Rating": 1703,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": "Alekhine_Defense Alekhine_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "001XA",
+    "FEN": "1qr2rk1/pb2bppp/8/8/2p1N3/P1Bn2P1/2Q2PBP/1R3RK1 b - - 3 23",
+    "Moves": "b8c7 b1b7 c7b7 e4f6 e7f6 g2b7",
+    "Rating": 1668,
+    "Themes": "crushing discoveredAttack long master middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "001cr",
+    "FEN": "8/3B2pp/p5k1/2p3P1/1p1p1K2/8/1P6/8 b - - 0 38",
+    "Moves": "c5c4 d7e8",
+    "Rating": 1724,
+    "Themes": "bishopEndgame endgame mate mateIn1 oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "001h8",
+    "FEN": "2r3k1/2r4p/4p1p1/1p1q1pP1/p1bP1P1Q/P6R/5B2/2R3K1 b - - 5 34",
+    "Moves": "c4e2 h4h7 c7h7 c1c8 g8g7 c8c7",
+    "Rating": 1780,
+    "Themes": "crushing deflection kingsideAttack long middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "002HE",
+    "FEN": "1qr2rk1/1p1p1ppp/pB2p1n1/7n/2P1P3/1Q2NP1P/PP2B1Pb/3R1RK1 w - - 1 20",
+    "Moves": "g1f2 b8g3",
+    "Rating": 1531,
+    "Themes": "master mate mateIn1 middlegame oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "002Hv",
+    "FEN": "8/8/8/3N2p1/5b2/3p3P/5kP1/3K4 w - - 16 56",
+    "Moves": "d5f4 g5f4 h3h4 f2g2 h4h5 f4f3 d1d2 f3f2",
+    "Rating": 1603,
+    "Themes": "advancedPawn crushing endgame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "002KJ",
+    "FEN": "r3kb1r/ppq2ppp/4pn2/2Ppn3/1P4bP/2P2N2/P3BPP1/RNBQ1RK1 b kq - 2 10",
+    "Moves": "f8e7 f3e5 c7e5 e2g4",
+    "Rating": 1581,
+    "Themes": "crushing discoveredAttack middlegame short",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Advance_Variation"
+  },
+  {
+    "PuzzleId": "002Tf",
+    "FEN": "r3kbnr/ppp1qppp/2n5/3pP3/5B2/4PQ2/PPP2PPP/RN2KB1R w KQkq - 1 7",
+    "Moves": "f1b5 e7b4 b1c3 b4b2",
+    "Rating": 1564,
+    "Themes": "advantage fork opening short",
+    "OpeningTags": "Queens_Pawn_Game Queens_Pawn_Game_Chigorin_Variation"
+  },
+  {
+    "PuzzleId": "002Ua",
+    "FEN": "r4rk1/pp3ppp/3p1q2/P1P1p3/2B5/2B2n2/2P2P1P/R2Q1RK1 w - - 0 16",
+    "Moves": "g1h1 f6f4 d1f3 f4f3",
+    "Rating": 1652,
+    "Themes": "crushing kingsideAttack middlegame short",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Lowenthal_Variation"
+  },
+  {
+    "PuzzleId": "002Uy",
+    "FEN": "8/8/1p6/k7/P1R5/1K5r/8/8 w - - 26 64",
+    "Moves": "c4c3 h3c3 b3c3 a5a4 c3b2 a4b4",
+    "Rating": 1657,
+    "Themes": "crushing defensiveMove endgame long rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "002rd",
+    "FEN": "r6k/q1pb1p1p/1b3Pr1/p1ppP2Q/3P2p1/4B3/PP2NRPP/3R2K1 b - - 1 25",
+    "Moves": "d7e6 e2f4 c5d4 f4g6 f7g6 h5h6",
+    "Rating": 1795,
+    "Themes": "crushing kingsideAttack long middlegame pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "002uV",
+    "FEN": "r2r2k1/1p2qppp/2n1p3/5n2/p2P4/P2Q1N2/BP3PPP/2R1R1K1 w - - 4 20",
+    "Moves": "d3f5 e6f5 e1e7 c6e7",
+    "Rating": 1610,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "003IX",
+    "FEN": "8/3pk3/R7/1R2Pp1p/2PPnKr1/8/8/8 w - - 4 43",
+    "Moves": "f4f5 e4g3",
+    "Rating": 1712,
+    "Themes": "endgame mate mateIn1 oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "003Tx",
+    "FEN": "2r5/pR5p/5p1k/4p3/4r3/B4nPP/PP3P2/1K2R3 w - - 0 27",
+    "Moves": "e1e4 f3d2 b1a1 c8c1",
+    "Rating": 1520,
+    "Themes": "backRankMate endgame fork mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "003UW",
+    "FEN": "8/6pk/7p/2p5/2qp4/5PP1/P3QK1P/8 b - - 1 40",
+    "Moves": "c4d5 e2e4 d5e4 f3e4",
+    "Rating": 1502,
+    "Themes": "advantage endgame queenEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "003if",
+    "FEN": "8/3q1kpp/1P2p3/4Q3/5P2/4B2P/2r3PK/8 b - - 0 43",
+    "Moves": "d7b7 e5h5 f7e7 e3c5 c2c5 h5c5",
+    "Rating": 1632,
+    "Themes": "advantage endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0047P",
+    "FEN": "8/1N3k2/6p1/8/2P3P1/pr6/R5K1/8 w - - 1 56",
+    "Moves": "g2f1 b3b1 f1e2 b1b2 e2d1 b2a2",
+    "Rating": 1769,
+    "Themes": "crushing endgame exposedKing fork long master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "004Ao",
+    "FEN": "4qk2/1b3rR1/p7/1p2Q3/4P2P/P2P3K/2r5/3R4 w - - 5 41",
+    "Moves": "g7f7 e8f7 e5h8 f8e7",
+    "Rating": 1711,
+    "Themes": "advantage endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "004BW",
+    "FEN": "r1bk2r1/ppq2pQp/3bpn2/1BpnN3/5P2/1P6/PBPP2PP/RN2K2R w KQ - 3 13",
+    "Moves": "e5f7 d8e7 g7g8 f6g8",
+    "Rating": 1643,
+    "Themes": "advantage master middlegame short",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Modern_Variations"
+  },
+  {
+    "PuzzleId": "004RF",
+    "FEN": "5rk1/5ppp/1p6/1qp2P1Q/3p3P/6R1/6PK/8 b - - 0 30",
+    "Moves": "c5c4 g3g7 g8g7 f5f6 g7f6 h5b5",
+    "Rating": 1746,
+    "Themes": "attraction crushing discoveredAttack endgame long sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "004Ud",
+    "FEN": "r1bqk2r/p3Bppp/3p4/1ppn4/4P3/4Q3/PPP2PPP/2KR1B1R b kq - 0 11",
+    "Moves": "d5e7 f1b5 c8d7 d1d6 d7b5 d6d8",
+    "Rating": 1640,
+    "Themes": "advantage interference long middlegame",
+    "OpeningTags": "Three_Knights_Opening Three_Knights_Opening_Other_variations"
+  },
+  {
+    "PuzzleId": "004d8",
+    "FEN": "8/4kr2/R2p4/1p1Pp1p1/5p2/3K1P2/PPP5/8 b - - 0 39",
+    "Moves": "g5g4 a6a7 e7f6 a7f7 f6f7 f3g4",
+    "Rating": 1608,
+    "Themes": "crushing endgame long rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "005HG",
+    "FEN": "r2q1rk1/p1p2pp1/3bbn1p/4N3/2Q5/1P4P1/PB1PPP1P/RN2K2R w KQ - 1 12",
+    "Moves": "c4c2 d6e5 b2e5 d8d5 f2f3 d5e5",
+    "Rating": 1757,
+    "Themes": "advantage clearance fork long opening",
+    "OpeningTags": "English_Opening English_Opening_Kings_English_Variation"
+  },
+  {
+    "PuzzleId": "006E1",
+    "FEN": "5rk1/R4pp1/1p5p/3Q4/1PPp2q1/3P2P1/5P2/4nK2 w - - 0 34",
+    "Moves": "f1e1 f8e8 e1f1 g4h3 d5g2 e8e1 f1e1 h3g2",
+    "Rating": 1671,
+    "Themes": "crushing deflection endgame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "006i7",
+    "FEN": "r4rk1/3nqpp1/2p1bn1p/3pN3/1p1P4/2NQP2P/1PB2PP1/R4RK1 w - - 0 18",
+    "Moves": "e5c6 e7d6 a1a8 f8a8 c6b4 d6b4",
+    "Rating": 1746,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": "Queens_Gambit_Declined Queens_Gambit_Declined_Other_variations"
+  },
+  {
+    "PuzzleId": "006pe",
+    "FEN": "r4r2/2q1NN2/4bQpk/2n4p/pp5P/8/1PP2PP1/2KR3R b - - 0 28",
+    "Moves": "e6f7 e7f5 h6h7 f6g7",
+    "Rating": 1690,
+    "Themes": "master mate mateIn2 middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00734",
+    "FEN": "rn3bk1/2rqp2p/2p3p1/3p1p2/3P1P1B/pP1BP3/P1Q2PRP/1KR5 b - - 0 26",
+    "Moves": "b8a6 d3f5 e7e6 f5g6",
+    "Rating": 1661,
+    "Themes": "crushing middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "007AS",
+    "FEN": "r3kb1r/3nnpp1/4p1bp/1NppP3/3P4/6N1/P2BBPPP/R3K2R b KQkq - 0 17",
+    "Moves": "a8b8 b5d6 e8d8 d2a5",
+    "Rating": 1585,
+    "Themes": "crushing master middlegame short",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Advance_Variation"
+  },
+  {
+    "PuzzleId": "007en",
+    "FEN": "rn3rk1/4pp1p/3p2pB/2q4P/3bP1b1/Pp2Q3/1P2B3/1K1R2NR w - - 0 20",
+    "Moves": "e3d4 c5c2 b1a1 a8a3 b2a3 c2a2",
+    "Rating": 1786,
+    "Themes": "long mate mateIn3 middlegame queensideAttack sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "007ku",
+    "FEN": "r1bq3Q/1np2kp1/p5B1/1p1Pp3/1Pn2BP1/2b2P2/P3K3/R4N2 b - - 5 35",
+    "Moves": "f7g6 h8h5 g6f6 f4g5",
+    "Rating": 1627,
+    "Themes": "mate mateIn2 middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "009BH",
+    "FEN": "3r2k1/6p1/4Q3/4B3/1p3P2/4PKP1/3q4/8 b - - 17 51",
+    "Moves": "g8h8 e6h6 h8g8 h6g7",
+    "Rating": 1564,
+    "Themes": "endgame mate mateIn2 pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "009FS",
+    "FEN": "r2qr1k1/p5bp/1pp1b1p1/8/2QN1p2/2P1n2P/PP3PP1/R1B1RNK1 w - - 1 18",
+    "Moves": "d4e6 e3c4 e6d8 e8e1",
+    "Rating": 1702,
+    "Themes": "crushing discoveredAttack opening short",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Closed"
+  },
+  {
+    "PuzzleId": "009zR",
+    "FEN": "3r4/p1p2ppp/4k3/6Q1/5P2/4P3/Prqn2PP/3R1RK1 w - - 3 22",
+    "Moves": "g5d8 d2f3 g1h1 c2g2",
+    "Rating": 1629,
+    "Themes": "discoveredAttack endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00AVR",
+    "FEN": "br1qkb1r/p1pp1ppp/4Pn2/6B1/3Qn3/5NP1/P3PPBP/RN1R2K1 b k - 0 15",
+    "Moves": "d7e6 d4a4 d8d7 d1d7",
+    "Rating": 1758,
+    "Themes": "crushing opening short",
+    "OpeningTags": "Zukertort_Opening Zukertort_Opening_Black_Mustang_Defense"
+  },
+  {
+    "PuzzleId": "00AcQ",
+    "FEN": "8/1bpp2k1/1p5r/1P2P3/3P1P2/2P1n1K1/2Q3P1/8 w - - 0 30",
+    "Moves": "c2a2 h6g6 g3f2 g6g2",
+    "Rating": 1689,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Al5",
+    "FEN": "2r3k1/p2q1pbp/1p2pnp1/nB1p4/3P4/1Pr1P2P/P1QB1PP1/2R2RK1 w - - 0 19",
+    "Moves": "b5d7 c3c2 d7c8 c2d2",
+    "Rating": 1729,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Slav_Defense Slav_Defense_Schlechter_Variation"
+  },
+  {
+    "PuzzleId": "00Ar2",
+    "FEN": "r2q1r2/1n4pk/p6p/1pp2pb1/3n1B2/P1NPN2P/1PPQ1PP1/R3R1K1 w - - 0 21",
+    "Moves": "c3d5 g5f4 d5f4 d8g5 d2d1 g5f4",
+    "Rating": 1797,
+    "Themes": "advantage clearance long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00AuR",
+    "FEN": "8/4bkp1/R6P/4p3/Pp2P3/1P1rB3/6P1/6K1 b - - 0 33",
+    "Moves": "d3e3 h6h7 e3e1 g1h2",
+    "Rating": 1695,
+    "Themes": "advancedPawn crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00B7G",
+    "FEN": "1rb2r1k/4q2p/p2p4/3B1p2/1pPb4/1P2NQ2/P5PP/2R2RK1 w - - 1 24",
+    "Moves": "g1h1 e7e3 f3e3 d4e3",
+    "Rating": 1643,
+    "Themes": "crushing master masterVsMaster middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00BM8",
+    "FEN": "r4rk1/pp2bppp/2ppnn2/8/N1P1P3/q1P4P/P2N2PB/R2Q1R1K b - - 0 16",
+    "Moves": "a8d8 d2b1 a3a4 d1a4",
+    "Rating": 1618,
+    "Themes": "advantage master middlegame short trappedPiece",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00Bex",
+    "FEN": "1rb1qrk1/6bp/2np4/2pNpp2/2P5/3P1B2/1B3PPP/1R1QR1K1 b - - 0 22",
+    "Moves": "c8e6 d5c7 e8f7 c7e6",
+    "Rating": 1695,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00CMj",
+    "FEN": "7R/8/8/6p1/2p1p1k1/2PbK2p/P7/8 w - - 4 71",
+    "Moves": "e3f2 e4e3 f2e3 g4g3",
+    "Rating": 1665,
+    "Themes": "crushing defensiveMove endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00CcK",
+    "FEN": "8/8/3p4/4kp2/1pP3pP/1RbK2P1/8/8 w - - 2 42",
+    "Moves": "b3c3 b4c3 d3c3 f5f4 c3d3 f4g3",
+    "Rating": 1691,
+    "Themes": "crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00DII",
+    "FEN": "2rr2k1/p5p1/1p5p/2pP1p1P/2q5/P4QR1/5PP1/4R1K1 b - - 3 31",
+    "Moves": "c4d5 e1e8 g8f7 f3d5 d8d5 e8c8",
+    "Rating": 1700,
+    "Themes": "advantage endgame intermezzo long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00DdW",
+    "FEN": "5rk1/4bppp/4b3/1p1pPpPP/2pP4/2P5/rqNQKP2/2RRN3 b - - 5 23",
+    "Moves": "e7a3 c1b1 b2b3 b1b3",
+    "Rating": 1693,
+    "Themes": "advantage middlegame short trappedPiece",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00DkJ",
+    "FEN": "3r1bnr/2p2ppp/2b5/R1k5/5P2/2N5/4N1PP/1R4K1 b - - 3 21",
+    "Moves": "c5d6 b1d1 d6e7 a5e5 e7f6 d1d8",
+    "Rating": 1671,
+    "Themes": "crushing deflection exposedKing long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00EDN",
+    "FEN": "rnbq1rk1/p4ppp/1p2p3/2p5/2QPn3/2P1PN2/P3BPPP/R1B2RK1 w - - 0 11",
+    "Moves": "c1a3 c8a6 c4a6 b8a6",
+    "Rating": 1623,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Nimzo-Indian_Defense Nimzo-Indian_Defense_Normal_Variation"
+  },
+  {
+    "PuzzleId": "00EEp",
+    "FEN": "3k2q1/pb1p3p/1p1P4/2p5/2P2Q1K/8/P7/5R2 b - - 2 36",
+    "Moves": "b7g2 f4f8 g8f8 f1f8",
+    "Rating": 1646,
+    "Themes": "endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00EXS",
+    "FEN": "r3r1k1/p2Q1p1p/1p2p1p1/8/1P1P4/P3P3/1B2Nb1q/2KR1R2 w - - 0 19",
+    "Moves": "f1h1 f2e3 c1b1 h2e2",
+    "Rating": 1571,
+    "Themes": "advantage discoveredAttack middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00F5G",
+    "FEN": "2rqrbk1/pp3ppp/4n3/3p1N2/3NnBQ1/2P4P/PP3PP1/R4RK1 b - - 14 22",
+    "Moves": "e6f4 f5h6 g8h8 h6f7",
+    "Rating": 1516,
+    "Themes": "crushing deflection kingsideAttack middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00FAe",
+    "FEN": "5Rbk/6pp/8/p3P3/Pp1pq3/8/1P4PP/3Q2K1 w - - 1 35",
+    "Moves": "d1b3 e4e1 f8f1 e1f1 g1f1 g8b3",
+    "Rating": 1677,
+    "Themes": "crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00FPo",
+    "FEN": "7R/1K3p2/6k1/PP4p1/8/6rp/8/8 b - - 2 47",
+    "Moves": "g5g4 a5a6 h3h2 h8h2",
+    "Rating": 1766,
+    "Themes": "crushing endgame rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00GVf",
+    "FEN": "2b2k2/6q1/pn4p1/1rp2p2/8/8/1P2Q1P1/1K2R2R b - - 3 32",
+    "Moves": "c8d7 h1h8 g7h8 e2e7 f8g8 e7d8",
+    "Rating": 1592,
+    "Themes": "crushing exposedKing long middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00GYk",
+    "FEN": "1r4k1/p3p1bp/1n3qp1/6B1/6Q1/1P4pP/P5B1/3R3K b - - 0 29",
+    "Moves": "f6e5 g5f4 e5f4 g4f4",
+    "Rating": 1665,
+    "Themes": "crushing master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00HDS",
+    "FEN": "6k1/pp2R3/6pp/8/3r4/P4BbP/1P4P1/6K1 b - - 3 38",
+    "Moves": "d4c4 f3d5 g8f8 e7f7 f8e8 d5c4",
+    "Rating": 1506,
+    "Themes": "crushing endgame exposedKing fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00HGG",
+    "FEN": "8/pp6/2p1kpp1/3p4/3P1PPp/1P3K2/P1P4P/8 w - - 0 31",
+    "Moves": "g4g5 f6g5 f3g4 g5f4 g4f4 e6f6",
+    "Rating": 1668,
+    "Themes": "crushing defensiveMove endgame long pawnEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00HZC",
+    "FEN": "4r1k1/pp1qn3/2p4R/6p1/3P1rR1/3Q2P1/PP3P1P/6K1 b - - 0 31",
+    "Moves": "f4g4 d3h7 g8f8 h6f6",
+    "Rating": 1518,
+    "Themes": "endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00HoG",
+    "FEN": "5r1k/5r2/2b2RQp/1p1p2p1/1q4P1/8/8/1B3R1K b - - 0 36",
+    "Moves": "f7f6 g6h7",
+    "Rating": 1533,
+    "Themes": "mate mateIn1 middlegame oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Hpe",
+    "FEN": "1rr3k1/4Qppp/qp2p3/P2pn3/3N4/4P2P/5PP1/RR4K1 b - - 3 29",
+    "Moves": "b6a5 b1b8 c8b8 e7c7 b8c8 c7e5",
+    "Rating": 1789,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00HzX",
+    "FEN": "4r1k1/5pp1/2R4p/1p6/8/1PP3QP/2q2PP1/6K1 w - - 0 29",
+    "Moves": "c6h6 c2c1 g1h2 c1h6",
+    "Rating": 1607,
+    "Themes": "crushing endgame fork short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IDz",
+    "FEN": "8/8/2p2P2/K2b3p/7N/P1k5/8/8 w - - 0 63",
+    "Moves": "f6f7 d5f7 a5b6 f7d5 b6c5 c3b3",
+    "Rating": 1634,
+    "Themes": "crushing endgame long master quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IF7",
+    "FEN": "b3k2r/4bpp1/2q1p2p/1p1nP3/1Pp1N3/2P5/2B2PPP/2BQR1K1 w k - 0 19",
+    "Moves": "c1e3 d5c3 d1g4 c3e4",
+    "Rating": 1682,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Old_Sicilian"
+  },
+  {
+    "PuzzleId": "00IHi",
+    "FEN": "8/4R3/1k6/8/p7/1p1N2P1/5KP1/r7 w - - 0 55",
+    "Moves": "e7e1 a1e1 f2e1 a4a3 e1d2 a3a2 d2c3 a2a1q",
+    "Rating": 1783,
+    "Themes": "advancedPawn crushing endgame promotion veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IMS",
+    "FEN": "1r4k1/r5q1/p2p1pP1/4pP2/2p1P2Q/2PbnBK1/P6R/2R5 b - - 7 35",
+    "Moves": "e3f5 e4f5 d3f5 f3d5",
+    "Rating": 1703,
+    "Themes": "clearance crushing kingsideAttack middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IPp",
+    "FEN": "4Q3/6pk/p3p2p/5p2/1p1P2P1/4q2P/2B1n2B/7K w - - 0 35",
+    "Moves": "g4f5 e3f3",
+    "Rating": 1582,
+    "Themes": "endgame mate mateIn1 oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IUT",
+    "FEN": "1r2r1k1/ppp1q1pp/4b3/4P3/1Q1p1P2/8/P5PP/R1BR2K1 w - - 6 19",
+    "Moves": "d1d4 c7c5 b4a3 c5d4 a3e7 e8e7",
+    "Rating": 1543,
+    "Themes": "crushing fork long middlegame",
+    "OpeningTags": "Italian_Game Italian_Game_Classical_Variation"
+  },
+  {
+    "PuzzleId": "00IUW",
+    "FEN": "8/Q1p1r1kp/5pp1/3P3r/4P3/2N2bPq/PPP2R1P/5RK1 w - - 3 23",
+    "Moves": "a7e3 h3g3 h2g3 h5h1",
+    "Rating": 1732,
+    "Themes": "clearance kingsideAttack mate mateIn2 middlegame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IbM",
+    "FEN": "6k1/5rp1/p2B3p/P1Pp4/1P6/2q1P2P/4Q1P1/6K1 w - - 0 34",
+    "Moves": "e2a6 c3e1 g1h2 f7f1 a6f1 e1f1",
+    "Rating": 1629,
+    "Themes": "advantage endgame long quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IiM",
+    "FEN": "r5k1/pp4p1/1n6/3pB3/3P2pb/2NQ1r2/PP6/2K3R1 w - - 2 24",
+    "Moves": "d3f3 g4f3 g1g7 g8f8",
+    "Rating": 1735,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Ivf",
+    "FEN": "8/2p4r/1p3k2/p2Pp1p1/P1P1RpP1/1P3P1r/4R1K1/8 w - - 7 46",
+    "Moves": "e4e5 h3h2 g2f1 h2h1 f1f2 h7h2",
+    "Rating": 1619,
+    "Themes": "endgame long mate mateIn3 rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00J1t",
+    "FEN": "r1qr3k/pp3pB1/1np1pb2/8/3P3P/2N2PR1/PP1Q2P1/2KR4 b - - 0 22",
+    "Moves": "f6g7 d2g5 d8g8 g5h5 g7h6 h5h6",
+    "Rating": 1668,
+    "Themes": "exposedKing kingsideAttack long mate mateIn3 middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00JR7",
+    "FEN": "r4rk1/pp2q1p1/2p1p2p/3nP1pP/3P2P1/2PQ1R2/PPB5/R5K1 b - - 1 23",
+    "Moves": "f8f3 d3h7 g8f7 c2g6 f7f8 h7h8",
+    "Rating": 1507,
+    "Themes": "kingsideAttack long mate mateIn3 middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00JYV",
+    "FEN": "r2q1rk1/p1p1bppp/2pp1nb1/4p3/4P1PN/2NP3P/PPP2PK1/R1BQ1R2 b - - 4 11",
+    "Moves": "f6e4 h4g6 e4c3 g6e7 d8e7 b2c3",
+    "Rating": 1593,
+    "Themes": "advantage kingsideAttack long opening",
+    "OpeningTags": "Ruy_Lopez Ruy_Lopez_Steinitz_Defense"
+  },
+  {
+    "PuzzleId": "00JzT",
+    "FEN": "8/7p/6pK/5p2/4p3/1k4P1/5P1P/8 w - - 2 44",
+    "Moves": "h6h7 g6g5 g3g4 f5f4",
+    "Rating": 1660,
+    "Themes": "crushing defensiveMove endgame pawnEndgame quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00KSB",
+    "FEN": "r7/4kpRp/2p2p1P/p1P1n3/Pp6/1B6/5PP1/6K1 b - - 2 35",
+    "Moves": "a8h8 f2f4 e5d7 g7f7",
+    "Rating": 1517,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Kbj",
+    "FEN": "8/8/6p1/PR3p2/1P3k2/7P/r5P1/7K w - - 1 39",
+    "Moves": "h3h4 f4g3 b5d5 a2a1 d5d1 a1d1",
+    "Rating": 1509,
+    "Themes": "endgame long mate mateIn3 rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Kia",
+    "FEN": "5r1k/4n1pp/1p6/pP5Q/P2pB2K/6P1/2P4P/4q3 b - - 4 37",
+    "Moves": "g7g6 h5e5 h8g8 e4d5 e7d5 e5e1",
+    "Rating": 1665,
+    "Themes": "advantage discoveredAttack endgame fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00L1Y",
+    "FEN": "3rkb1r/pp2pbpp/2p5/q7/3Q1B2/2P3P1/PP2PP1P/RN2K2R w KQk - 0 15",
+    "Moves": "d4b4 a5d5 e1g1 e7e5 b4b7 e5f4",
+    "Rating": 1795,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": "Queens_Pawn_Game Queens_Pawn_Game_Chigorin_Variation"
+  },
+  {
+    "PuzzleId": "00LH7",
+    "FEN": "6k1/6Bp/6pP/3q1p2/p2PnQ2/2r5/P5PK/4R3 b - - 1 39",
+    "Moves": "d5d6 e1e4 d6f4 e4f4",
+    "Rating": 1510,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00LMb",
+    "FEN": "8/8/1n4kP/1P3p2/3P1K2/2p1N3/8/8 w - - 4 49",
+    "Moves": "f4e5 b6c4 e3c4 c3c2",
+    "Rating": 1771,
+    "Themes": "advancedPawn crushing endgame knightEndgame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00LO6",
+    "FEN": "2r3k1/3q1pp1/1rp5/2Rn2Np/1p1N3n/1Q2P3/5PP1/2R3K1 w - - 0 33",
+    "Moves": "c5d5 c6d5 c1c8 d7c8",
+    "Rating": 1655,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00LSv",
+    "FEN": "3r3k/1p4pp/2p3q1/8/3Q4/8/PP4rP/R4R1K b - - 1 28",
+    "Moves": "g2g1 d4g1 g6e4 g1g2",
+    "Rating": 1755,
+    "Themes": "advantage endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Lhb",
+    "FEN": "2n4k/p3b2p/Pp6/1PpPp3/2B1PpP1/1P6/5BK1/8 b - - 0 33",
+    "Moves": "c8d6 f2c5 b6c5 b5b6 a7b6 a6a7",
+    "Rating": 1790,
+    "Themes": "advancedPawn advantage endgame long master masterVsMaster sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Lt1",
+    "FEN": "r4k2/pp3p2/2pNR2p/5Qp1/1P3n2/3P4/P1PK1qPP/8 w - - 6 31",
+    "Moves": "d2c3 f4d5 c3b3 f2f5 d6f5 f7e6",
+    "Rating": 1659,
+    "Themes": "advantage discoveredAttack endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00MDy",
+    "FEN": "8/pp6/2p1k3/2Pp2pp/1P1P1p2/P2K1P2/6PP/8 w - - 0 42",
+    "Moves": "g2g3 f4g3 h2g3 h5h4 g3h4 g5h4",
+    "Rating": 1589,
+    "Themes": "crushing endgame long pawnEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ME0",
+    "FEN": "8/1p6/p1b5/5k1p/1PB1p2P/P3P1K1/8/8 b - - 2 35",
+    "Moves": "f5e5 c4f7 c6d7 f7h5",
+    "Rating": 1625,
+    "Themes": "bishopEndgame crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00MIY",
+    "FEN": "6k1/3R3p/1p5q/3P4/3QP1pN/6P1/PPr3B1/5rK1 w - - 0 25",
+    "Moves": "g1f1 h6c1 d4d1 c1d1",
+    "Rating": 1500,
+    "Themes": "endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Mbv",
+    "FEN": "2k2b1r/pp3ppp/1n6/BN2p1P1/2Q1Nn1P/8/PP3P2/2KR4 b - - 0 24",
+    "Moves": "b6c4 d1d8",
+    "Rating": 1566,
+    "Themes": "mate mateIn1 middlegame oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00MwU",
+    "FEN": "3r1b1R/ppq3p1/2k3P1/3p4/1P1Q4/4PP2/P1P5/2K5 b - - 0 26",
+    "Moves": "a7a6 h8f8 d8f8 d4c5 c6d7 c5f8",
+    "Rating": 1792,
+    "Themes": "advantage attraction endgame fork long sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00NHK",
+    "FEN": "r1b2rk1/1p2b1p1/pqn1p1P1/3pP3/1P1P4/P1N1P3/6P1/R2QK2R b KQ - 0 17",
+    "Moves": "c6e5 h1h8 g8h8 d1h5 h8g8 h5h7",
+    "Rating": 1715,
+    "Themes": "attraction fork long mate mateIn3 middlegame sacrifice",
+    "OpeningTags": "French_Defense French_Defense_Advance_Variation"
+  },
+  {
+    "PuzzleId": "00NUc",
+    "FEN": "6k1/6pp/1PP5/4b3/3p4/Br5P/4prP1/R5RK w - - 1 30",
+    "Moves": "c6c7 b3h3 g2h3 f2h2",
+    "Rating": 1568,
+    "Themes": "endgame mate mateIn2 sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Nay",
+    "FEN": "r2q1r2/ppp2pk1/3p1n2/4p1p1/2B1P3/2NP2Q1/PPP5/2K4R b - - 0 19",
+    "Moves": "g7g6 g3h3 f8h8 h3f5 g6g7 f5g5",
+    "Rating": 1748,
+    "Themes": "crushing deflection long middlegame quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Nf5",
+    "FEN": "r1bq1rk1/pp2bppp/2pp1n2/8/5P2/5N2/PBPPB1PP/RN1Q1RK1 w - - 5 11",
+    "Moves": "b1c3 d8b6 g1h1 b6b2 a1b1 b2a3",
+    "Rating": 1572,
+    "Themes": "advantage fork long opening",
+    "OpeningTags": "Polish_Opening Polish_Opening_Other_variations"
+  },
+  {
+    "PuzzleId": "00Ngg",
+    "FEN": "3qk2r/1p1bbppp/4pn2/1BPp1n2/3P4/4PN2/5PPP/BN1QK2R w Kk - 1 15",
+    "Moves": "d1e2 d8a5 a1c3 a5b5",
+    "Rating": 1524,
+    "Themes": "advantage fork middlegame short",
+    "OpeningTags": "Polish_Opening Polish_Opening_Grigorian_Variation"
+  },
+  {
+    "PuzzleId": "00Nte",
+    "FEN": "r4k2/8/2p3Bb/4p1n1/3q4/PQ6/2K2P2/1N4R1 w - - 3 30",
+    "Moves": "g1g5 d4f2 b1d2 h6g5 b3f3 f2f3",
+    "Rating": 1698,
+    "Themes": "advantage intermezzo long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00O9Z",
+    "FEN": "5QR1/5p1p/1b3qp1/p6k/P2P4/8/1P2rPPP/5RK1 w - - 7 32",
+    "Moves": "g8h8 f6f2 f1f2 e2e1 f2f1 b6d4 g1h1 e1f1",
+    "Rating": 1594,
+    "Themes": "backRankMate deflection endgame fork master mate mateIn4 pin sacrifice veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00OQt",
+    "FEN": "8/8/8/p3b3/P1B2pKp/1Pk1p2P/6P1/8 w - - 8 50",
+    "Moves": "g4h4 c3d2 h4g4 e3e2 c4e2 d2e2",
+    "Rating": 1680,
+    "Themes": "advancedPawn bishopEndgame crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Or5",
+    "FEN": "r2qkbnr/pp5p/8/4Nb2/3p4/1QN5/PP2PPPP/R3KB1R b KQkq - 1 12",
+    "Moves": "d4c3 b3f7",
+    "Rating": 1507,
+    "Themes": "mate mateIn1 oneMove opening",
+    "OpeningTags": "Slav_Defense Slav_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00P6s",
+    "FEN": "Qn3rk1/p1p3pp/1p2Pb2/8/3q4/5P2/PPP4P/R3KBNR w KQ - 0 14",
+    "Moves": "a8e4 f6h4 e1e2 d4f2",
+    "Rating": 1630,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Dutch_Defense Dutch_Defense_Manhattan_Gambit"
+  },
+  {
+    "PuzzleId": "00PUc",
+    "FEN": "3r3k/pp4bp/3Bn1p1/7n/8/8/PP3P1K/R4RN1 w - - 1 27",
+    "Moves": "a1d1 d8d6 d1d6 g7e5 h2h1 e5d6",
+    "Rating": 1505,
+    "Themes": "advantage attraction exposedKing fork long middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00PvX",
+    "FEN": "8/n7/P7/3k4/PK6/7P/5PP1/8 w - - 0 53",
+    "Moves": "b4a5 d5c5 f2f3 a7c6",
+    "Rating": 1660,
+    "Themes": "endgame knightEndgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Qlc",
+    "FEN": "8/5R2/P7/2p1r3/2Pp2k1/3K4/5p2/8 b - - 1 54",
+    "Moves": "e5f5 f7f5 g4f5 d3e2 f2f1q e2f1",
+    "Rating": 1630,
+    "Themes": "crushing endgame long rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00QqI",
+    "FEN": "r6r/pQ2nkpp/4b3/2p1q3/4p3/2N5/PP1B1PPP/R4RK1 w - - 1 15",
+    "Moves": "c3e4 e6d5 e4g5 e5g5 d2g5 d5b7",
+    "Rating": 1698,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": "Scotch_Game Scotch_Game_Scotch_Gambit"
+  },
+  {
+    "PuzzleId": "00R4l",
+    "FEN": "r1b5/p4pkp/3p2p1/2pPr3/2P5/1P1B4/R4PPP/R5K1 w - - 0 24",
+    "Moves": "a2a7 a8a7 a1a7 e5e1 d3f1 c8f5",
+    "Rating": 1532,
+    "Themes": "advantage defensiveMove endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00RbX",
+    "FEN": "3r2k1/2q1bppp/b3n3/p2N4/2p1P3/P3QN2/1PP2PPP/4R1K1 b - - 1 22",
+    "Moves": "e7c5 d5c7 c5e3 c7e6 e3f2 g1f2",
+    "Rating": 1616,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Rep",
+    "FEN": "8/8/b1k5/p1N5/2p5/1P4P1/P6P/6K1 w - - 1 51",
+    "Moves": "c5a6 c4c3 b3b4 c3c2",
+    "Rating": 1590,
+    "Themes": "advancedPawn crushing endgame knightEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00STy",
+    "FEN": "8/1R5R/4kpp1/4p3/4P2K/5P1P/r7/6r1 b - - 10 40",
+    "Moves": "a2h2 b7b6",
+    "Rating": 1515,
+    "Themes": "endgame master mate mateIn1 oneMove rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00SU7",
+    "FEN": "2rqr1k1/B2b1ppp/5n2/8/3Q4/3B4/P1P2PPP/R3R1K1 w - - 3 22",
+    "Moves": "d4h4 e8e1 a1e1 d8a5 e1a1 a5a7",
+    "Rating": 1688,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Se9",
+    "FEN": "5rk1/pp1n2r1/3p2N1/2pQ4/2P5/4P1P1/qP2KPP1/7R b - - 1 24",
+    "Moves": "g7f7 g6e7 g8g7 d5g5",
+    "Rating": 1784,
+    "Themes": "mate mateIn2 middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Sr6",
+    "FEN": "4r2k/pQ5p/1p3p2/8/2p2P2/P6q/8/3R1RK1 w - - 0 37",
+    "Moves": "b7f3 e8g8 g1f2 h3h2",
+    "Rating": 1520,
+    "Themes": "advantage endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00T2k",
+    "FEN": "2k5/p3qp2/bpp1p1p1/4P2r/P4n1p/5P2/BPQ2B1P/1K1R4 b - - 0 30",
+    "Moves": "h5e5 c2c6 c8b8 d1d7 e7d7 c6d7",
+    "Rating": 1537,
+    "Themes": "advantage long middlegame queensideAttack",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00TRo",
+    "FEN": "5q1k/2r3p1/1p2p2b/3p2NQ/3P4/1p6/5R2/6K1 b - - 1 38",
+    "Moves": "f8b4 h5e8 b4f8 f2f8",
+    "Rating": 1753,
+    "Themes": "endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00TV2",
+    "FEN": "6k1/p1Q2p1p/4p1p1/3p4/1r6/7P/Pq3PP1/5RK1 b - - 2 26",
+    "Moves": "b2a2 c7c8 g8g7 c8c3 d5d4 c3b4",
+    "Rating": 1732,
+    "Themes": "advantage endgame fork long master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00TXF",
+    "FEN": "3R4/6pk/4rp1p/p1N1P3/1p3P2/1Pb4P/6P1/6K1 b - - 1 33",
+    "Moves": "e6c6 e5e6 c6e6 c5e6",
+    "Rating": 1727,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Tll",
+    "FEN": "5r1k/1pp3p1/7p/pP1N4/P3P3/2PP3P/3BnbPK/R7 w - - 2 27",
+    "Moves": "d5c7 f2g3 h2h1 g3c7",
+    "Rating": 1546,
+    "Themes": "advantage endgame fork short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00UB0",
+    "FEN": "1r2n3/p1p3bk/Pp1p2pp/1PqP1p2/5P2/1Q1P1N2/6BP/5R1K b - - 0 29",
+    "Moves": "e8f6 d3d4 c5d5 f3g5",
+    "Rating": 1570,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00UEs",
+    "FEN": "8/3R3p/5kp1/8/2Bnp3/1P5P/P6r/4K3 b - - 1 40",
+    "Moves": "f6e5 d7d5 e5f4 d5d4",
+    "Rating": 1505,
+    "Themes": "advantage deflection endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00UF4",
+    "FEN": "rnbQ1b1r/pp2n2p/2p2k2/1q2p1p1/3P4/5N2/P1P2PPP/R1B1K2R b KQ - 0 13",
+    "Moves": "f8g7 c1g5 f6f7 d8e7",
+    "Rating": 1734,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Scandinavian_Defense Scandinavian_Defense_Main_Line"
+  },
+  {
+    "PuzzleId": "00UOA",
+    "FEN": "6k1/5p1p/4pbp1/p2p4/2rP1P2/P3B1P1/1P2R1KP/8 b - - 0 30",
+    "Moves": "f6d4 b2b3 c4c2 e2c2",
+    "Rating": 1640,
+    "Themes": "advantage endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00UZP",
+    "FEN": "5r1k/ppQ3p1/6qp/5r2/3Pp1b1/2P5/P2B1PPP/R4R1K w - - 5 22",
+    "Moves": "c7b7 f5f2 f1f2 f8f2",
+    "Rating": 1745,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Uwn",
+    "FEN": "3r1rk1/p1p2pbp/1p4p1/7n/4P3/1P2BP1q/P1B3QP/3R1R1K b - - 6 23",
+    "Moves": "h3h4 e3g5 h5g3 g2g3",
+    "Rating": 1594,
+    "Themes": "advantage fork middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00UyQ",
+    "FEN": "4r1k1/p1p2pp1/1p5p/2Q1P3/5r1q/5R2/P3B1PP/R5K1 w - - 0 22",
+    "Moves": "c5c7 f4f3 g2f3 h4d4 g1g2 d4a1",
+    "Rating": 1574,
+    "Themes": "advantage clearance fork long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00VEe",
+    "FEN": "3r4/4k3/3pn3/p3r1p1/PpB3K1/1P4P1/3R4/7R b - - 3 47",
+    "Moves": "d8f8 h1h7 f8f7 h7f7 e7f7 d2d6",
+    "Rating": 1735,
+    "Themes": "crushing endgame long master masterVsMaster",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00VIe",
+    "FEN": "8/8/8/P6p/8/2RnkN2/r7/3K4 w - - 1 60",
+    "Moves": "f3e1 a2d2",
+    "Rating": 1737,
+    "Themes": "endgame mate mateIn1 oneMove vukovicMate",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00VQ7",
+    "FEN": "r2q1r1k/pppn2pp/2n1B3/6b1/5B2/2N2Q2/PPP3PP/2KR1R2 w - - 1 15",
+    "Moves": "f4g5 d8g5 c1b1 f8f3",
+    "Rating": 1582,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Kings_Gambit_Accepted Kings_Gambit_Accepted_Fischer_Defense"
+  },
+  {
+    "PuzzleId": "00VhV",
+    "FEN": "5k2/5P2/4K3/4p3/ppp1P3/2P1P3/PP4P1/8 w - - 2 50",
+    "Moves": "g2g4 a4a3 c3b4 a3b2",
+    "Rating": 1607,
+    "Themes": "advancedPawn crushing endgame pawnEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Vqp",
+    "FEN": "8/5ppp/4p3/p6k/6R1/4P2P/3q1PP1/2R3K1 w - - 2 33",
+    "Moves": "c1c7 d2d1 g1h2 d1d6 g2g3 d6c7",
+    "Rating": 1577,
+    "Themes": "crushing endgame fork long queenRookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00WUu",
+    "FEN": "r3k1nr/pp3ppp/1q2b3/8/1n1p4/6P1/PB1QPPBP/R3K1NR w KQkq - 0 13",
+    "Moves": "b2d4 b6d4 d2d4 b4c2 e1f1 c2d4",
+    "Rating": 1523,
+    "Themes": "attraction crushing fork long opening sacrifice",
+    "OpeningTags": "Queens_Gambit_Declined Queens_Gambit_Declined_Tarrasch_Defense"
+  },
+  {
+    "PuzzleId": "00WbE",
+    "FEN": "5rk1/2pp1q1p/n5p1/pp1PP3/3PB1PP/P2Q1p2/5P2/R5K1 w - - 0 25",
+    "Moves": "d3b5 f7f4 b5d7 f4e4",
+    "Rating": 1675,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Wi9",
+    "FEN": "8/8/3n1P2/2k5/2pp1K2/P7/8/3B4 w - - 2 63",
+    "Moves": "f4e5 d4d3 f6f7 d6f7",
+    "Rating": 1706,
+    "Themes": "crushing endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00WqT",
+    "FEN": "r4r2/1ppb1p2/p2p2pk/5P2/4P3/2PBB1R1/PKP2P1q/8 b - - 4 26",
+    "Moves": "h6h5 d3e2 h5h4 e3g5",
+    "Rating": 1617,
+    "Themes": "mate mateIn2 middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Wqc",
+    "FEN": "4k3/5p2/3P4/p5p1/6Pp/1P1K3n/P7/2B5 w - - 0 33",
+    "Moves": "d3e3 h3f4 e3f3 h4h3",
+    "Rating": 1635,
+    "Themes": "crushing endgame master quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Wyh",
+    "FEN": "2r5/8/8/pNp1r2p/3kNppP/1P1P4/2R2K2/8 b - - 2 42",
+    "Moves": "d4d3 c2d2 d3e4 b5d6",
+    "Rating": 1660,
+    "Themes": "endgame mate mateIn2 sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00X2j",
+    "FEN": "8/5KP1/R1k5/8/2pp4/8/8/6r1 b - - 1 50",
+    "Moves": "c6c5 a6g6 g1g6 f7g6 d4d3 g7g8q",
+    "Rating": 1529,
+    "Themes": "advancedPawn crushing endgame long promotion rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00XPO",
+    "FEN": "r2q1r1k/1pp3p1/1b2b2p/3n4/pP6/P1P2N1P/1BB2PP1/R2QK2R w KQ - 0 20",
+    "Moves": "d1d3 e6f5 e1c1 f5d3",
+    "Rating": 1692,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00XQ8",
+    "FEN": "k4r2/pp6/2p3Q1/3p2P1/4r2P/8/PPP2q2/2KR3R w - - 1 30",
+    "Moves": "h1f1 f2e3 c1b1 f8f1 g6g8 e4e8",
+    "Rating": 1566,
+    "Themes": "advantage discoveredAttack endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00XTV",
+    "FEN": "8/2k4p/p2p2p1/2pP1p2/2P4P/3K4/P2R1PP1/4r3 w - - 0 28",
+    "Moves": "d2e2 e1e2 d3e2 c7b6 e2f3 b6a5 a2a3 a5a4",
+    "Rating": 1593,
+    "Themes": "crushing endgame master rookEndgame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00XXM",
+    "FEN": "3r1br1/Qpqk1p2/p1p1p2p/3nP3/8/2P1NP1N/PP6/1K1R3R b - - 3 25",
+    "Moves": "f8e7 c3c4 b7b6 a7c7 d7c7 c4d5",
+    "Rating": 1774,
+    "Themes": "advantage long middlegame pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00XZR",
+    "FEN": "8/2p5/p1n5/1pP1p2k/1P1p4/P2P3P/5P2/R4KRq b - - 9 34",
+    "Moves": "h1h3 f1e2 e5e4 g1h1 e4d3 e2d2",
+    "Rating": 1602,
+    "Themes": "crushing defensiveMove endgame long pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Ygn",
+    "FEN": "5rk1/p3Rp1p/5pp1/np1q4/r2P4/2P2N2/PQ3PPP/2R3K1 w - - 4 22",
+    "Moves": "e7a7 a5c4 a7a4 c4b2",
+    "Rating": 1502,
+    "Themes": "crushing master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00YhY",
+    "FEN": "8/8/5kp1/R7/4p1P1/5p1P/2r2P2/6K1 w - - 0 52",
+    "Moves": "h3h4 c2c1 g1h2 e4e3",
+    "Rating": 1784,
+    "Themes": "crushing endgame rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ZAn",
+    "FEN": "rnbqk1nr/ppp1b1pp/3p4/4p3/2B1P3/5N2/PPPP2PP/RNBQK2R w KQkq - 0 6",
+    "Moves": "f3e5 d6e5 d1h5 g7g6 h5e5 g8f6",
+    "Rating": 1781,
+    "Themes": "advantage hangingPiece long opening",
+    "OpeningTags": "Kings_Gambit Kings_Gambit_Other_variations"
+  },
+  {
+    "PuzzleId": "00ZDZ",
+    "FEN": "8/pp4k1/2p3p1/3nRr2/3P1Pp1/2P3K1/PP6/5R2 w - - 3 36",
+    "Moves": "g3g4 f5e5 d4e5 d5e3 g4f3 e3f1",
+    "Rating": 1737,
+    "Themes": "advantage endgame fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00a98",
+    "FEN": "4r1k1/p4p2/1p3q1p/1P6/3b2p1/P3B1P1/Q1P2PKP/4R3 w - - 0 32",
+    "Moves": "e3d4 f6f3 g2f1 f3h1",
+    "Rating": 1523,
+    "Themes": "endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00aDl",
+    "FEN": "r5k1/1p3p2/2p1ppp1/3p4/2nP4/1QB2B1P/rPP2PP1/qNKR3R w - - 3 22",
+    "Moves": "f3e2 a1b1 c1b1 a2a1",
+    "Rating": 1535,
+    "Themes": "attraction mate mateIn2 middlegame queensideAttack sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00aYp",
+    "FEN": "2rq1rk1/p1n1bp2/1p2p1pN/3nP2p/3P3P/P2Q1N2/1P4P1/RBB3K1 b - - 1 21",
+    "Moves": "g8g7 h6f7 f8f7 d3g6",
+    "Rating": 1722,
+    "Themes": "crushing master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00awL",
+    "FEN": "4q1r1/k2r1Rp1/ppp4p/2Qp4/3P4/2P1P3/PP4P1/2K2R2 w - - 0 35",
+    "Moves": "c5c6 d7f7 f1f7 e8f7",
+    "Rating": 1739,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00b6f",
+    "FEN": "6k1/8/5B2/1R3pK1/6p1/6P1/P4P1q/8 w - - 0 41",
+    "Moves": "g5f5 h2h5 f6g5 h5f7 f5g4 f7c4",
+    "Rating": 1749,
+    "Themes": "crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bFH",
+    "FEN": "4r1k1/1q3ppp/3B1n2/p2P4/8/Pp3Q1P/5PPN/1R4K1 w - - 0 27",
+    "Moves": "f3b3 e8e1 b1e1 b7b3",
+    "Rating": 1656,
+    "Themes": "deflection equality middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bJi",
+    "FEN": "7k/1p2R3/p3N3/3p4/2n5/2P5/PPK4r/8 w - - 3 36",
+    "Moves": "c2d3 h2d2",
+    "Rating": 1580,
+    "Themes": "endgame hookMate mate mateIn1 oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bnu",
+    "FEN": "2r2rk1/2QR1p1p/p3p1p1/1p4q1/5P2/P1N5/BPP3bP/2K4R w - - 1 20",
+    "Moves": "c7c8 g5f4 c1b1 f8c8",
+    "Rating": 1575,
+    "Themes": "advantage intermezzo middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bri",
+    "FEN": "2r4k/p4p1p/b4p2/8/4P2P/1Pqr1QP1/P4PB1/2RR2K1 b - - 1 25",
+    "Moves": "c3c1 f3f6 h8g8 d1c1",
+    "Rating": 1793,
+    "Themes": "advantage fork intermezzo middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bzy",
+    "FEN": "4k1r1/p1p5/2P4p/3rNp2/1b1BnP1p/4PR1P/P6K/1R6 b - - 1 27",
+    "Moves": "e4d2 b1b4 d2f3 e5f3",
+    "Rating": 1511,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00cRN",
+    "FEN": "8/4rkb1/R5R1/5P1p/P6P/4p1P1/1r6/4K3 b - - 0 44",
+    "Moves": "e3e2 g6g7 f7g7 f5f6 g7f7 f6e7",
+    "Rating": 1726,
+    "Themes": "advancedPawn advantage attraction endgame exposedKing fork long sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ccX",
+    "FEN": "r4rk1/1p1b1pbp/p1pp2p1/8/2PNq3/1P2P2P/PB1Q1PP1/R2R2K1 w - - 0 19",
+    "Moves": "d2d3 e4d3 d1d3 c6c5 b2c3 c5d4",
+    "Rating": 1534,
+    "Themes": "crushing long middlegame",
+    "OpeningTags": "Nimzo-Larsen_Attack Nimzo-Larsen_Attack_Indian_Variation"
+  },
+  {
+    "PuzzleId": "00d4c",
+    "FEN": "3r3k/p1p3p1/1p3q1p/4b3/2P1p3/1P2B1P1/P3QPKP/1R6 w - - 0 29",
+    "Moves": "b1d1 f6f3 e2f3 e4f3 g2f3 d8d1",
+    "Rating": 1714,
+    "Themes": "advantage endgame long master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00dqP",
+    "FEN": "r1b2rk1/5p1p/p3pP2/1p1p4/5q1n/1P5P/P1P1QPB1/1K1R2R1 b - - 2 21",
+    "Moves": "f4f6 g2d5 h4g6 d5a8",
+    "Rating": 1677,
+    "Themes": "advantage discoveredAttack middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00e5u",
+    "FEN": "2r2r2/1p2k1p1/p5p1/P1P3N1/3bPBpP/3K2P1/2P5/7R b - - 0 29",
+    "Moves": "f8d8 f4d6 d8d6 c5d6 e7d6 d3d4",
+    "Rating": 1502,
+    "Themes": "crushing endgame exposedKing long master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00e63",
+    "FEN": "r4r1k/pp4pp/1qpp1b2/4p3/N3P3/3Q4/PPP2PPP/3RR1K1 b - - 3 16",
+    "Moves": "b6d4 d3b3 b7b5 d1d4",
+    "Rating": 1760,
+    "Themes": "advantage discoveredAttack middlegame short trappedPiece",
+    "OpeningTags": "Scotch_Game Scotch_Game_Other_variations"
+  },
+  {
+    "PuzzleId": "00e6J",
+    "FEN": "r5k1/pb2r1p1/1p2pQ2/2b1N3/5P2/PP5P/4p2K/3R2R1 w - - 0 33",
+    "Moves": "d1e1 c5g1 e1g1 e2e1q f6e6 e7e6",
+    "Rating": 1623,
+    "Themes": "advancedPawn advantage long middlegame promotion",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00e6Q",
+    "FEN": "5r2/pppk2pp/3p1r2/8/3PPn2/2P2PQq/PP2B2P/R3KR2 b Q - 2 21",
+    "Moves": "h3g3 h2g3 f4e2 e1e2",
+    "Rating": 1572,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00eOw",
+    "FEN": "r2r2k1/pp3pp1/5q1p/4p3/3p4/2N1P3/PPQ2P1R/2K4R w - - 0 25",
+    "Moves": "e3d4 e5d4 c1b1 d4c3",
+    "Rating": 1652,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00eWz",
+    "FEN": "4r1k1/p5bp/1q4p1/2pPrp2/1pP2N2/6PP/P4QB1/1R3RK1 w - - 2 25",
+    "Moves": "f4e6 e5e6 d5e6 g7d4",
+    "Rating": 1610,
+    "Themes": "advantage clearance master middlegame pin sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00eXL",
+    "FEN": "8/8/3RP3/p1Pn4/1pN1k2p/8/rP1K4/8 b - - 0 40",
+    "Moves": "a5a4 d6d5 e4d5 e6e7",
+    "Rating": 1678,
+    "Themes": "advancedPawn advantage endgame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00eae",
+    "FEN": "2r3kr/1pq1b1p1/p1n1p1P1/3p1pB1/3P3p/P3Q3/1PP1N3/1K4RR b - - 4 26",
+    "Moves": "e7g5 e3e6 g8f8 g1g5",
+    "Rating": 1794,
+    "Themes": "crushing intermezzo kingsideAttack master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00fTw",
+    "FEN": "r2qk2r/4bpp1/4pn1p/pp1pPb2/2p2P1B/P1P1P3/1P2B1PP/RN1Q1RK1 b kq - 0 13",
+    "Moves": "f5b1 e5f6 e7f6 h4f6",
+    "Rating": 1640,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Bird_Opening Bird_Opening_Dutch_Variation"
+  },
+  {
+    "PuzzleId": "00fmc",
+    "FEN": "1r1r2k1/2p3b1/p1q4p/3pP1pb/P2B1p2/1B3P2/1P4PP/R2QR1K1 w - - 7 29",
+    "Moves": "e5e6 g7d4 d1d4 b8b3",
+    "Rating": 1530,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00gS7",
+    "FEN": "8/1r3pkp/1b4p1/2Rp4/7P/1qP3P1/1P2QP2/2B3K1 w - - 5 33",
+    "Moves": "e2e5 f7f6 c1h6 g7h6 e5f4 h6g7",
+    "Rating": 1644,
+    "Themes": "advantage defensiveMove endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00gsT",
+    "FEN": "1r3rk1/p4pp1/4p2p/1Q2Pn2/1b1P4/4BN2/q4PPP/2R2RK1 w - - 1 19",
+    "Moves": "c1a1 a2a1 f1a1 b8b5",
+    "Rating": 1509,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Queens_Gambit_Accepted Queens_Gambit_Accepted_Other_variations"
+  },
+  {
+    "PuzzleId": "00gyK",
+    "FEN": "5rk1/5pp1/3p3p/4p1N1/8/PR6/1p3PPP/6K1 w - - 0 33",
+    "Moves": "g5e4 f8c8 g2g3 c8c1",
+    "Rating": 1659,
+    "Themes": "crushing endgame quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00h5T",
+    "FEN": "1r2r1k1/3p1pb1/p2q2pp/1p3P2/3p4/P6Q/BPP3PP/4RRK1 b - - 0 23",
+    "Moves": "g6g5 e1e8 b8e8 f5f6",
+    "Rating": 1795,
+    "Themes": "crushing kingsideAttack master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00h7S",
+    "FEN": "8/p1N3pp/5k2/2PB2b1/1P4b1/P6r/6K1/4R3 b - - 0 31",
+    "Moves": "h3d3 c7e8 f6g6 d5e4",
+    "Rating": 1752,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00h8Z",
+    "FEN": "5k2/p1R4R/1p4p1/3r3q/3P4/2P2rQp/PP5K/8 b - - 4 36",
+    "Moves": "f3g3 c7c8 d5d8 c8d8",
+    "Rating": 1532,
+    "Themes": "endgame mate mateIn2 queenRookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00h95",
+    "FEN": "7k/Q1p3p1/5p1p/3q4/3Pr3/4P3/P4P1P/1R4K1 w - - 2 26",
+    "Moves": "a7c5 e4g4 g1f1 d5h1 f1e2 h1b1",
+    "Rating": 1729,
+    "Themes": "crushing endgame long skewer",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00hA5",
+    "FEN": "6n1/2p3k1/1p1p2P1/p2P1K1P/P1P5/1P6/8/8 b - - 2 53",
+    "Moves": "g8h6 f5e6 h6g8 e6d7",
+    "Rating": 1677,
+    "Themes": "crushing defensiveMove endgame knightEndgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00hSW",
+    "FEN": "2R5/4b1pk/1r5p/2pPN3/1p2P3/3P4/4K1PP/8 w - - 1 39",
+    "Moves": "e5d7 b4b3 d5d6 e7d6 d7b6 b3b2 b6c4 b2b1q",
+    "Rating": 1763,
+    "Themes": "advancedPawn advantage endgame master promotion sacrifice veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00hsd",
+    "FEN": "5k2/p4p2/1p6/3p1R2/7Q/P2Pr1KP/6P1/6q1 w - - 3 40",
+    "Moves": "f5f3 g1e1 g3g4 e1h4 g4h4 e3f3",
+    "Rating": 1624,
+    "Themes": "crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00huW",
+    "FEN": "8/3k4/p6p/1p2Q1pP/3P2b1/1PP2qP1/P3p3/1K2R3 w - - 3 44",
+    "Moves": "d4d5 f3d3 b1b2 d3d2 b2a3 d2e1",
+    "Rating": 1675,
+    "Themes": "advantage endgame fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00hxr",
+    "FEN": "r4rk1/pp3ppp/4p3/3pB1qB/Q1p5/2PbP3/PP1N1P1P/R3K2R w KQ - 0 15",
+    "Moves": "e5g7 g5h5 a4d1 h5d1 a1d1 g8g7",
+    "Rating": 1677,
+    "Themes": "advantage hangingPiece long middlegame",
+    "OpeningTags": "Queens_Pawn_Game Queens_Pawn_Game_Accelerated_London_System"
+  },
+  {
+    "PuzzleId": "00iLe",
+    "FEN": "r1b1r1k1/pp1n1pb1/3p1q1p/2pP2p1/2P1B3/4PNB1/PPQ2PPP/2KR3R w - - 1 15",
+    "Moves": "h2h4 e8e4 h4g5 h6g5",
+    "Rating": 1737,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Torre_Attack Torre_Attack_Fianchetto_Defense"
+  },
+  {
+    "PuzzleId": "00iQD",
+    "FEN": "8/8/8/3K2kp/8/2P1P3/8/8 w - - 0 50",
+    "Moves": "c3c4 h5h4 d5e4 g5g4 c4c5 h4h3 e4e5 h3h2 c5c6 h2h1q",
+    "Rating": 1618,
+    "Themes": "advancedPawn crushing endgame pawnEndgame promotion quietMove veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00j1r",
+    "FEN": "8/2rkb3/1p6/6P1/5q2/3R4/Q1P1K3/8 b - - 4 37",
+    "Moves": "d7c6 a2d5",
+    "Rating": 1620,
+    "Themes": "dovetailMate endgame mate mateIn1 oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00jG1",
+    "FEN": "5q1k/4b1p1/2b1p3/2pp2n1/8/2P2PB1/PP2QP1P/R4RK1 w - - 3 25",
+    "Moves": "h2h4 g5f3 g1g2 d5d4",
+    "Rating": 1636,
+    "Themes": "middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00jXF",
+    "FEN": "r1b1r1k1/ppp2ppp/2nb1q2/4N3/2BPQB2/8/PPP3PP/2KR3R w - - 5 13",
+    "Moves": "c4f7 f6f7 e5f7 e8e4",
+    "Rating": 1552,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Vienna_Gambit_with_Max_Lange_Defense Vienna_Gambit_with_Max_Lange_Defense_Steinitz_Gambit"
+  },
+  {
+    "PuzzleId": "00jgd",
+    "FEN": "5Q2/8/8/8/pn6/k6r/8/2K5 w - - 2 83",
+    "Moves": "f8d6 h3c3 c1d2 c3d3 d6d3 b4d3",
+    "Rating": 1758,
+    "Themes": "crushing endgame exposedKing fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00kS9",
+    "FEN": "4r1k1/1ppbrpp1/7p/p2P4/3q1P2/P2B1P2/1P1Q2PP/3RR2K w - - 5 26",
+    "Moves": "d3h7 g8h7 e1e7 d4d2 d1d2 e8e7",
+    "Rating": 1570,
+    "Themes": "advantage hangingPiece long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ko8",
+    "FEN": "6k1/5ppp/pp6/3q4/P2R2Q1/8/1Pr1r1PP/5R1K b - - 3 26",
+    "Moves": "h7h5 g4e2 c2e2 d4d5",
+    "Rating": 1706,
+    "Themes": "advantage endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00l0K",
+    "FEN": "2b5/2p2p2/k7/1qQ1P3/1p6/1N3P2/1PP5/2K5 w - - 3 38",
+    "Moves": "c5c7 b5f1 c1d2 f1f2 d2d3 c8f5 d3c4 f2c2 c4b4 c2c7",
+    "Rating": 1639,
+    "Themes": "crushing deflection endgame skewer veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00l7Y",
+    "FEN": "r1b2q2/p3p1bk/2p3p1/3pn2p/8/2NB3P/PPPBQ1P1/5RK1 b - - 1 17",
+    "Moves": "f8d8 e2h5 h7g8 d3g6 e5g6 h5g6",
+    "Rating": 1578,
+    "Themes": "advantage deflection long middlegame pin",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Open"
+  },
+  {
+    "PuzzleId": "00lA1",
+    "FEN": "r3k2r/ppp3Np/3p2pB/2b1p3/2B1P3/2NP3q/PPP2P2/R2R2K1 b - - 3 17",
+    "Moves": "e8d8 h6g5 d8d7 c4e6 h3e6 g7e6",
+    "Rating": 1704,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": "Four_Knights_Game Four_Knights_Game_Spanish_Variation"
+  },
+  {
+    "PuzzleId": "00lHu",
+    "FEN": "8/p7/6P1/4p3/R4pK1/1r2k2P/8/8 b - - 0 47",
+    "Moves": "f4f3 g6g7 b3b8 a4a3",
+    "Rating": 1713,
+    "Themes": "advancedPawn crushing endgame rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00lIV",
+    "FEN": "r2qr1k1/pb2bppp/2p2n2/3pN1B1/2P5/4P3/PPQ2PPP/3RKB1R w K - 3 13",
+    "Moves": "f1e2 e7b4 e1f1 e8e5",
+    "Rating": 1636,
+    "Themes": "crushing discoveredAttack middlegame short",
+    "OpeningTags": "Queens_Gambit_Declined Queens_Gambit_Declined_Normal_Defense"
+  },
+  {
+    "PuzzleId": "00lL3",
+    "FEN": "Qr5k/5pp1/5N1p/4q3/4P3/8/7P/6RK w - - 6 36",
+    "Moves": "g1a1 g7f6 a8b8 e5b8",
+    "Rating": 1792,
+    "Themes": "crushing endgame hangingPiece short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ldC",
+    "FEN": "3r1r2/pp3pk1/2p1pRp1/6Qp/2P5/P7/1q4PP/5R1K b - - 1 31",
+    "Moves": "d8d2 f6g6 f7g6 g5e7 g7h6 e7f8 b2g7 f8f4 h6h7 f4d2",
+    "Rating": 1706,
+    "Themes": "advantage clearance deflection endgame fork sacrifice veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00nUh",
+    "FEN": "5rk1/p4pp1/1p4rp/2p1P3/3p1P2/P2PnP2/2P2R1P/2B1R2K b - - 4 25",
+    "Moves": "e3g2 f2g2 g6g2 h1g2",
+    "Rating": 1698,
+    "Themes": "advantage endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00nh0",
+    "FEN": "8/8/8/4R1kp/4p3/4r2P/6PK/8 b - - 1 50",
+    "Moves": "g5h4 g2g3 e3g3 e5e4 h4g5 h2g3",
+    "Rating": 1587,
+    "Themes": "crushing deflection endgame long rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00oQO",
+    "FEN": "5rk1/1p4pp/p7/3R1N2/4rn2/6KP/PPR2PP1/8 w - - 1 34",
+    "Moves": "d5d4 f4e2 c2e2 e4e2",
+    "Rating": 1770,
+    "Themes": "crushing endgame fork master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00oXF",
+    "FEN": "3r1rk1/1p3p1p/p1q1b1p1/4P2P/2p2P2/P5R1/2Q1B1P1/3R2K1 b - - 1 25",
+    "Moves": "e6f5 c2f5 d8d1 e2d1",
+    "Rating": 1742,
+    "Themes": "crushing middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ob0",
+    "FEN": "r4rk1/4qp2/p2p2np/1p3b1Q/2p1P3/2P5/PPB3PP/RN2R1K1 b - - 0 20",
+    "Moves": "e7h4 h5h4 g6h4 e4f5",
+    "Rating": 1744,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00pER",
+    "FEN": "r2q1rk1/4N1bp/p2p2p1/2p3N1/Pp4P1/1Q5P/1P1n1P2/5RK1 b - - 0 21",
+    "Moves": "g8h8 b3g8 f8g8 g5f7",
+    "Rating": 1559,
+    "Themes": "kingsideAttack mate mateIn2 middlegame sacrifice short smotheredMate",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00pEZ",
+    "FEN": "2kr2r1/ppq1bbBQ/2p1p3/2npP3/8/2P2N2/PPB2PPP/R4RK1 w - - 3 21",
+    "Moves": "g7f6 e7f6 e5f6 g8h8",
+    "Rating": 1663,
+    "Themes": "advantage master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00qIK",
+    "FEN": "r4rk1/p3b1pp/1qB1bp2/1p2p3/2p2P2/3PR1P1/PPPN3P/R1BQ2K1 w - - 1 16",
+    "Moves": "c6a8 b6e3 g1g2 f8a8",
+    "Rating": 1548,
+    "Themes": "advantage hangingPiece intermezzo middlegame short",
+    "OpeningTags": "Kings_Indian_Attack Kings_Indian_Attack_Sicilian_Variation"
+  },
+  {
+    "PuzzleId": "00qMd",
+    "FEN": "4r1kb/3q1p1p/1p1p1PpB/p2P4/2Pp4/6Q1/1P4PP/5RK1 b - - 2 26",
+    "Moves": "e8e3 h6e3 d4e3 g3e3",
+    "Rating": 1596,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00qk4",
+    "FEN": "3r4/ppN1kppp/5n2/8/1n3Nb1/4P3/1B3PPP/R3KB1R w KQ - 0 18",
+    "Moves": "a1c1 b4c2 c1c2 d8d1",
+    "Rating": 1531,
+    "Themes": "mate mateIn2 middlegame sacrifice short",
+    "OpeningTags": "Tarrasch_Defense Tarrasch_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00qmI",
+    "FEN": "4k3/3n3P/p2PN1K1/8/1p6/2b5/8/8 b - - 0 51",
+    "Moves": "b4b3 e6g7 c3g7 g6g7",
+    "Rating": 1711,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rAM",
+    "FEN": "3rr1k1/1p3pq1/p1n1b2p/2b3p1/Q7/P2BPNB1/1P3PPP/R2R2K1 w - - 0 20",
+    "Moves": "b2b4 d8d3 d1d3 g7a1",
+    "Rating": 1743,
+    "Themes": "advantage deflection middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rB5",
+    "FEN": "2r3k1/4pp2/3p1bp1/1p6/1Pr1P1Q1/P3q1P1/6BP/1R2R2K b - - 4 23",
+    "Moves": "c4c1 g4c8 c1c8 e1e3",
+    "Rating": 1742,
+    "Themes": "crushing master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rFc",
+    "FEN": "8/1p6/1k4K1/7p/7P/5P2/8/8 b - - 0 50",
+    "Moves": "b6c5 f3f4 c5d6 f4f5",
+    "Rating": 1593,
+    "Themes": "crushing defensiveMove endgame pawnEndgame quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rL0",
+    "FEN": "5q2/3r4/P1k2p1p/1p2pNp1/2b1P1P1/2P2P1P/3r2BK/R5Q1 b - - 4 40",
+    "Moves": "f8c5 g1c5 c6c5 a6a7 d7a7 a1a7 c4f1 f5e3 f1g2 e3g2",
+    "Rating": 1722,
+    "Themes": "advancedPawn advantage middlegame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rNc",
+    "FEN": "1q5r/p3kpp1/2Q1p2p/3pP2P/2n3P1/2N2P2/PrP5/K3R1NR w - - 0 26",
+    "Moves": "g1e2 b2a2 c3a2 b8b2",
+    "Rating": 1628,
+    "Themes": "clearance mate mateIn2 middlegame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rwh",
+    "FEN": "5k2/2p5/r1PpQp2/1pN1p1b1/1P2P1p1/r5Pq/5P2/R2R2K1 w - - 2 37",
+    "Moves": "c5a6 a3g3 f2g3 g5e3",
+    "Rating": 1617,
+    "Themes": "kingsideAttack mate mateIn2 middlegame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00sHx",
+    "FEN": "q3k1nr/1pp1nQpp/3p4/1P2p3/4P3/B1PP1b2/B5PP/5K2 b k - 0 17",
+    "Moves": "e8d7 a2e6 d7d8 f7f8",
+    "Rating": 1554,
+    "Themes": "mate mateIn2 middlegame short",
+    "OpeningTags": "Italian_Game Italian_Game_Classical_Variation"
+  },
+  {
+    "PuzzleId": "00sKo",
+    "FEN": "5rk1/pR4bp/q2p4/3Ppn1p/4Q3/4B2P/5PP1/5RK1 w - - 1 24",
+    "Moves": "b7a7 a6f1 g1f1 f5g3 f1e1 g3e4",
+    "Rating": 1686,
+    "Themes": "advantage attraction long middlegame pin sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00t8q",
+    "FEN": "r4rk1/1pp2pbp/2n1bnp1/2q1p3/4P3/1NP2PB1/PQ4PP/1KNR1B1R b - - 0 17",
+    "Moves": "c5b6 g3f2 c6d4 c3d4",
+    "Rating": 1729,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Indian_Defense Indian_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00tgU",
+    "FEN": "r4rk1/pbpp2p1/1pn3Qp/3N4/3q1N2/3B4/PP3PPP/5RK1 b - - 5 20",
+    "Moves": "c6e5 d5e7 g8h8 g6h7",
+    "Rating": 1730,
+    "Themes": "kingsideAttack mate mateIn2 middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00uKb",
+    "FEN": "6k1/p4rp1/8/2p1Bq1p/2P1b3/2P3QP/P5P1/4R1K1 w - - 0 30",
+    "Moves": "g1h2 h5h4 g3h4 f5e5",
+    "Rating": 1558,
+    "Themes": "advantage deflection endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ueI",
+    "FEN": "8/5p1k/pp3B2/3bPq2/6R1/2R4P/1P1p2PK/8 w - - 0 47",
+    "Moves": "c3g3 f5g4 g3g4 d2d1q g4g7 h7h6",
+    "Rating": 1798,
+    "Themes": "advancedPawn advantage endgame long promotion",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00umX",
+    "FEN": "2k3rr/ppp2p2/3b1p2/2pP1q1p/2P2B2/2N2B1b/PP1Q1PP1/R3R1K1 w - - 4 19",
+    "Moves": "f4d6 f5f3 e1e8 c8d7",
+    "Rating": 1698,
+    "Themes": "crushing middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00unD",
+    "FEN": "2kr1bnr/2p2p1p/1pbq2pP/p3N3/P2P4/4B3/1PP2PP1/RN1QK2R b KQ - 0 16",
+    "Moves": "c6g2 d1g4 f7f5 g4g2",
+    "Rating": 1552,
+    "Themes": "crushing fork middlegame short",
+    "OpeningTags": "Modern_Defense Modern_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00urx",
+    "FEN": "8/4r1k1/2P2R1p/4qQp1/3p4/7P/6PK/8 w - - 5 43",
+    "Moves": "h2g1 e5f6 f5f6 g7f6",
+    "Rating": 1788,
+    "Themes": "crushing endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00uzT",
+    "FEN": "5rk1/3nppbp/1rpp2p1/p1q5/P3PP2/1PNQ4/2PB2PP/3R1RK1 w - - 1 20",
+    "Moves": "d2e3 c5c3 d3c3 g7c3 e3b6 d7b6",
+    "Rating": 1557,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00veX",
+    "FEN": "1r3rk1/p4p2/2pq3p/4p1p1/4Pnb1/2PB1PB1/P1Q3PP/3R1RK1 b - - 0 18",
+    "Moves": "d6c5 g3f2 c5a3 f3g4 b8b2 c2c1",
+    "Rating": 1606,
+    "Themes": "advantage defensiveMove long middlegame",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Lowenthal_Variation"
+  },
+  {
+    "PuzzleId": "00wUm",
+    "FEN": "5rk1/pR1Q1ppp/4N3/3p1n2/8/7P/q1r2PP1/4R1K1 b - - 0 28",
+    "Moves": "c2f2 d7f7 f8f7 b7b8 f7f8 b8f8",
+    "Rating": 1580,
+    "Themes": "long mate mateIn3 middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00wft",
+    "FEN": "3r2k1/pp3pp1/7p/b7/2b3Q1/P2qPN1P/3N1PP1/3RK2R w K - 0 30",
+    "Moves": "f3e5 a5d2 d1d2 d3d2",
+    "Rating": 1531,
+    "Themes": "mate mateIn2 middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00xHQ",
+    "FEN": "1r4k1/5p1p/3R2p1/1qN5/3Qp3/7P/5PPK/1r6 b - - 0 35",
+    "Moves": "b1b4 d6d8 b8d8 d4d8 g8g7 c5d7",
+    "Rating": 1624,
+    "Themes": "advantage defensiveMove endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00y0m",
+    "FEN": "r5k1/2B2pp1/rP2p1p1/P2q4/3Pp3/R6P/5PP1/1R4K1 b - - 6 32",
+    "Moves": "a6a5 a3a5 a8a5 b6b7 d5b7 b1b7 a5a1 g1h2",
+    "Rating": 1728,
+    "Themes": "advancedPawn advantage endgame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00y2j",
+    "FEN": "3r4/1pB3kp/2b1Pp2/1pN2RpK/1P6/7P/6r1/8 w - - 0 34",
+    "Moves": "c7d8 c6e8",
+    "Rating": 1622,
+    "Themes": "endgame mate mateIn1 oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00yfI",
+    "FEN": "r1b5/1p3kpp/p1nBpn2/3p4/3P4/P1NQ4/1PP1B1qP/2K2R2 w - - 2 17",
+    "Moves": "d3h7 g2f1 e2f1 f6h7",
+    "Rating": 1714,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Rapport-Jobava_System Rapport-Jobava_System_Other_variations"
+  },
+  {
+    "PuzzleId": "00yfJ",
+    "FEN": "r1b1k2r/p4p1p/2p1p3/1pR1Pp2/qn1P4/2Q2N1P/5PP1/1B3RK1 b kq - 0 19",
+    "Moves": "b4d5 c5d5 c6d5 c3c6",
+    "Rating": 1586,
+    "Themes": "clearance crushing middlegame sacrifice short",
+    "OpeningTags": "Queens_Gambit_Declined Queens_Gambit_Declined_Other_variations"
+  },
+  {
+    "PuzzleId": "00ymq",
+    "FEN": "Q7/4ppbk/6pp/5q2/4n3/4PNBP/Pr3PP1/3R2K1 w - - 2 31",
+    "Moves": "a2a4 e4g3 f2g3 f5c2",
+    "Rating": 1505,
+    "Themes": "clearance crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00z82",
+    "FEN": "r3rbk1/1p1n1ppp/p2p4/q1pP4/4RP2/1P1B1Q1P/1BP3P1/5RK1 b - - 0 18",
+    "Moves": "e8e4 f3e4 g7g6 f4f5",
+    "Rating": 1682,
+    "Themes": "advantage master middlegame short",
+    "OpeningTags": "Queens_Pawn_Game Queens_Pawn_Game_Other_variations"
+  },
+  {
+    "PuzzleId": "00zI4",
+    "FEN": "r2q1rk1/pb3ppp/1p2p3/2nn4/8/P1N1PN2/1P1Q1PPP/1BR1K2R b K - 1 13",
+    "Moves": "c5b3 d2c2 g7g6 c2b3",
+    "Rating": 1658,
+    "Themes": "crushing opening short",
+    "OpeningTags": "Queens_Gambit_Declined Queens_Gambit_Declined_Other_variations"
+  },
+  {
+    "PuzzleId": "011A6",
+    "FEN": "1r1q1rk1/pb3pbp/1p1pnnp1/1Np5/2P5/PP3NP1/1B3PBP/Q1RR2K1 b - - 5 20",
+    "Moves": "d6d5 c4d5",
+    "Rating": 1615,
+    "Themes": "advantage oneMove opening",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "011JG",
+    "FEN": "r1r3k1/4pp1p/3p2p1/8/q2bPP2/1N1R4/1PP2QPP/1K3R2 w - - 0 26",
+    "Moves": "d3d4 a4a2 b1c1 a2b3",
+    "Rating": 1575,
+    "Themes": "crushing middlegame pin queensideAttack short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "011o8",
+    "FEN": "2r5/1p4bk/p2q2p1/3p1bQn/3B4/P1NP1N1P/1P6/K3R3 b - - 0 33",
+    "Moves": "g7h6 e1e7 h7g8 g5h6",
+    "Rating": 1532,
+    "Themes": "crushing deflection master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "011zd",
+    "FEN": "r4rk1/pq3ppp/Rn2p3/Q2pN3/2pP4/4P3/1PP2PPP/R5K1 w - - 11 19",
+    "Moves": "a6a7 a8a7 a5a7 f8a8 a7a8 b6a8",
+    "Rating": 1720,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0127O",
+    "FEN": "8/6k1/5R2/1K4Pp/1P6/2P5/6r1/8 w - - 1 63",
+    "Moves": "c3c4 g2g5 b5a6 g7f6",
+    "Rating": 1740,
+    "Themes": "crushing endgame rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0128O",
+    "FEN": "r4rk1/1q1p2pp/p1b1p3/2p1Q3/8/1B6/PPP2PPP/3RR1K1 b - - 0 21",
+    "Moves": "c6g2 d1d7 b7d7 b3e6 g8h8 e6d7",
+    "Rating": 1794,
+    "Themes": "advantage attraction fork long middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "012kM",
+    "FEN": "5r2/1pp4k/p1n1p2p/3p2p1/3P2P1/2P2q2/PP1Q1P2/1K3R1R w - - 5 31",
+    "Moves": "d2g5 f3d3 b1c1 d3f1 h1f1 h6g5",
+    "Rating": 1653,
+    "Themes": "crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "012sr",
+    "FEN": "1k1r3r/p2b1p1p/Bp2pq2/3p4/1Q6/3N1N2/PbP2PPP/4R1K1 b - - 3 20",
+    "Moves": "b2a1 b4d6 b8a8 d6c7",
+    "Rating": 1577,
+    "Themes": "advantage master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "012wW",
+    "FEN": "8/8/7p/7P/2k2Kp1/6P1/8/8 b - - 5 46",
+    "Moves": "c4d5 f4f5 d5d4 f5g6",
+    "Rating": 1794,
+    "Themes": "crushing endgame pawnEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0133E",
+    "FEN": "7r/6p1/1pp5/p3N1k1/2P3p1/5K1P/8/7R w - - 0 35",
+    "Moves": "f3g3 h8h3 h1h3 g4h3",
+    "Rating": 1536,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "013Jo",
+    "FEN": "rnb2rk1/ppp3pp/3bpq2/4N3/2BPpB2/4Q3/PPP2PPP/R3K2R w KQ - 2 12",
+    "Moves": "e3e4 f6f4 e4f4 f8f4",
+    "Rating": 1529,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Scandinavian_Defense Scandinavian_Defense_Valencian_Variation"
+  },
+  {
+    "PuzzleId": "013bF",
+    "FEN": "8/6pk/8/R7/5Pp1/p5P1/7P/r3K3 w - - 2 46",
+    "Moves": "e1d2 a3a2 d2c3 a1c1",
+    "Rating": 1604,
+    "Themes": "advancedPawn crushing endgame rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "014QG",
+    "FEN": "7k/p5pp/8/3Q4/8/2N2r1b/PP3q1P/6RK w - - 0 28",
+    "Moves": "c3d1 f2g1 h1g1 f3f1",
+    "Rating": 1641,
+    "Themes": "endgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0150p",
+    "FEN": "8/pp4k1/2b2pr1/3r1R2/PP1Q4/8/7P/7K w - - 0 31",
+    "Moves": "f5d5 g6g5 h2h4 g5d5 d4d5 c6d5",
+    "Rating": 1649,
+    "Themes": "crushing endgame long pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00008",
+    "FEN": "r6k/pp2r2p/4Rp1Q/3p4/8/1N1P2R1/PqP2bPP/7K b - - 0 24",
+    "Moves": "f2g3 e6e7 b2b1 b3c1 b1c1 h6c1",
+    "Rating": 1807,
+    "Themes": "crushing hangingPiece long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "000mr",
+    "FEN": "5r1k/5rp1/p7/1b2B2p/1P1P1Pq1/2R1Q3/P3p1P1/2R3K1 w - - 0 41",
+    "Moves": "e3g3 f7f4 e5f4 f8f4",
+    "Rating": 1941,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "001aK",
+    "FEN": "6k1/5p2/4p3/P1B5/2P4P/4Pnp1/Rb1rN3/5K2 b - - 1 33",
+    "Moves": "d2e2 f1e2 g3g2 e3e4 f3d4 e2f2",
+    "Rating": 1990,
+    "Themes": "crushing endgame hangingPiece long quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "001kG",
+    "FEN": "rnbq3r/1p2bkpp/p4n2/8/2pNP3/2N5/PPP3PP/R1BQ1RK1 b - - 1 11",
+    "Moves": "e7c5 d1h5 f7g8 h5c5",
+    "Rating": 1832,
+    "Themes": "advantage opening pin short",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Najdorf_Variation"
+  },
+  {
+    "PuzzleId": "001uD",
+    "FEN": "6k1/1p3pp1/1p5p/2r1p3/2n5/r3PN2/2RnNPPP/2R3K1 b - - 1 32",
+    "Moves": "f7f6 f3d2 c4d2 c2d2 c5c1 e2c1",
+    "Rating": 1894,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "001xO",
+    "FEN": "k1r1b3/p1r1nppp/1p1qpn2/2Np4/1P1P4/PQRBPN2/5PPP/2R3K1 w - - 0 19",
+    "Moves": "d3a6 b6c5 a6c8 c5c4",
+    "Rating": 1824,
+    "Themes": "crushing master masterVsMaster middlegame sacrifice short",
+    "OpeningTags": "Slav_Defense Slav_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "002Ds",
+    "FEN": "8/1pp5/p2p4/P2Pk2p/1PP1p2P/2n1K2P/3N4/8 b - - 0 45",
+    "Moves": "b7b6 b4b5 c3d1 e3e2 a6b5 a5a6",
+    "Rating": 1997,
+    "Themes": "crushing endgame knightEndgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "003cs",
+    "FEN": "2r1kbnr/pp4pp/4p3/3pP1N1/3q4/1P2B3/P3Q1PP/nN3RK1 b k - 1 16",
+    "Moves": "d4e5 f1f8 e8f8 e3c5 c8c5 e2e5 c5c1 g1f2",
+    "Rating": 1978,
+    "Themes": "advantage attraction discoveredAttack exposedKing middlegame sacrifice veryLong",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Advance_Variation"
+  },
+  {
+    "PuzzleId": "003wQ",
+    "FEN": "2r2rk1/6pp/3Q1q2/8/3N1B2/6P1/PP1K3P/R4b2 w - - 0 24",
+    "Moves": "a1f1 f6d6 f4d6 f8f1",
+    "Rating": 1975,
+    "Themes": "advantage discoveredAttack middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "004Ax",
+    "FEN": "8/8/4R1kp/p7/5rPK/8/7P/8 b - - 2 42",
+    "Moves": "g6f7 e6h6 f4f6 h6h7 f7g6 h7a7",
+    "Rating": 1912,
+    "Themes": "crushing endgame exposedKing long rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "005YX",
+    "FEN": "2rr4/2N2pk1/p1Q1b1pp/1p4q1/3pP3/1B1P4/PPP3PP/6RK w - - 7 25",
+    "Moves": "c7e6 f7e6 c6b7 g7h8",
+    "Rating": 1820,
+    "Themes": "defensiveMove equality middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "005f3",
+    "FEN": "r5k1/2p1pp2/pp4p1/1q1r4/5P2/2QP2R1/PP6/1K4R1 b - - 0 32",
+    "Moves": "d5h5 g3g6 f7g6 g1g6 g8f7 c3g7 f7e8 g7g8 e8d7 g8e6 d7d8 g6g8",
+    "Rating": 1932,
+    "Themes": "crushing endgame sacrifice veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "005wy",
+    "FEN": "1r6/pp2kpp1/2n1p1n1/3p2PQ/5P2/2PqP3/PP1N4/2KR3R w - - 3 27",
+    "Moves": "h5h7 c6b4 c3b4 b8c8 d2c4 c8c4",
+    "Rating": 1964,
+    "Themes": "long mate mateIn3 middlegame queensideAttack sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "005xu",
+    "FEN": "8/3k4/1K1P4/2P3r1/R7/5b2/8/8 b - - 0 68",
+    "Moves": "g5g8 a4a7 d7e6 a7e7 e6d5 d6d7",
+    "Rating": 1914,
+    "Themes": "advancedPawn crushing endgame exposedKing long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0068D",
+    "FEN": "7r/pppk4/2pb1r2/8/2NP2p1/2P5/PP2RPP1/4R1K1 w - - 2 26",
+    "Moves": "c4d6 f6h6 f2f4 g4g3 e2e7 d7d6 g1f1 h6h1",
+    "Rating": 1908,
+    "Themes": "crushing endgame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "006fF",
+    "FEN": "r1b4r/pp1k2pp/2nb2q1/1B1p2B1/3p3Q/8/PPP2PPP/3RR1K1 b - - 5 17",
+    "Moves": "h7h6 h4g4 d7c7 g5d8 h8d8 g4g6",
+    "Rating": 1841,
+    "Themes": "advantage discoveredAttack exposedKing long middlegame",
+    "OpeningTags": "Italian_Game Italian_Game_Two_Knights_Defense"
+  },
+  {
+    "PuzzleId": "006om",
+    "FEN": "1r3k2/5p1p/2p1pp2/P2n4/2r1N3/P4PK1/2R2P1P/2R5 b - - 9 29",
+    "Moves": "c4a4 e4c5 a4a5 c5d7 f8g7 d7b8",
+    "Rating": 1828,
+    "Themes": "crushing endgame fork long master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "008lc",
+    "FEN": "7k/pb1qn2n/1p2R2Q/2p2p2/2Pp4/3B4/PP3PrP/4RK2 b - - 1 27",
+    "Moves": "g2g7 h6g7 h8g7 e6e7 d7e7 e1e7",
+    "Rating": 1990,
+    "Themes": "attraction crushing exposedKing fork long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0095W",
+    "FEN": "8/pp1r2kp/q2P1ppb/4p3/2N1P3/1Q5P/PPR2PP1/6K1 w - - 3 32",
+    "Moves": "c4e5 f6e5 c2c7 a6d6",
+    "Rating": 1838,
+    "Themes": "advantage endgame hangingPiece short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "009XT",
+    "FEN": "rn1qk2r/pp3ppp/3bp1b1/3p4/3Pn2N/3BB3/PPP2PPP/RN1Q1RK1 w kq - 4 10",
+    "Moves": "h4g6 d6h2 g1h1 h7g6",
+    "Rating": 1865,
+    "Themes": "crushing intermezzo opening short",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Exchange_Variation"
+  },
+  {
+    "PuzzleId": "009hH",
+    "FEN": "k3r3/p3q3/1pp5/3pnB2/1P1Q4/1KPP4/P4R2/8 w - - 0 41",
+    "Moves": "f2e2 e5f3 e2e7 f3d4 c3d4 e8e7",
+    "Rating": 1838,
+    "Themes": "advantage endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00A5m",
+    "FEN": "8/1p6/p1p2p2/P3b3/1PK3P1/2PBk3/8/8 b - - 3 60",
+    "Moves": "e3d2 d3f5 e5c7 f5c8 b7b6 a5b6 c7b6 c8a6",
+    "Rating": 1918,
+    "Themes": "bishopEndgame crushing endgame quietMove veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00APl",
+    "FEN": "3b1k2/1p4r1/p3qp1Q/8/8/3B1bP1/PP3P1P/2R3K1 b - - 0 29",
+    "Moves": "d8b6 d3c4 f3d5 c4d5 e6d5 h6f6",
+    "Rating": 1923,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00BPh",
+    "FEN": "r4rk1/1b1p1p1p/p2NpQpq/1p6/3R4/P7/1P3PPP/3R2K1 b - - 9 23",
+    "Moves": "b7d5 d4d5 h6g7 f6g7",
+    "Rating": 1839,
+    "Themes": "advantage kingsideAttack middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00CBU",
+    "FEN": "8/2pR2kp/pb4p1/8/5p1P/B6K/P1r5/6r1 b - - 3 39",
+    "Moves": "g7h6 a3f8 h6h5 d7h7",
+    "Rating": 1822,
+    "Themes": "deflection endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00CXr",
+    "FEN": "r2k2nr/pp2qBb1/3p3p/Q5p1/3n1B2/2N2R2/PPP3P1/R5K1 b - - 1 18",
+    "Moves": "b7b6 a5d5 d4f3 g2f3 a8c8 f4d6",
+    "Rating": 1946,
+    "Themes": "advantage long middlegame sacrifice",
+    "OpeningTags": "Kings_Gambit_Accepted Kings_Gambit_Accepted_Fischer_Defense"
+  },
+  {
+    "PuzzleId": "00D77",
+    "FEN": "5rk1/bpp3pp/p1npb3/4p3/1P2Nr1q/P1PP3P/1B1QBPR1/2K3R1 b - - 2 21",
+    "Moves": "h4h3 g2g7 g8h8 e4g5",
+    "Rating": 1948,
+    "Themes": "crushing kingsideAttack middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00DKr",
+    "FEN": "3r1k2/2p1R3/p2p2n1/1p6/1P1P2Q1/7P/5qPK/3R4 w - - 2 42",
+    "Moves": "d1e1 g6e7 e1e4 f8e8",
+    "Rating": 1992,
+    "Themes": "advantage defensiveMove endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00EgR",
+    "FEN": "N2k3r/1b1n1Bpp/p7/1pb1P3/6P1/4p3/PPP4P/1K1R3R w - - 1 20",
+    "Moves": "e5e6 b7h1 d1d7 d8c8 d7c7 c8b8",
+    "Rating": 1828,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Ezc",
+    "FEN": "rnb1k2r/ppp4p/3b1qp1/3P1pBQ/4p2N/2N5/PPP2PPP/R3R1K1 b kq - 1 13",
+    "Moves": "f6f7 c3e4 f5e4 e1e4",
+    "Rating": 1986,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Russian_Game Russian_Game_Italian_Variation"
+  },
+  {
+    "PuzzleId": "00FND",
+    "FEN": "8/1P6/8/7p/3P4/3k1p1P/4p3/3K4 w - - 0 49",
+    "Moves": "d1e1 d3e3 h3h4 f3f2",
+    "Rating": 1948,
+    "Themes": "advancedPawn endgame mate mateIn2 pawnEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00G1l",
+    "FEN": "5k2/1R6/3pp1P1/2p5/1pr1PK2/5P2/8/8 b - - 0 60",
+    "Moves": "c4c1 f4g5 c1g1 g5f6",
+    "Rating": 1848,
+    "Themes": "crushing defensiveMove endgame master rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00GiQ",
+    "FEN": "5r2/1p3p1k/6pp/p1qp1P2/7Q/5N2/6PP/5N1K b - - 4 31",
+    "Moves": "b7b5 f3g5 h7g7 f5f6 g7f6 g5e4",
+    "Rating": 1858,
+    "Themes": "attraction crushing doubleCheck endgame long pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00H87",
+    "FEN": "6k1/2q1pp2/p5pB/2p4n/3pP1Q1/P2P3P/1r4P1/5RK1 b - - 1 30",
+    "Moves": "c7g3 g4c8 g8h7 f1f7 h5g7 f7g7 h7h6 c8h8 h6g5 g7g6 g5g6 h8g8 g6f6 g8g3",
+    "Rating": 1958,
+    "Themes": "attraction crushing deflection endgame sacrifice skewer veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Huv",
+    "FEN": "3r2q1/5prk/p3pQpp/1p2P3/2p4R/2P2P1P/PPB2P2/6K1 b - - 2 29",
+    "Moves": "g8f8 h4h6 h7g8 f6h4",
+    "Rating": 1867,
+    "Themes": "clearance crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IDw",
+    "FEN": "4r3/pN3kpp/2N1b3/2R5/5b2/P7/1P3PPP/7K w - - 1 30",
+    "Moves": "g2g3 e6h3 c5c1 f4c1",
+    "Rating": 1862,
+    "Themes": "advantage endgame quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00IYg",
+    "FEN": "r1b2r2/pp2npp1/1qn1p1k1/3pP1N1/3P3P/P7/1P1Q1PP1/RN2K2R b KQ - 0 13",
+    "Moves": "f7f6 h4h5 g6h6 g5e6 h6h7 e6f8",
+    "Rating": 1932,
+    "Themes": "advantage discoveredAttack long middlegame",
+    "OpeningTags": "French_Defense French_Defense_Advance_Variation"
+  },
+  {
+    "PuzzleId": "00JqT",
+    "FEN": "2r2rk1/pp2R3/5p2/3p1q2/3P4/4QPPp/PP3R1P/6K1 w - - 2 30",
+    "Moves": "g3g4 f5b1 f2f1 b1b2 e3e6 g8h8",
+    "Rating": 1882,
+    "Themes": "crushing deflection endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00JsQ",
+    "FEN": "r1b1k1nr/pp1np2p/2q1Npp1/2P1p3/2B5/2N3B1/PPPR1PPP/2K4R b kq - 2 14",
+    "Moves": "d7c5 d2d8 e8f7 d8f8",
+    "Rating": 1982,
+    "Themes": "mate mateIn2 middlegame short",
+    "OpeningTags": "Indian_Defense Indian_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00Knu",
+    "FEN": "r2q1rk1/p3bpp1/2pp1nb1/4p1Q1/8/1B3N1P/PPP3P1/R1B2RK1 b - - 0 18",
+    "Moves": "f6e4 g5g6 d8b6 g1h2",
+    "Rating": 1865,
+    "Themes": "advantage defensiveMove opening pin short",
+    "OpeningTags": "Czech_Defense Czech_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "00Ksa",
+    "FEN": "8/5p2/5pk1/8/4PP2/6r1/5K2/7R b - - 2 46",
+    "Moves": "g3g4 f2f3 g4g5 f4g5",
+    "Rating": 1835,
+    "Themes": "crushing endgame rookEndgame short trappedPiece",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00LoE",
+    "FEN": "2k5/1p4p1/p4b2/3p4/3P4/2PQN3/PP3q2/1K6 w - - 0 37",
+    "Moves": "e3d5 f2g1 b1c2 g1g2",
+    "Rating": 1858,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Lyc",
+    "FEN": "4R3/1p4k1/1q1N1bpp/3B4/5p1P/p4P2/3RK1P1/8 w - - 4 42",
+    "Moves": "d6e4 b6b5 d2d3 b5e8",
+    "Rating": 1935,
+    "Themes": "crushing endgame fork master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Msq",
+    "FEN": "r5k1/1pp2Bp1/5n1p/1q2N3/3P4/7P/5PP1/4Q1K1 b - - 2 30",
+    "Moves": "g8f8 f7c4 b5c4 e5c4",
+    "Rating": 1884,
+    "Themes": "crushing endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00NKk",
+    "FEN": "2r2rk1/pp4q1/4Q3/3p4/3P4/P1P5/1P3PPP/4R1K1 b - - 0 25",
+    "Moves": "g8h8 e1e3 c8c7 e3h3",
+    "Rating": 1877,
+    "Themes": "advantage endgame quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00NVe",
+    "FEN": "2B4k/p1p3pb/8/5pnr/8/2P2R2/PPP2K2/6R1 w - - 6 34",
+    "Moves": "c8f5 g5f3 f5g4 f3g1",
+    "Rating": 1821,
+    "Themes": "advantage endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Nqd",
+    "FEN": "8/p7/5P2/PP1bp3/4N3/K2p4/2k5/8 b - - 0 48",
+    "Moves": "d3d2 e4d2 c2d2 b5b6 a7b6 a5b6",
+    "Rating": 1808,
+    "Themes": "crushing endgame long sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Nua",
+    "FEN": "8/1p1k2r1/p1p5/2P1R3/1P1pP3/P2r4/5RPK/8 w - - 1 31",
+    "Moves": "a3a4 g7h7 h2g1 d3d1 f2f1 h7h1 g1h1 d1f1",
+    "Rating": 1841,
+    "Themes": "endgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ON5",
+    "FEN": "8/k1p5/P7/3N4/3P2pp/3K2n1/6P1/8 w - - 1 47",
+    "Moves": "d3e3 h4h3 e3f2 h3h2 f2g3 h2h1q",
+    "Rating": 1841,
+    "Themes": "advancedPawn crushing endgame knightEndgame long promotion",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00OYl",
+    "FEN": "3r4/5p2/k3p1p1/2B1Pr2/2P3n1/1p3NPp/4QP1P/6K1 w - - 0 34",
+    "Moves": "f3h4 f5e5 e2f1 e5c5",
+    "Rating": 1974,
+    "Themes": "crushing endgame fork short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00QN3",
+    "FEN": "r1b1B2k/pp4pp/2pb4/4q3/8/8/PPP3PP/R2Q1R1K w - - 1 17",
+    "Moves": "g2g3 e5e4 d1f3 e4e8",
+    "Rating": 1923,
+    "Themes": "advantage fork middlegame short",
+    "OpeningTags": "Blackmar-Diemer_Gambit_Accepted Blackmar-Diemer_Gambit_Accepted_Euwe_Defense"
+  },
+  {
+    "PuzzleId": "00QQS",
+    "FEN": "2r3k1/1p1q1ppp/4p3/Q7/3P4/P1B5/1Pr2PPP/R5K1 b - - 0 22",
+    "Moves": "d7d4 c3d4 c2c1 a5e1",
+    "Rating": 1828,
+    "Themes": "advantage endgame hangingPiece short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Qm5",
+    "FEN": "r2q1rk1/p3b1pp/2p5/4ppB1/4p1nP/2N5/PPP1QPP1/3R1RK1 b - - 8 15",
+    "Moves": "d8c7 e2c4 g8h8 c3d5 c6d5 c4c7",
+    "Rating": 1871,
+    "Themes": "crushing long middlegame",
+    "OpeningTags": "Queens_Pawn_Game Queens_Pawn_Game_Morris_Countergambit"
+  },
+  {
+    "PuzzleId": "00RtC",
+    "FEN": "r4k2/ppp3p1/3p3r/2q5/2NnP3/2Q2PBp/PP3R1P/5RK1 w - - 4 25",
+    "Moves": "b2b4 d4e2 g1h1 c5f2 c3g7 f8g7",
+    "Rating": 1948,
+    "Themes": "advantage deflection discoveredAttack long middlegame pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Rue",
+    "FEN": "r2qkb1r/pp1nppp1/2p2n1p/3p1b2/3P4/BP2PN2/P1P2PPP/RN1QKB1R w KQkq - 2 7",
+    "Moves": "c2c4 f5b1 a1b1 d8a5 b3b4 a5a3",
+    "Rating": 1945,
+    "Themes": "advantage fork long opening",
+    "OpeningTags": "Nimzo-Larsen_Attack Nimzo-Larsen_Attack_Classical_Variation"
+  },
+  {
+    "PuzzleId": "00SIq",
+    "FEN": "r3r1k1/1Q3ppp/8/pP6/2q5/7P/3R2P1/5R1K w - - 0 30",
+    "Moves": "f1f7 c4f7 b7f7 g8f7",
+    "Rating": 1903,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Ty2",
+    "FEN": "r5k1/ppp4p/2n3r1/3P4/4P3/B1P5/P1Q1K3/6N1 w - - 1 31",
+    "Moves": "d5c6 g6g2 e2d3 a8d8 d3c4 g2c2",
+    "Rating": 1999,
+    "Themes": "advantage endgame exposedKing fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00UTH",
+    "FEN": "3r3r/q4pk1/p4N2/1p2PQp1/P4n2/3p1P1P/1P4P1/3RR1K1 w - - 0 32",
+    "Moves": "g1h2 h8h3 f5h3 f4h3",
+    "Rating": 1842,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00UqU",
+    "FEN": "2k4r/q5p1/p2rpn1p/8/1RQP4/2P1P3/1P4PP/R5K1 b - - 0 25",
+    "Moves": "a7c7 a1a6 c7c4 b4c4 c8d7 a6a7",
+    "Rating": 1992,
+    "Themes": "advantage exposedKing long middlegame queensideAttack",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00VNr",
+    "FEN": "5rk1/npp3p1/p3pr1p/2b5/3NR3/4B2P/PPP2PP1/R5K1 w - - 5 22",
+    "Moves": "e4e6 c5d4 e6f6 d4f6 e3a7 b7b6",
+    "Rating": 1948,
+    "Themes": "crushing defensiveMove long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00WVK",
+    "FEN": "k7/7R/p1P5/4K3/1P6/r6p/8/8 b - - 2 51",
+    "Moves": "a3b3 h7h8 a8a7 c6c7",
+    "Rating": 1990,
+    "Themes": "advancedPawn crushing endgame master rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00XAG",
+    "FEN": "1r1r2k1/p3ppb1/b3q1pp/2p5/2N5/1Q1RB3/P4PPP/2R1N1K1 b - - 0 21",
+    "Moves": "b8b3 d3d8 g8h7 a2b3",
+    "Rating": 1901,
+    "Themes": "advantage hangingPiece intermezzo master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00XGg",
+    "FEN": "2k4r/ppp2ppr/2n5/3b1N2/3p1bP1/5NP1/PPP1QP2/R3R1K1 w - - 1 20",
+    "Moves": "g1g2 h7h2 g2f1 h2h1 f3g1 h1g1 f1g1 h8h1",
+    "Rating": 1940,
+    "Themes": "attraction mate mateIn4 middlegame pin sacrifice veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Xp9",
+    "FEN": "r2r2k1/p4ppp/1p6/N1p1n3/4n3/P3P3/1P2BPPP/1R1R2K1 w - - 0 20",
+    "Moves": "a5c4 e5c4 e2c4 e4d2",
+    "Rating": 1969,
+    "Themes": "crushing master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00YbG",
+    "FEN": "8/7p/3k2p1/p5P1/P2K4/8/8/8 b - - 4 47",
+    "Moves": "d6c6 d4c4 c6d6 c4b5",
+    "Rating": 1813,
+    "Themes": "crushing endgame pawnEndgame short zugzwang",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Yqw",
+    "FEN": "1Qbk1b1r/4rpp1/p1BP3p/8/3q4/6P1/1PP3PP/1K5R b - - 0 33",
+    "Moves": "e7d7 c6d7 d4c5 d7c8",
+    "Rating": 1880,
+    "Themes": "crushing middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Yuf",
+    "FEN": "5rk1/n1q2ppp/1p1bpn2/1B1p1b2/NP1P4/P3PN2/3B1PPP/3Q1RK1 w - - 0 19",
+    "Moves": "b5e2 f5c2 d1a1 c2a4",
+    "Rating": 1961,
+    "Themes": "advantage interference middlegame short",
+    "OpeningTags": "Slav_Defense Slav_Defense_Quiet_Variation"
+  },
+  {
+    "PuzzleId": "00ZEc",
+    "FEN": "1r3bk1/5p2/3P1qRP/r1n1p3/ppB5/P2Q1P2/1PP5/1K6 b - - 0 35",
+    "Moves": "g8h7 g6g7 h7h6 d3h7",
+    "Rating": 1866,
+    "Themes": "doubleCheck mate mateIn2 middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00Zks",
+    "FEN": "8/P1R4p/5pk1/4q1p1/5P2/6KP/5QP1/7r b - - 0 51",
+    "Moves": "e5c7 a7a8q c7c3 a8f3",
+    "Rating": 1800,
+    "Themes": "advancedPawn advantage defensiveMove endgame promotion short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00aa9",
+    "FEN": "6k1/7p/6p1/5p2/5PP1/7P/1p6/1K6 w - - 0 42",
+    "Moves": "b1b2 f5g4 h3g4 h7h5 g4h5 g6h5",
+    "Rating": 1916,
+    "Themes": "crushing endgame long pawnEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bPT",
+    "FEN": "2k2Q2/pp2pp2/3p1n2/2pP4/2P1P3/2q2PK1/8/5B2 b - - 1 33",
+    "Moves": "c8d7 f1h3 d7c7 f8e7",
+    "Rating": 1874,
+    "Themes": "advantage deflection endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bTb",
+    "FEN": "7R/kppq2r1/p3p3/3p4/P2P4/BPr5/1KP5/5Q2 b - - 1 33",
+    "Moves": "c3g3 f1f8 g7g8 h8g8 g3g8 f8g8",
+    "Rating": 1974,
+    "Themes": "advantage endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00baa",
+    "FEN": "1r1qr1k1/p1p2ppp/1p1b1n2/8/3Q4/1PN3P1/PBP1PPKP/R3R3 w - - 1 15",
+    "Moves": "c3d5 d6e5 d5f6 d8f6 d4c4 e5b2",
+    "Rating": 1970,
+    "Themes": "advantage long middlegame skewer",
+    "OpeningTags": "Zukertort_Opening Zukertort_Opening_Vos_Gambit"
+  },
+  {
+    "PuzzleId": "00bpH",
+    "FEN": "8/5p2/pq5p/1p5k/6B1/6P1/P6P/2Q4K b - - 0 36",
+    "Moves": "h5g4 c1f4 g4h5 f4f5",
+    "Rating": 1871,
+    "Themes": "endgame mate mateIn2 queenEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00bqJ",
+    "FEN": "r7/1pp4k/p2p3p/3Ppq2/2P2bb1/1N2R3/PP1Q4/1K1N2R1 w - - 8 27",
+    "Moves": "d2c2 f5c2 b1c2 g4d1 g1d1 f4e3",
+    "Rating": 1807,
+    "Themes": "advantage attraction long middlegame queensideAttack",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00cxg",
+    "FEN": "r2qk2r/1p2bpp1/p2pp3/8/4b2P/4B3/PPPQB3/2K3RR b kq - 1 17",
+    "Moves": "g7g6 d2d4 e4h1 d4h8 e8d7 h8d8",
+    "Rating": 1863,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Najdorf_Variation"
+  },
+  {
+    "PuzzleId": "00dRh",
+    "FEN": "1q5k/1b2Q1pp/pb3p2/1p6/1P2P3/PB3n2/5P1P/3RR1K1 w - - 0 25",
+    "Moves": "g1g2 b8h2 g2f3 h2f2",
+    "Rating": 1884,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00dwJ",
+    "FEN": "2r5/2r3k1/p1q1b1pp/3pn3/3R4/4P1N1/PQ4PP/R5K1 b - - 7 32",
+    "Moves": "c6c1 a1c1 c7c1 g3f1",
+    "Rating": 1805,
+    "Themes": "advantage defensiveMove middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00dyB",
+    "FEN": "2rq1r2/4pBkp/pn1P1bp1/1p2N3/3PR3/P4Q2/1P3PPP/3R2K1 w - - 1 25",
+    "Moves": "f7e6 f6e5 d6e7 d8e7 f3e3 e7e6",
+    "Rating": 1892,
+    "Themes": "advantage long master middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00e7H",
+    "FEN": "8/7p/p1p4k/1p1p4/3Qpq2/2P2NpP/PP4K1/8 w - - 0 44",
+    "Moves": "f3d2 c6c5 d4c5 f4d2",
+    "Rating": 1939,
+    "Themes": "advantage deflection endgame master masterVsMaster short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00eSU",
+    "FEN": "5r2/p2R4/1p3pk1/PQ4p1/4p1q1/4P1P1/6PK/8 w - - 3 34",
+    "Moves": "a5b6 f8h8 h2g1 g4g3",
+    "Rating": 1996,
+    "Themes": "crushing deflection endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00eTD",
+    "FEN": "r1bq1r2/2p2p1k/pb1p1pnp/1p2p2Q/1P2P2N/P1PP1N2/B4PPP/R4RK1 w - - 6 17",
+    "Moves": "a2f7 g6f4 f7g6 h7g7 h4f5 c8f5",
+    "Rating": 1978,
+    "Themes": "advantage defensiveMove long middlegame",
+    "OpeningTags": "Italian_Game Italian_Game_Giuoco_Pianissimo"
+  },
+  {
+    "PuzzleId": "00eak",
+    "FEN": "4r1k1/5pp1/5n1p/P5r1/7q/1QP1p1PP/1P3P2/R3RBK1 w - - 0 27",
+    "Moves": "g1h2 f6g4 h2g2 g4f2",
+    "Rating": 1947,
+    "Themes": "crushing middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00f2T",
+    "FEN": "4r2k/p7/3p4/2pPbr1p/2P1RR2/2B3qP/P3Q3/7K w - - 1 33",
+    "Moves": "f4f5 g3h3 h1g1 e8g8",
+    "Rating": 1877,
+    "Themes": "crushing fork middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00fA6",
+    "FEN": "2r3k1/p4p1p/Pn2p1p1/2rpP1P1/5P2/4B1P1/2P4R/R6K b - - 2 28",
+    "Moves": "c5c2 h2c2 c8c2 e3b6 a7b6 a6a7",
+    "Rating": 1841,
+    "Themes": "advancedPawn crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00fJC",
+    "FEN": "1r6/6p1/5p1p/r1kp4/Pp3q2/2pR3P/2Q2PP1/3R2K1 b - - 4 39",
+    "Moves": "b8d8 d3c3 b4c3 c2c3 c5d6 c3a5",
+    "Rating": 1800,
+    "Themes": "advantage endgame fork long sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00fba",
+    "FEN": "3r2k1/p3qp1p/6p1/P7/3r4/2Q4P/n4PP1/1RR2BK1 w - - 2 31",
+    "Moves": "c3c7 d4d7 c7c5 a2c1 c5e7 d7e7",
+    "Rating": 1970,
+    "Themes": "crushing long master middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00fky",
+    "FEN": "5rk1/ppqb1p1p/2p2Bp1/3p4/8/2P2Q2/PP3PPP/4R1K1 b - - 0 19",
+    "Moves": "f8e8 e1e8 d7e8 f3e3 c7d6 e3e8",
+    "Rating": 1923,
+    "Themes": "advantage endgame kingsideAttack long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00g9R",
+    "FEN": "8/p4k2/2p3PP/2P2K2/8/2b5/P7/8 b - - 0 42",
+    "Moves": "f7g8 f5e6 c3d2 h6h7",
+    "Rating": 1857,
+    "Themes": "advancedPawn bishopEndgame crushing endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00gPT",
+    "FEN": "2r1r3/5R2/p7/6P1/5P2/PB3bR1/1PP2k1P/2K5 w - - 1 35",
+    "Moves": "g5g6 e8e1 c1d2 e1d1",
+    "Rating": 1814,
+    "Themes": "endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00gy1",
+    "FEN": "8/1p6/8/3kp2p/4p1p1/4K1P1/PP4PP/8 w - - 0 36",
+    "Moves": "h2h4 b7b5 a2a3 d5c4 e3e4 c4b3",
+    "Rating": 1993,
+    "Themes": "crushing endgame long pawnEndgame quietMove zugzwang",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00hUl",
+    "FEN": "2kr4/1pq2p2/p3p1p1/2b1n2p/Q1P2B2/7P/P3BPP1/1R4K1 b - - 1 24",
+    "Moves": "c5d6 c4c5 c7c6 a4c6",
+    "Rating": 1942,
+    "Themes": "crushing middlegame queensideAttack short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00kCm",
+    "FEN": "2r3k1/3n1pp1/pq2r1p1/2p5/3b4/BP5P/P2N1PP1/R1Q1R1K1 w - - 0 23",
+    "Moves": "a3b2 e6e1 c1e1 d4b2 d2c4 b6f6 c4b2 f6b2",
+    "Rating": 1855,
+    "Themes": "advantage middlegame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00kDo",
+    "FEN": "8/5ppk/6qp/P1p1p3/2B4Q/1P2PbP1/5P1P/6K1 w - - 1 37",
+    "Moves": "a5a6 g6b1 c4f1 f3e2 h4h3 e2a6",
+    "Rating": 1872,
+    "Themes": "advantage endgame long pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00kSx",
+    "FEN": "r1bq3k/pppnp2r/5nQb/3p4/8/3B1N2/PPPP1PPP/RNB1K2R w KQ - 2 11",
+    "Moves": "f3g5 d7e5 g6h6 h7h6",
+    "Rating": 1946,
+    "Themes": "advantage opening short trappedPiece",
+    "OpeningTags": "Duras_Gambit Duras_Gambit_Other_variations"
+  },
+  {
+    "PuzzleId": "00kXF",
+    "FEN": "6rr/p1k1qp2/Ppn1p3/3pP1b1/QP1n1NNp/3P3P/3B2PK/1R2R3 b - - 2 32",
+    "Moves": "c7b8 b4b5 g5f4 d2f4 g8g4 h3g4",
+    "Rating": 1821,
+    "Themes": "crushing long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00lUJ",
+    "FEN": "8/4k3/5pK1/1p2p2P/2p2b2/5P2/1PB5/8 b - - 3 34",
+    "Moves": "e7e6 h5h6 f4h6 g6h6",
+    "Rating": 1952,
+    "Themes": "bishopEndgame crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00lY4",
+    "FEN": "2R3k1/rb3ppp/pn2p3/4P3/1P1P1P2/P4B2/6PP/5RK1 b - - 0 23",
+    "Moves": "b6c8 f1c1 c8b6 c1c7 b7f3 c7a7",
+    "Rating": 1829,
+    "Themes": "advantage endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00lo9",
+    "FEN": "6r1/4p3/3p1kp1/2pP1n2/1p2pRP1/1P6/4RP1P/6K1 w - - 0 40",
+    "Moves": "g4f5 g6f5 g1f1 f6g5 e2e4 f5e4",
+    "Rating": 1990,
+    "Themes": "advantage discoveredAttack endgame long rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00m47",
+    "FEN": "rn1r2k1/pp2qppp/4pn2/6B1/2B1b2N/8/PPP1QPPP/2KR3R b - - 7 15",
+    "Moves": "e4c6 h4f5 d8d1 h1d1",
+    "Rating": 1902,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Scandinavian_Defense Scandinavian_Defense_Main_Line"
+  },
+  {
+    "PuzzleId": "00mRr",
+    "FEN": "8/2Q2kpp/1p1p2r1/1PnN4/2P1n3/6P1/1r3PK1/8 b - - 6 41",
+    "Moves": "f7e6 c7e7 e6f5 d5e3",
+    "Rating": 1821,
+    "Themes": "endgame master mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00n8z",
+    "FEN": "6rk/pq3p1p/1p3RrB/1Pp1p3/2PnP2Q/P5P1/6KP/1R6 w - - 2 28",
+    "Moves": "b1f1 g6g4 h4g4 g8g4 f6f7 b7e4",
+    "Rating": 1828,
+    "Themes": "capturingDefender crushing long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00nAo",
+    "FEN": "8/p2k4/2p5/8/Q7/2B2p2/PP1K1q2/8 w - - 0 40",
+    "Moves": "d2d3 f2e2 d3d4 f3f2 a4a7 d7e6",
+    "Rating": 1981,
+    "Themes": "advancedPawn crushing defensiveMove endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00nxI",
+    "FEN": "r3kbnr/p2n2pp/2pp2q1/4P2b/2P1Pp2/P1N2N1P/4BP1R/1RBQK3 b kq - 0 21",
+    "Moves": "d7e5 f3e5 g6g1 e1d2 g1d1 e2d1",
+    "Rating": 1948,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00oGl",
+    "FEN": "4rbk1/ppq2rpp/2p2n2/8/8/1Q2B1N1/PPP2PPP/R3R1K1 w - - 5 18",
+    "Moves": "e3a7 e8e1 a1e1 c7a5 e1e2 a5a7",
+    "Rating": 1800,
+    "Themes": "advantage fork long master middlegame",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Karpov_Variation"
+  },
+  {
+    "PuzzleId": "00onZ",
+    "FEN": "3r4/ppq3kp/2p1Qpp1/2P1b3/1P1rRp2/P4P1P/2B3P1/4R1K1 b - - 6 31",
+    "Moves": "c7d7 e4e5 f6e5 e6e5 g7g8 c2b3",
+    "Rating": 1879,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00p93",
+    "FEN": "1k1r1b1r/n1p3p1/p5p1/1pn1P3/P2B2Pq/2P2Q1P/1PB1K3/R6R b - - 0 24",
+    "Moves": "c5e6 d4a7 b8a7 a4b5 d8d2 e2d2",
+    "Rating": 1983,
+    "Themes": "crushing long middlegame pin queensideAttack",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00pWF",
+    "FEN": "8/8/p3k3/1p1pP3/5P2/1P6/6K1/8 w - - 0 53",
+    "Moves": "g2f3 a6a5 f3e3 a5a4 b3a4 b5a4 e3d4 a4a3 d4c3 d5d4 c3d4 a3a2",
+    "Rating": 1948,
+    "Themes": "advancedPawn crushing endgame pawnEndgame quietMove veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00plb",
+    "FEN": "8/1p6/p1p3r1/1kP5/7R/5P1P/5K2/8 w - - 0 54",
+    "Moves": "h4g4 g6g4 f3g4 b5c5",
+    "Rating": 1925,
+    "Themes": "crushing endgame rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00q6t",
+    "FEN": "q2r2k1/5pbp/p5p1/1p6/2pP1P2/P1N1P1Pb/1P1B1R1P/1Q4K1 b - - 4 21",
+    "Moves": "d8d4 e3d4 g7d4 b1e4 a8e4 c3e4",
+    "Rating": 1991,
+    "Themes": "crushing long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00qb9",
+    "FEN": "8/8/3k4/1p6/1Pp1K3/2P5/8/8 b - - 2 54",
+    "Moves": "d6c6 e4e5 c6d7 e5d5",
+    "Rating": 1850,
+    "Themes": "crushing endgame pawnEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rHa",
+    "FEN": "2kr3r/pp2nppp/4p3/2PpP3/bn1N2Q1/q1N5/2PB1PPP/1K1R1B1R w - - 4 14",
+    "Moves": "f1b5 a4c2 d4c2 a3b3 b1a1 b4c2",
+    "Rating": 1893,
+    "Themes": "deflection fork long mate mateIn3 middlegame sacrifice",
+    "OpeningTags": "French_Defense French_Defense_Winawer_Variation"
+  },
+  {
+    "PuzzleId": "00rhJ",
+    "FEN": "2r2rk1/pb3ppp/1p4q1/4P3/3P4/P7/BP2Q1PP/4RR1K w - - 1 21",
+    "Moves": "e5e6 c8c2 e6f7 g8h8",
+    "Rating": 1918,
+    "Themes": "advantage defensiveMove middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00rqm",
+    "FEN": "2r2r1k/3b3n/p6q/1p1nN3/7P/3P2Q1/PPP2P2/1K4RR b - - 0 30",
+    "Moves": "d7f5 g3g8 f8g8 e5f7",
+    "Rating": 1836,
+    "Themes": "kingsideAttack mate mateIn2 middlegame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00s23",
+    "FEN": "r2q1rk1/1ppb1ppp/1p1p1n2/4p3/1PBnP3/P2P1N1P/2P2PP1/R1BQK2R w KQ - 0 11",
+    "Moves": "c2c3 d7a4 c3d4 a4d1",
+    "Rating": 1832,
+    "Themes": "advantage opening short",
+    "OpeningTags": "Four_Knights_Game Four_Knights_Game_Italian_Variation"
+  },
+  {
+    "PuzzleId": "00sBK",
+    "FEN": "3r2k1/p4p1p/1p3qp1/3B1b2/8/1Qr1PP1P/P2R1KP1/7R w - - 0 23",
+    "Moves": "d5f7 g8g7 b3c3 f6c3",
+    "Rating": 1829,
+    "Themes": "advantage defensiveMove middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00sMq",
+    "FEN": "5rk1/4r1p1/p3pnQp/3pN1p1/P1pPq3/2P2R1P/1P4P1/5R1K b - - 9 29",
+    "Moves": "e7b7 f3f6 f8f6 f1f6 e4g6 f6g6",
+    "Rating": 1973,
+    "Themes": "advantage long middlegame pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ttk",
+    "FEN": "6k1/ppqn1rp1/2p3Qp/3p1N2/3P1bP1/2P4P/PP1N1P2/R5K1 w - - 4 21",
+    "Moves": "d2f3 d7f8 g6h5 g7g6",
+    "Rating": 1820,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00uJL",
+    "FEN": "7Q/5p2/6p1/R3pk1p/P2q3K/7P/5PP1/7r w - - 2 41",
+    "Moves": "g2g4 d4g4",
+    "Rating": 1871,
+    "Themes": "endgame master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00ueM",
+    "FEN": "2kr4/2pR4/2P1K1P1/8/8/p3n3/8/8 b - - 1 49",
+    "Moves": "a3a2 d7d8 c8d8 g6g7 a2a1q g7g8q",
+    "Rating": 1867,
+    "Themes": "advancedPawn endgame long mate mateIn3 promotion",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00v6q",
+    "FEN": "2Q1k3/4qpp1/2pr4/2Np4/3P4/7P/P1P3P1/6K1 b - - 4 34",
+    "Moves": "e7d8 c5b7 d8c8 b7d6 e8d7 d6c8",
+    "Rating": 1940,
+    "Themes": "crushing endgame fork long master sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00vXZ",
+    "FEN": "4n1k1/5r2/p1r1p2Q/1p1qP1p1/8/5PP1/P3n1KP/1RB2R2 b - - 0 27",
+    "Moves": "c6c2 h6g6 e8g7 g6c2 f7f3 f1f3",
+    "Rating": 1924,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00vuv",
+    "FEN": "r3r3/2q1b1pk/p3P1Np/5Qp1/8/3p4/PPp2P2/2R1R1K1 b - - 1 30",
+    "Moves": "d3d2 g6f8 h7g8 f5h7 g8f8 h7h8",
+    "Rating": 1974,
+    "Themes": "doubleCheck long mate mateIn3 middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00x5X",
+    "FEN": "7r/Bp1k1ppp/b7/4P3/1b1N4/8/PP3rPP/R2K3R w - - 0 19",
+    "Moves": "d4c2 f2d2 d1c1 h8c8 h1d1 c8c2",
+    "Rating": 1994,
+    "Themes": "crushing long middlegame pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00xDW",
+    "FEN": "7k/5Bp1/3p3p/8/4P1n1/r1rP4/6PP/1R1R2K1 b - - 0 36",
+    "Moves": "c3d3 d1d3 a3d3 f7g6",
+    "Rating": 1965,
+    "Themes": "crushing defensiveMove endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00xNH",
+    "FEN": "r2qr1k1/p4ppp/2p2n2/3p2B1/6b1/2NQ1N1P/PPP2bP1/2KR3R b - - 0 14",
+    "Moves": "e8e3 g5e3 f2e3 d3e3",
+    "Rating": 1915,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Old_Sicilian"
+  },
+  {
+    "PuzzleId": "00xyk",
+    "FEN": "3r1rk1/1b1n1qn1/pp1Q2p1/2p3Pp/P1P1Pp1N/2P2B1P/5B1K/R4R2 b - - 1 25",
+    "Moves": "d7e5 d6e5 d8e8 e5d6",
+    "Rating": 1943,
+    "Themes": "advantage hangingPiece middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00yYi",
+    "FEN": "2k3rr/ppp2p1p/2b5/4Nn2/3p1Q2/1P2P1Pq/P1PP1P1P/RN3RK1 w - - 0 18",
+    "Moves": "e3e4 f5h4 f4h4 h3h4",
+    "Rating": 1944,
+    "Themes": "crushing middlegame pin quietMove short",
+    "OpeningTags": "Vant_Kruijs_Opening Vant_Kruijs_Opening_Other_variations"
+  },
+  {
+    "PuzzleId": "00ysx",
+    "FEN": "1k5r/ppq2p2/2pN4/4PBb1/2P2pp1/1P5r/P1Q3KP/3RR3 w - - 5 28",
+    "Moves": "e1h1 f4f3 g2f1 g4g3 f5h3 h8h3",
+    "Rating": 1949,
+    "Themes": "crushing long middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00yyG",
+    "FEN": "8/4p1k1/p2pRq2/3P1p2/6r1/1P4Q1/4PP2/6K1 w - - 4 39",
+    "Moves": "e6f6 g4g3 g1h2 g7f6 h2g3 f6e5",
+    "Rating": 1970,
+    "Themes": "crushing endgame intermezzo long master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00yzd",
+    "FEN": "6k1/8/4p1p1/1P5p/1B2PP2/3pb1KP/2p5/4R3 w - - 2 36",
+    "Moves": "g3f3 d3d2 b4d2 e3d2 b5b6 d2e1",
+    "Rating": 1806,
+    "Themes": "advancedPawn advantage endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00yzf",
+    "FEN": "3rk3/3N2R1/4P1pr/3pP3/2p5/6p1/PP6/2K5 b - - 3 29",
+    "Moves": "g3g2 d7f6 e8f8 g7f7",
+    "Rating": 1912,
+    "Themes": "endgame mate mateIn2 short vukovicMate",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00z22",
+    "FEN": "r7/pRp2pkp/3p1pr1/4pQ2/3bP3/5PB1/P1q3PP/1R5K b - - 1 22",
+    "Moves": "d4f2 b7b2 c2b2 b1b2",
+    "Rating": 1904,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00z6j",
+    "FEN": "r3qrk1/p6p/1p2pbp1/3pn3/3Q2P1/P6R/1B3P2/1B4KR b - - 1 28",
+    "Moves": "e5g4 d4g4 f6b2 h3h7",
+    "Rating": 1949,
+    "Themes": "advantage kingsideAttack master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00zDb",
+    "FEN": "8/1pk1q3/1n3p2/2r2Pp1/p2QP2p/PB3P2/KP4P1/3R4 w - - 0 36",
+    "Moves": "b3a4 c5c4 d4d3 c4a4",
+    "Rating": 1902,
+    "Themes": "advantage endgame interference master masterVsMaster short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00zOQ",
+    "FEN": "2r3k1/p7/7p/1p4p1/6R1/3B1q1P/2P4P/2B3RK w - - 6 35",
+    "Moves": "g1g2 c8e8 c1d2 f3d1 g2g1 d1d2",
+    "Rating": 1885,
+    "Themes": "advantage deflection endgame long quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00zdb",
+    "FEN": "2rqr1k1/pb3p2/1p4pp/n2p4/P1pRnN2/2P2N1P/BPQ2PP1/3R2K1 b - - 2 20",
+    "Moves": "c8c5 d4e4 d5e4 d1d8",
+    "Rating": 1866,
+    "Themes": "advantage discoveredAttack master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "00zgl",
+    "FEN": "3r1rk1/1b3ppp/p1p1p3/1pqNP1b1/5P2/3B4/PPP1Q1PP/3R1R1K w - - 0 18",
+    "Moves": "d3h7 g8h7 f4g5 d8d5",
+    "Rating": 1852,
+    "Themes": "middlegame",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Four_Knights_Variation"
+  },
+  {
+    "PuzzleId": "00zqB",
+    "FEN": "3r1rk1/pp6/5pb1/2p2q2/8/P2P4/1PP4Q/2K3RR b - - 1 27",
+    "Moves": "c5c4 h2h7",
+    "Rating": 1864,
+    "Themes": "mate mateIn1 middlegame oneMove pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "010N8",
+    "FEN": "8/3r3p/pp1pk1pP/2rR1pP1/P1PRpP2/1P2P3/4K3/8 b - - 1 37",
+    "Moves": "c5d5 c4d5 e6e7 d4c4",
+    "Rating": 1968,
+    "Themes": "crushing endgame rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "010p7",
+    "FEN": "3R2k1/4r2p/pp2r1p1/1p2P1P1/2p5/P3n3/1P5P/5RK1 b - - 1 36",
+    "Moves": "g8g7 f1f8 e7a7 f8g8",
+    "Rating": 1854,
+    "Themes": "endgame equality quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0116f",
+    "FEN": "r3k1r1/2pq1p2/p2p1R2/4p1np/P1B1P1b1/2NPP3/2P3PP/R3Q1K1 w q - 1 19",
+    "Moves": "h2h4 g5f3 g1f1 f3e1",
+    "Rating": 1947,
+    "Themes": "advantage kingsideAttack middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "011N0",
+    "FEN": "r5k1/p1pN1p2/1p1b2p1/3p1n2/3P4/2P3Pq/P2Q1P1P/1R2R1K1 w - - 3 23",
+    "Moves": "e1e2 f5h4 d7f6 g8g7",
+    "Rating": 1881,
+    "Themes": "advantage defensiveMove middlegame quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01273",
+    "FEN": "8/p1B1Q2p/1p3pk1/6p1/3P2P1/2P1nP1K/P3q2P/8 w - - 9 36",
+    "Moves": "e7e4 g6h6 e4e3 e2e3",
+    "Rating": 1807,
+    "Themes": "crushing defensiveMove endgame master pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "012uN",
+    "FEN": "8/p2n1k2/5P2/5KPP/2P5/8/n7/8 b - - 1 49",
+    "Moves": "a2c3 g5g6 f7f8 h5h6",
+    "Rating": 1929,
+    "Themes": "crushing endgame knightEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01312",
+    "FEN": "8/pp6/8/2pp1k1P/8/2P3K1/PP6/8 b - - 0 39",
+    "Moves": "d5d4 c3d4 c5d4 g3f3",
+    "Rating": 1980,
+    "Themes": "crushing defensiveMove endgame pawnEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0134q",
+    "FEN": "k2r3r/ppq3pb/2p1Pp1p/8/1b1N2P1/3P3P/PB1N2Q1/2KR3R w - - 0 22",
+    "Moves": "d2c4 c7f4 c1b1 d8d4 b2d4 f4d4",
+    "Rating": 1946,
+    "Themes": "advantage long middlegame queensideAttack",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "013BM",
+    "FEN": "8/1p1k4/8/p1p5/P4P2/8/5PK1/8 w - - 0 43",
+    "Moves": "g2f3 b7b5 a4b5 a5a4 f3e4 a4a3",
+    "Rating": 1866,
+    "Themes": "crushing endgame long pawnEndgame quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "013Kj",
+    "FEN": "2r2rk1/pp2qp2/4p3/3p2P1/3P4/P1N4Q/1PP5/1R4K1 b - - 0 30",
+    "Moves": "e7g5 g1h1 g5g6 b1g1 g8g7 g1g6",
+    "Rating": 1896,
+    "Themes": "advantage clearance defensiveMove endgame long master pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "013zx",
+    "FEN": "1r1q1rk1/1b2bppp/p7/1p1ppP2/3pP1Q1/P2P2P1/BPP4P/R1B2RK1 b - - 1 16",
+    "Moves": "d5e4 c1h6 e7f6 h6g7 f6g7 f5f6 d8f6 f1f6",
+    "Rating": 1840,
+    "Themes": "crushing middlegame pin sacrifice veryLong",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Closed"
+  },
+  {
+    "PuzzleId": "01432",
+    "FEN": "8/8/5pk1/1p4pp/1P6/2P3PP/3K4/8 b - - 0 39",
+    "Moves": "g5g4 h3g4 h5h4 g3h4",
+    "Rating": 1909,
+    "Themes": "crushing endgame pawnEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "014K4",
+    "FEN": "8/7p/5kpP/p4p2/8/2bR4/P2p1PP1/6K1 w - - 4 44",
+    "Moves": "d3d6 f6e5 d6d3 e5e4",
+    "Rating": 1969,
+    "Themes": "crushing defensiveMove endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "015Da",
+    "FEN": "8/8/8/3N3P/k1nP4/1p6/1p6/1K6 w - - 2 57",
+    "Moves": "h5h6 a4a3 h6h7 c4d2",
+    "Rating": 1897,
+    "Themes": "endgame knightEndgame master mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "015Mk",
+    "FEN": "r3k2r/p4ppp/2p1p3/q2pPn2/Qb1P1Pb1/2N2N2/PP1B2PP/R4RK1 b kq - 5 14",
+    "Moves": "g4f3 a4c6 e8e7 c6b7",
+    "Rating": 1982,
+    "Themes": "advantage fork middlegame short",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "015Vc",
+    "FEN": "q4r1k/5pbp/2Np1np1/3P2B1/pQb5/5B2/P4PPP/4R1K1 b - - 1 23",
+    "Moves": "c4d5 g5f6 d5c6 f6g7 h8g7 b4c3",
+    "Rating": 1881,
+    "Themes": "attraction crushing kingsideAttack long master middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "015qm",
+    "FEN": "r2q3r/5k2/R2Pp3/1pbR2pp/8/1P4B1/1P2QPPP/6K1 b - - 0 22",
+    "Moves": "e6d5 a6a8 d8a8 e2e7 f7g6 e7e6",
+    "Rating": 1987,
+    "Themes": "advantage exposedKing long master middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "0165r",
+    "FEN": "8/7r/2R4P/6k1/4p3/8/4KP2/8 b - - 4 51",
+    "Moves": "h7h6 c6h6 g5h6 e2e3 h6g5 e3e4 g5f6 e4f4",
+    "Rating": 1812,
+    "Themes": "crushing defensiveMove endgame rookEndgame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "016IE",
+    "FEN": "1knq2rr/pp1b1R2/2p1p3/P2pP3/1P1P1Q1P/2PB2P1/7P/R5K1 b - - 0 25",
+    "Moves": "h8h4 f7d7 h4f4 d7d8 g8d8 g3f4",
+    "Rating": 1862,
+    "Themes": "crushing long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "016e7",
+    "FEN": "6r1/p6p/1p1ppk1r/4Np2/2PPnp2/7P/PP2RPPK/3R4 w - - 0 31",
+    "Moves": "e5d3 f4f3 g2f3 e4g5",
+    "Rating": 1966,
+    "Themes": "advantage endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "016rF",
+    "FEN": "r4qk1/pppb2p1/1bnp1R2/6N1/8/2NQ2B1/PP4PP/7K b - - 0 19",
+    "Moves": "f8f6 d3h7 g8f8 h7h8 f8e7 c3d5",
+    "Rating": 1865,
+    "Themes": "kingsideAttack long mate mateIn3 middlegame",
+    "OpeningTags": "Kings_Gambit_Declined Kings_Gambit_Declined_Queens_Knight_Defense"
+  },
+  {
+    "PuzzleId": "016yu",
+    "FEN": "4r1k1/p5pp/1p3n2/5Q2/1q3B2/5P2/PP3P1P/2R3K1 w - - 5 24",
+    "Moves": "f5d3 b4f4 d3c4 f4c4",
+    "Rating": 1820,
+    "Themes": "advantage endgame hangingPiece master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "017QF",
+    "FEN": "8/8/2k2p2/5P2/2K5/8/8/8 b - - 4 63",
+    "Moves": "c6c7 c4c5 c7d7 c5d5 d7e7 d5c6",
+    "Rating": 1901,
+    "Themes": "crushing defensiveMove endgame long pawnEndgame zugzwang",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "017Wg",
+    "FEN": "2r5/pp3pkp/5np1/1q6/2N5/1P5P/PQ3PP1/2R3K1 w - - 3 28",
+    "Moves": "c1d1 c8c4 d1d6 c4f4",
+    "Rating": 1909,
+    "Themes": "advantage endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "017qV",
+    "FEN": "2Q5/1p4pk/p6p/2P5/P5KP/1q4P1/8/8 w - - 2 52",
+    "Moves": "c5c6 b3a4 g4h3 a4c6",
+    "Rating": 1864,
+    "Themes": "crushing endgame queenEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "017qg",
+    "FEN": "8/5R1P/3k2p1/4p3/4P1P1/8/p4p1K/r7 w - - 0 46",
+    "Moves": "h7h8q a1h1 h2h1 a2a1q h1g2 a1g1",
+    "Rating": 1866,
+    "Themes": "advancedPawn attraction crushing endgame exposedKing long promotion queenRookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "018KB",
+    "FEN": "r5k1/5q1p/p1Q3p1/1p3p2/4p3/P1P4P/1P3RK1/8 b - - 7 49",
+    "Moves": "f7a7 f2d2 g8f8 d2d7 a7d7 c6d7",
+    "Rating": 1980,
+    "Themes": "advantage endgame long quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "018eM",
+    "FEN": "r3kb1r/1p1b1pp1/pq3p1p/3p4/3P4/2N2N2/PPP1QPPP/R3K2R b KQkq - 1 11",
+    "Moves": "f8e7 e2e7 e8e7 c3d5 e7d6 d5b6",
+    "Rating": 1830,
+    "Themes": "advantage attraction fork long middlegame sacrifice",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "0193i",
+    "FEN": "r5rk/2p2p1p/1p3p2/1P1P4/q3Pp1N/7P/4QP1K/5R2 b - - 1 24",
+    "Moves": "a8a5 e2b2 g8g6 h4g6 h7g6 b2f6",
+    "Rating": 1896,
+    "Themes": "crushing endgame long pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01AEw",
+    "FEN": "5r2/p1p2p1k/5p1p/3Qp3/1b2P3/1P3P2/P1P1q2P/2KR2R1 w - - 3 26",
+    "Moves": "d5c4 b4a3 c1b1 e2c4 b3c4 f8b8 b1a1 a3b2",
+    "Rating": 1890,
+    "Themes": "advantage endgame queensideAttack veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01AIF",
+    "FEN": "8/8/2p4K/1p3kp1/1P6/2P5/7P/8 w - - 0 52",
+    "Moves": "h2h3 g5g4 h3g4 f5g4",
+    "Rating": 1868,
+    "Themes": "crushing endgame pawnEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01AQh",
+    "FEN": "2rk4/5Rp1/p3p3/2B1P2p/2pP3P/2b5/5PP1/6K1 w - - 1 27",
+    "Moves": "f7g7 c8c5 d4c5 c3b2",
+    "Rating": 1979,
+    "Themes": "advantage endgame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01AxK",
+    "FEN": "3r4/2kr2qp/pp1pRNp1/n1pP1n2/P1P5/7Q/2P2PPP/4R1K1 b - - 10 26",
+    "Moves": "d7e7 h3f5 g6f5 e6e7 g7e7 e1e7",
+    "Rating": 1994,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Cry",
+    "FEN": "3r2k1/1pq2pbp/3r2p1/1QnB4/8/4P2P/PP3PP1/1RBR2K1 w - - 3 24",
+    "Moves": "b5c4 b7b5 c4c2 d6d5 d1d5 d8d5",
+    "Rating": 1887,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01F3z",
+    "FEN": "r4rk1/pp1b1ppp/8/2bBB3/8/8/PP3PPP/R4RK1 b - - 0 16",
+    "Moves": "f8e8 d5b7 e8e5 b7a8",
+    "Rating": 1890,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Horwitz_Defense Horwitz_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "01F65",
+    "FEN": "8/8/8/8/8/3K1p1k/5P2/8 b - - 3 63",
+    "Moves": "h3h2 d3e4 h2g2 e4e3",
+    "Rating": 1929,
+    "Themes": "crushing endgame pawnEndgame short zugzwang",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01FId",
+    "FEN": "2rr4/1Q3p1k/6pp/p4q2/8/2P1R1R1/P4PK1/8 b - - 5 38",
+    "Moves": "d8d2 e3f3 d2b2 b7b2",
+    "Rating": 1956,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01FmQ",
+    "FEN": "3r2k1/2B3pp/1Q2Pp2/2b5/P3n3/5N2/2q2PPP/5RK1 w - - 4 32",
+    "Moves": "e6e7 c2f2 f1f2 d8d1 f3e1 d1e1",
+    "Rating": 1870,
+    "Themes": "long mate mateIn3 middlegame pin sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01G4i",
+    "FEN": "6r1/1pp2rpk/p4nR1/3qpP1P/8/2P3Q1/PP3P1K/6R1 b - - 6 35",
+    "Moves": "f6h5 g6h6 g7h6 g3g8",
+    "Rating": 1834,
+    "Themes": "discoveredAttack mate mateIn2 middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01GAH",
+    "FEN": "2n1k3/p7/1q1b1p2/n3pP2/b2pP3/1p1P4/1P1BN3/3QNB1K b - - 1 26",
+    "Moves": "b6c7 d1a1 c7d7 d2a5",
+    "Rating": 1902,
+    "Themes": "advantage master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01GcH",
+    "FEN": "8/KP3k2/8/5p2/8/8/1R2p3/2r5 w - - 0 56",
+    "Moves": "b7b8q c1a1 a7b6 e2e1q b8c7 e1e7 c7e7 f7e7",
+    "Rating": 1807,
+    "Themes": "advancedPawn advantage endgame master promotion queenRookEndgame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01H66",
+    "FEN": "4r3/6K1/8/5RP1/1PpP4/P1P3k1/8/4b3 w - - 5 52",
+    "Moves": "f5e5 e8e5 d4e5 e1c3 g7g6 c3e5 g6f5 c4c3 f5e5 c3c2 g5g6 c2c1q",
+    "Rating": 1825,
+    "Themes": "endgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01H6V",
+    "FEN": "8/RR4pk/6r1/7p/P3KP1P/4P1P1/1pr5/8 w - - 0 50",
+    "Moves": "e4f3 c2c7 b7b2 c7a7",
+    "Rating": 1971,
+    "Themes": "advantage endgame master rookEndgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01HAa",
+    "FEN": "r1bq3r/1np1k1b1/pp1p3p/3Pp2B/2P1Pp1Q/2N5/PP1N2PP/R4RK1 b - - 5 19",
+    "Moves": "e7d7 h4g4 d7e7 g4g7",
+    "Rating": 1921,
+    "Themes": "fork mate mateIn2 middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01HAq",
+    "FEN": "rn1q1rk1/1bppppbp/1p4pn/6N1/p1B1P3/2PP3Q/PP3PPP/RNB1K2R w KQ - 0 9",
+    "Moves": "c4f7 f8f7 g5f7 h6f7",
+    "Rating": 1866,
+    "Themes": "advantage opening short",
+    "OpeningTags": "Owen_Defense Owen_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "01I14",
+    "FEN": "2r1r1k1/pp3ppp/5n2/3p4/1P1Nn3/2P4P/PB2RPP1/R5K1 b - - 0 20",
+    "Moves": "e4c3 e2e8 f6e8 a1c1",
+    "Rating": 1941,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01IKl",
+    "FEN": "k1r4r/2Qn1p1p/1p1Bpnp1/q7/2BP4/2P5/1PK2P1P/3R2R1 w - - 5 29",
+    "Moves": "c7c8 h8c8 d1a1 c8c4 a1a5 b6a5",
+    "Rating": 1854,
+    "Themes": "advantage hangingPiece long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Kdn",
+    "FEN": "1k1r4/pb3p2/1pq2r2/4p1B1/PQ2p1p1/6P1/2P2P1P/1R3RK1 w - - 2 28",
+    "Moves": "g5f6 e4e3 f2f3 g4f3 f6e5 b8a8",
+    "Rating": 1805,
+    "Themes": "crushing defensiveMove long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01LIu",
+    "FEN": "7k/p5p1/8/2P1p2p/6n1/PqBQ2P1/7P/6K1 w - - 3 32",
+    "Moves": "c5c6 b3b6 c3d4 e5d4",
+    "Rating": 1869,
+    "Themes": "crushing endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01MNV",
+    "FEN": "8/1p4k1/1p1p4/2p1p2K/P1P1P3/1P1P4/8/8 b - - 0 38",
+    "Moves": "g7f6 h5h6 f6e6 h6g6 e6e7 g6g7",
+    "Rating": 1926,
+    "Themes": "crushing defensiveMove endgame long pawnEndgame zugzwang",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01MnR",
+    "FEN": "r7/q1pb1pbk/3p2pp/3P4/2Pp2P1/2BP3P/2Q2PB1/R5K1 b - - 8 24",
+    "Moves": "a7a1 c3a1 a8a1 g2f1",
+    "Rating": 1913,
+    "Themes": "advantage defensiveMove master masterVsMaster middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01N6h",
+    "FEN": "7k/pp4pp/6q1/2P5/3Bp2n/2Pn1rPP/PP2QP2/R4RK1 w - - 1 20",
+    "Moves": "g1h2 d3f4 f1e1 f4e2",
+    "Rating": 1994,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Nfj",
+    "FEN": "b1r2rk1/R5pp/1p6/3p4/4pP2/1q2N2P/4Q1PK/5R2 b - - 2 30",
+    "Moves": "d5d4 e2g4 a8b7 a7b7",
+    "Rating": 1829,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Nky",
+    "FEN": "r2r2k1/p3ppbp/b1p1n1p1/q7/7P/PBN1B1Q1/1PPR1PP1/4K2R w K - 1 18",
+    "Moves": "h4h5 g7c3 b2c3 a5c3 e3d4 c3g3",
+    "Rating": 1973,
+    "Themes": "advantage long master masterVsMaster middlegame pin",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Hyperaccelerated_Fianchetto"
+  },
+  {
+    "PuzzleId": "01OFL",
+    "FEN": "8/8/KPk5/2rp1p1P/4p1p1/2n5/2R3B1/8 b - - 0 51",
+    "Moves": "e4e3 g2f1 c3e4 f1b5 c6d6 b6b7",
+    "Rating": 1974,
+    "Themes": "advancedPawn advantage endgame long quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Ooi",
+    "FEN": "1r2r1k1/6bp/p2p2p1/2pPpP2/q1b1n1PQ/5N2/PP5R/KB5R b - - 1 35",
+    "Moves": "c4a2 h4h7 g8f8 b1a2",
+    "Rating": 1940,
+    "Themes": "advantage intermezzo master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01PIs",
+    "FEN": "r7/6kp/5rp1/K2Bn3/4P3/2P3b1/PP1B2P1/R6R w - - 1 33",
+    "Moves": "a5b4 f6b6 b4c5 g3f2 d2e3 f2e3",
+    "Rating": 1922,
+    "Themes": "long mate mateIn3 middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Prn",
+    "FEN": "3r2k1/p4pp1/1p4qp/2pNp2n/2P1P3/5P1P/PP3QP1/3R2K1 b - - 0 26",
+    "Moves": "g6d6 f2h4 h5f6 d5f6",
+    "Rating": 1836,
+    "Themes": "advantage endgame kingsideAttack short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Qf0",
+    "FEN": "2r1r1k1/1p2b1p1/p2p1pPp/2nPpP1Q/3pP3/1P1q3P/P2B2B1/R4RK1 w - - 0 22",
+    "Moves": "d2h6 g7h6 h5h6 d3e3 h6e3 d4e3",
+    "Rating": 1829,
+    "Themes": "advantage exposedKing long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Qia",
+    "FEN": "1k4rr/pp3p2/b3p1q1/3p4/6R1/Q6P/PPP2PP1/4R1K1 b - - 4 27",
+    "Moves": "g6c2 a3g3 e6e5 g4g8 h8g8 g3g8",
+    "Rating": 1827,
+    "Themes": "crushing long middlegame pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Qs6",
+    "FEN": "6k1/1N3ppp/p1PK4/8/4p3/7P/8/1r6 b - - 0 43",
+    "Moves": "e4e3 c6c7 b1d1 d6c6 h7h6 c7c8q",
+    "Rating": 1901,
+    "Themes": "advancedPawn advantage defensiveMove endgame long promotion",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01QsE",
+    "FEN": "k1r5/P1p5/3p1p1r/3Pp2p/4P3/8/3N2PP/R5K1 b - - 1 35",
+    "Moves": "c7c6 d2c4 h6h8 c4b6 a8b7 b6c8",
+    "Rating": 1805,
+    "Themes": "crushing endgame exposedKing fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Rax",
+    "FEN": "6k1/1p6/p2p1N2/P1pPp3/2P1Pbp1/1P6/6K1/8 b - - 0 42",
+    "Moves": "g8g7 f6e8 g7f8 e8d6",
+    "Rating": 1827,
+    "Themes": "crushing endgame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Rl0",
+    "FEN": "r2qr1k1/ppp3bp/3p2p1/2n3P1/8/2PBPQ2/P1P1KP2/R6R b - - 0 17",
+    "Moves": "e8f8 d3c4 d6d5 c4d5 d8d5 f3d5",
+    "Rating": 1876,
+    "Themes": "crushing kingsideAttack long middlegame",
+    "OpeningTags": "Indian_Defense Indian_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "01SMk",
+    "FEN": "r4rk1/pbp2ppp/1pNbp3/1B2n3/Q2P4/4PqP1/PP3P1P/RNB2RK1 b - - 0 13",
+    "Moves": "e5c6 b1d2 f3d5 e3e4 d5d4 b5c6 d4a4 c6a4",
+    "Rating": 1826,
+    "Themes": "advantage middlegame veryLong",
+    "OpeningTags": "Reti_Opening Reti_Opening_Reti_Accepted"
+  },
+  {
+    "PuzzleId": "01TDT",
+    "FEN": "r3r1k1/ppqN2p1/2pb1p1p/5b2/3PRP1B/2P4P/PPQN2P1/R5K1 b - - 0 18",
+    "Moves": "f5e4 d7f6 g7f6 d2e4 e8e4 c2e4",
+    "Rating": 1969,
+    "Themes": "advantage intermezzo kingsideAttack long middlegame",
+    "OpeningTags": "French_Defense French_Defense_Exchange_Variation"
+  },
+  {
+    "PuzzleId": "01Tbk",
+    "FEN": "5k2/2r3b1/p2pPr2/1pqP2Q1/8/P7/1PPR4/1K5R b - - 0 32",
+    "Moves": "c5c4 d2f2 c4d4 h1f1",
+    "Rating": 1974,
+    "Themes": "crushing defensiveMove master middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Tlc",
+    "FEN": "8/1p3k2/p1p3p1/P1P3K1/1P5P/8/8/8 w - - 9 60",
+    "Moves": "g5h6 f7f6 h6h7 g6g5 h4g5 f6g5",
+    "Rating": 1863,
+    "Themes": "crushing endgame long pawnEndgame zugzwang",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Tr9",
+    "FEN": "6k1/1p3pp1/2q4p/p3PQb1/2p1N3/2PrP2P/PP2R1PK/8 b - - 0 36",
+    "Moves": "d3e3 e4g5 h6g5 e2e3",
+    "Rating": 1846,
+    "Themes": "capturingDefender crushing endgame intermezzo short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01UH3",
+    "FEN": "2r1kb1r/ppq2ppp/2n1p3/3pPn2/N2P4/4BN2/PP2QPPP/2R2RK1 w k - 9 14",
+    "Moves": "c1c2 c6d4 f3d4 f5d4 e3d4 c7c2 e2b5 c2c6",
+    "Rating": 1892,
+    "Themes": "crushing fork master middlegame veryLong",
+    "OpeningTags": "French_Defense French_Defense_Advance_Variation"
+  },
+  {
+    "PuzzleId": "01UsT",
+    "FEN": "r3r1k1/pp2qp1p/3b2p1/3p4/3P2n1/1PN5/PBP1BPPP/R2QK2R w KQ - 6 15",
+    "Moves": "h2h3 g4f2 e1f2 e7e3 f2f1 d6g3",
+    "Rating": 1992,
+    "Themes": "advantage attackingF2F7 attraction defensiveMove long middlegame sacrifice",
+    "OpeningTags": "Zukertort_Opening Zukertort_Opening_Nimzo-Larsen_Variation"
+  },
+  {
+    "PuzzleId": "01WeI",
+    "FEN": "8/8/1b2p3/1P1p2kP/3P2P1/1K6/8/8 b - - 4 46",
+    "Moves": "g5g4 h5h6 b6d4 h6h7 g4f5 b5b6 f5g6 b6b7",
+    "Rating": 1964,
+    "Themes": "advancedPawn bishopEndgame crushing endgame master masterVsMaster veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Wnj",
+    "FEN": "5rk1/p4ppp/1pQ5/2b1P3/8/P4N2/1Pq2PPP/4R1K1 w - - 1 28",
+    "Moves": "c6b5 c5f2 g1f1 f2e1",
+    "Rating": 1855,
+    "Themes": "crushing endgame fork master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01X3n",
+    "FEN": "r2q1rk1/pp2nppp/2pp4/3Np1N1/2P1Q3/3P4/PP3KPP/R1B5 b - - 3 14",
+    "Moves": "f7f5 e4h4 h7h6 g5e6",
+    "Rating": 1867,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Kings_Pawn_Game Kings_Pawn_Game_Dresden_Opening"
+  },
+  {
+    "PuzzleId": "01X5n",
+    "FEN": "8/8/7p/p1r3p1/2PKpkP1/7P/4R3/8 b - - 2 40",
+    "Moves": "c5e5 e2f2 f4g3 d4e5 g3f2 e5e4",
+    "Rating": 1805,
+    "Themes": "crushing deflection endgame long rookEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01XDC",
+    "FEN": "r2q1rk1/pp2ppbp/6p1/n1p1N3/2bP1P2/3B4/PP1B2PP/R3QRK1 w - - 0 15",
+    "Moves": "e5c4 a5c4 d3c4 d8d4 f1f2 d4c4",
+    "Rating": 1990,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": "Indian_Defense Indian_Defense_Other_variations"
+  },
+  {
+    "PuzzleId": "01XoC",
+    "FEN": "8/1q4p1/6kp/3BQ3/5pP1/6b1/4p1K1/8 b - - 17 47",
+    "Moves": "e2e1n g2h3 b7d5 e5d5",
+    "Rating": 1955,
+    "Themes": "crushing defensiveMove endgame master short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01YvD",
+    "FEN": "3rr1k1/p4p2/2BBb1p1/4b2p/4P1qP/6P1/P2Q1P2/3R1RK1 w - - 3 23",
+    "Moves": "f2f3 g4g3 d2g2 e5d6 g2g3 d6g3 c6e8 d8e8",
+    "Rating": 1949,
+    "Themes": "advantage deflection middlegame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Z4Y",
+    "FEN": "2r2rk1/3b1p1p/3p3P/p2Np1q1/1p2Q3/8/PPP5/1K1R3R b - - 1 23",
+    "Moves": "d7f5 e4f5 g5f5 d5e7 g8h8 e7f5",
+    "Rating": 1950,
+    "Themes": "attraction crushing fork long middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01Z93",
+    "FEN": "1r3rk1/1pp2pp1/p4q2/5b2/1P1R1P2/P1N4P/5QP1/4R2K b - - 8 29",
+    "Moves": "b8d8 c3d5 d8d5 d4d5",
+    "Rating": 1828,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01a5v",
+    "FEN": "4r2k/R7/1p6/5ppp/3P1P1K/4P3/PP2QPq1/2R5 w - - 0 32",
+    "Moves": "f4g5 g2h2",
+    "Rating": 1885,
+    "Themes": "endgame mate mateIn1 oneMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01aI3",
+    "FEN": "r1q1r1k1/1b1p1p1p/p1nBp1p1/1p4P1/4B2P/2PQ2P1/P1P5/R4RK1 b - - 0 19",
+    "Moves": "c6e7 d3f3 e7f5 e4b7",
+    "Rating": 1996,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Pin_Variation"
+  },
+  {
+    "PuzzleId": "01aJJ",
+    "FEN": "8/8/1p6/1P3kp1/7p/4KP1P/5P2/8 w - - 0 34",
+    "Moves": "e3d4 f5f4 d4d5 f4f3 d5c6 g5g4",
+    "Rating": 1911,
+    "Themes": "crushing endgame long pawnEndgame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01aXt",
+    "FEN": "2rqr3/7k/1pb1p1pp/p2pPp2/2pP1B1P/P1P2NQ1/1P1R1PP1/6K1 b - - 0 38",
+    "Moves": "h7g7 h4h5 g6g5 f3g5 e8g8 g5e6",
+    "Rating": 1972,
+    "Themes": "advantage doubleCheck long middlegame pin",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01bhX",
+    "FEN": "r4rk1/p1p1bppp/2pp4/8/7q/1P2B1P1/P1PQ1P1P/3RR1K1 b - - 0 16",
+    "Moves": "h4f6 e3d4 f6g5 f2f4",
+    "Rating": 1900,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "Four_Knights_Game Four_Knights_Game_Spanish_Variation"
+  },
+  {
+    "PuzzleId": "01chU",
+    "FEN": "1N4k1/7p/PR1n2r1/1b6/1P3R2/3p3r/1P4P1/4N1K1 w - - 0 45",
+    "Moves": "e1d3 h3d3 a6a7 d3d1",
+    "Rating": 1861,
+    "Themes": "equality hangingPiece middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01cmV",
+    "FEN": "2rqr1k1/1b2bp1p/p3p1pQ/4P3/1p2N3/8/PPB2PPP/2R2RK1 b - - 2 22",
+    "Moves": "c8c2 e4f6 e7f6 e5f6 d8f6 c1c2",
+    "Rating": 1870,
+    "Themes": "advantage fork long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01d0S",
+    "FEN": "5R2/1pQ3pk/1p1p3p/4q3/3pP3/3P3P/1PP3P1/r5K1 w - - 1 23",
+    "Moves": "g1f2 e5g5 f8h8 h7h8 c7c8 h8h7",
+    "Rating": 1915,
+    "Themes": "crushing endgame long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01dX4",
+    "FEN": "3rr3/4qpk1/5np1/p2p4/3Q4/P1P5/2B2R1P/3R3K b - - 0 29",
+    "Moves": "e7e6 d1f1 d8d6 f2f6 e6f6 f1f6",
+    "Rating": 1910,
+    "Themes": "advantage long middlegame quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01e0v",
+    "FEN": "1k1r1r2/2p5/pp3p2/3qn1pp/B4n2/1RQ2N2/PP3B2/5R1K b - - 1 35",
+    "Moves": "g5g4 f2b6 c7b6 b3b6",
+    "Rating": 1893,
+    "Themes": "advantage middlegame queensideAttack short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01eYJ",
+    "FEN": "6rr/1p1k1p2/3b4/3p4/3q1P2/7P/2QB1RPK/RN6 w - - 2 32",
+    "Moves": "b1c3 d4f2 c2f5 d7c7 c3d5 c7b8",
+    "Rating": 1883,
+    "Themes": "crushing defensiveMove hangingPiece long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01faz",
+    "FEN": "3nrr1k/1ppR2p1/p6p/6NQ/2B2p1P/1P6/P1PK1PP1/q6R b - - 2 22",
+    "Moves": "a1h1 h5h6 g7h6 d7h7",
+    "Rating": 1898,
+    "Themes": "kingsideAttack mate mateIn2 middlegame sacrifice short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01g9c",
+    "FEN": "r4rk1/ppq3pp/8/3pn1B1/8/3B1N1b/PP2NKPb/2RQR3 w - - 0 19",
+    "Moves": "c1c7 e5g4 f2f1 f8f3",
+    "Rating": 1957,
+    "Themes": "deflection mate mateIn2 middlegame pin short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01h56",
+    "FEN": "r3n3/2q1b1kp/3p2p1/2n2N2/2B1P3/8/1Pp2B2/1NKR3R b - - 1 29",
+    "Moves": "g7h8 h1h7 h8h7 d1h1 e7h4 h1h4",
+    "Rating": 1823,
+    "Themes": "attraction long master masterVsMaster mate mateIn3 middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01idc",
+    "FEN": "8/8/1r3k2/5p2/R5p1/5nP1/P4PK1/3R4 w - - 1 39",
+    "Moves": "d1d5 b6b1 d5f5 f6f5 a4f4 f5g5 f4f3 g4f3",
+    "Rating": 1866,
+    "Themes": "endgame master",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01ifd",
+    "FEN": "3bB1k1/1q1P1p1p/6p1/p3B3/Pp2n3/2r4P/4QPP1/3RR1K1 w - - 1 33",
+    "Moves": "e2f3 c3f3 g2f3 e4g5",
+    "Rating": 1919,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01j9y",
+    "FEN": "r1b3k1/ppqnbrp1/4Qn1p/5N2/8/1NP5/PP3PPP/R1BR2K1 b - - 2 17",
+    "Moves": "d7c5 f5e7 c7e7 e6e7 f7e7 b3c5",
+    "Rating": 1809,
+    "Themes": "advantage capturingDefender kingsideAttack long middlegame",
+    "OpeningTags": "Caro-Kann_Defense Caro-Kann_Defense_Main_Line"
+  },
+  {
+    "PuzzleId": "01jBT",
+    "FEN": "2r3k1/pp3ppp/5n2/3p4/3P4/1P3QP1/PB3RB1/4q1K1 w - - 3 23",
+    "Moves": "g1h2 e1f2 f3f2 f6g4 h2g1 g4f2",
+    "Rating": 1853,
+    "Themes": "advantage attraction fork long middlegame sacrifice",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01jKd",
+    "FEN": "8/8/2p3p1/p1k4p/P3Pp1P/3K1P2/8/8 b - - 1 41",
+    "Moves": "c5b4 e4e5 b4c5 d3e4",
+    "Rating": 1975,
+    "Themes": "advantage endgame pawnEndgame quietMove short zugzwang",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01jyS",
+    "FEN": "r1b2rk1/pp3ppp/5n2/1N1p4/B7/q6P/P4PP1/2RQR1K1 b - - 3 18",
+    "Moves": "a3a2 e1e2 a2e2 d1e2",
+    "Rating": 1887,
+    "Themes": "advantage middlegame short trappedPiece",
+    "OpeningTags": "Sicilian_Defense Sicilian_Defense_Old_Sicilian"
+  },
+  {
+    "PuzzleId": "01k6e",
+    "FEN": "r3kb1r/pq1b1ppp/Bp1Bp1n1/3pn3/QP6/2P2N2/P4PPP/RN3RK1 w kq - 0 15",
+    "Moves": "a6b7 e5f3 g2f3 d7a4",
+    "Rating": 1936,
+    "Themes": "advantage middlegame short",
+    "OpeningTags": "French_Defense French_Defense_Advance_Variation"
+  },
+  {
+    "PuzzleId": "01kKD",
+    "FEN": "2k3rr/pp1q1p2/3p1p2/1p1N4/1P1QP2p/P4b2/2P2PPP/R4RK1 w - - 2 20",
+    "Moves": "g2g3 d7h3 d4c3 c8b8 c3c7 b8a8 c7d8 g8d8",
+    "Rating": 1990,
+    "Themes": "crushing defensiveMove middlegame veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01kUF",
+    "FEN": "6k1/R2RBp1p/2p1p1p1/p3b3/5P1P/8/P4PK1/1rr5 b - - 0 33",
+    "Moves": "e5f4 e7f6 b1b8 d7f7",
+    "Rating": 1825,
+    "Themes": "advantage discoveredAttack endgame quietMove short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01l3i",
+    "FEN": "r3R3/Q1pk1p2/1pbp4/6qp/3N4/7P/PPP5/1K2R3 b - - 0 32",
+    "Moves": "a8a7 e1e7 g5e7 e8e7 d7e7 d4c6 e7d7 c6a7",
+    "Rating": 1817,
+    "Themes": "advantage attraction endgame fork veryLong",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01lC9",
+    "FEN": "r3k1r1/2bq1p1b/1np1pp1p/p3P2P/p1PPN3/1P3Q2/5PP1/R1B2RK1 b q - 3 25",
+    "Moves": "c7d8 e4d6 d7d6 e5d6",
+    "Rating": 1899,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01m0q",
+    "FEN": "3R1bk1/pQ3p1p/2B1b1p1/8/8/q5P1/4PP1P/6K1 w - - 2 27",
+    "Moves": "b7b8 a3c1 g1g2 c1c6 f2f3 c6c5",
+    "Rating": 1890,
+    "Themes": "advantage defensiveMove endgame fork long",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01m1K",
+    "FEN": "4rrk1/ppp3pp/3p4/3Pn3/4Q1bq/2PB2P1/PP1N2P1/R5KR b - - 0 19",
+    "Moves": "e5f3 d2f3 h4h1 g1h1 e8e4 d3e4",
+    "Rating": 1834,
+    "Themes": "advantage long middlegame",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01mGb",
+    "FEN": "8/8/8/2k1pB1p/2Pp4/3K2p1/8/8 w - - 0 43",
+    "Moves": "f5e4 h5h4 e4g2 e5e4 d3e2 c5c4",
+    "Rating": 1836,
+    "Themes": "bishopEndgame crushing deflection endgame long master quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01mH1",
+    "FEN": "8/n5pp/P1pk1p2/5P2/1PPK2P1/7P/8/8 b - - 0 36",
+    "Moves": "g7g6 f5g6 h7g6 h3h4 c6c5 b4c5",
+    "Rating": 1924,
+    "Themes": "crushing endgame knightEndgame long quietMove",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01mLC",
+    "FEN": "7k/p1q4p/5Pp1/1ppb4/3n1PQ1/2KP4/PP6/2R4R w - - 0 27",
+    "Moves": "h1e1 c7a5 b2b4 a5b4",
+    "Rating": 1889,
+    "Themes": "endgame mate mateIn2 short",
+    "OpeningTags": null
+  },
+  {
+    "PuzzleId": "01nGl",
+    "FEN": "r3kb1r/1p1b1ppp/1B2p3/nN1pq3/7P/2P5/P3BPP1/R2Q1RK1 b kq - 0 17",
+    "Moves": "f8d6 f2f4 e5f4 f1f4",
+    "Rating": 1945,
+    "Themes": "crushing middlegame short",
+    "OpeningTags": "French_Defense French_Defense_Advance_Variation"
+  }
+]
