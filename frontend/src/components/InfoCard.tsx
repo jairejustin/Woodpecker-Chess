@@ -3,7 +3,7 @@ import './InfoCard.css';
 export function InfoCard({Rating, Opening, Feedback}:
    {
     Rating: number,
-    Opening: string | undefined, 
+    Opening: string | null | undefined, 
     Feedback: string }) 
   {
 

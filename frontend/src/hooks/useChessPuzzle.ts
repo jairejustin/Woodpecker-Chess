@@ -29,7 +29,6 @@ interface UseChessPuzzleReturn {
     id: string;
     rating: number;
     themes: string[];
-    popularity: number;
   };
 }
 
@@ -37,6 +36,7 @@ export function useChessPuzzle(
   puzzle: LichessPuzzle,
   onEvent?: (event: PuzzleEvent) => void
 ): UseChessPuzzleReturn {
+
   const chessGameRef = useRef(new Chess());
   const chessGame = chessGameRef.current;
 
@@ -203,7 +203,6 @@ export function useChessPuzzle(
       id: puzzle.PuzzleId,
       rating: puzzle.Rating,
       themes: themesArray,
-      popularity: puzzle.Popularity,
     },
   };
 }

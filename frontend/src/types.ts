@@ -23,14 +23,10 @@ export interface LichessPuzzle {
   FEN: string;
   Moves: string;
   Rating: number;
-  RatingDeviation: number;
-  Popularity: number;
-  NbPlays: number;
   Themes: string;
-  GameUrl?: string;
-  OpeningFamily?: string;
-  OpeningVariation?: string;
+  OpeningTags?: string | null;
 }
+
 
 export type PuzzleEvent = 
   | { type: 'correct_move'; moveNumber: number; move: string }
