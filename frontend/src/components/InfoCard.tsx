@@ -1,10 +1,10 @@
 import './InfoCard.css';
 
-export function InfoCard({Rating, Opening, Feedback}:
+export function InfoCard({Rating, Feedback}:
    {
     Rating: number,
-    Opening: string | null | undefined, 
-    Feedback: string }) 
+    Feedback: string,
+  }) 
   {
 
   return (
@@ -18,10 +18,6 @@ export function InfoCard({Rating, Opening, Feedback}:
         <div className="stat-item">
             <span className="stat-label">Rating</span>
             <span className="stat-value">{Rating}</span>
-        </div>
-        <div className="stat-item">
-            <span className="stat-label">Opening</span>
-            <span className="stat-value">{Opening}</span>
         </div>
         </div>
 

@@ -1,5 +1,5 @@
 // useChessPuzzle.ts
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { Chess } from "chess.js";
 import type { PieceDropHandlerArgs } from "../types";
 import type { LichessPuzzle } from "../types";
@@ -25,11 +25,46 @@ interface UseChessPuzzleReturn {
   totalPlayerMoves: number;
   isSolved: boolean;
   lastEvent: PuzzleEvent | null;
+  solutionSequence: string[];
   puzzleInfo: {
     id: string;
     rating: number;
     themes: string[];
   };
+}
+
+// Helper function to convert UCI moves to SAN notation
+function convertUCItoSAN(fen: string, uciMoves: string[]): string[] {
+  const tempGame = new Chess(fen);
+  const sanMoves: string[] = [];
+
+  for (const uciMove of uciMoves) {
+    try {
+      // Extract from, to, and promotion from UCI format
+      const from = uciMove.slice(0, 2);
+      const to = uciMove.slice(2, 4);
+      const promotion = uciMove.length > 4 ? uciMove[4] : undefined;
+
+      // Make the move and get SAN notation
+      const move = tempGame.move({
+        from,
+        to,
+        promotion,
+      });
+
+      if (move) {
+        sanMoves.push(move.san);
+      } else {
+        // If move fails, fall back to UCI
+        sanMoves.push(uciMove);
+      }
+    } catch (error) {
+      // If conversion fails, use UCI as fallback
+      sanMoves.push(uciMove);
+    }
+  }
+
+  return sanMoves;
 }
 
 export function useChessPuzzle(
@@ -43,6 +78,11 @@ export function useChessPuzzle(
   // parse moves from UCI format
   const movesArray = puzzle.Moves.split(" ").filter((m) => m.length > 0);
   const themesArray = puzzle.Themes.split(" ").filter((t) => t.length > 0);
+
+  // Convert UCI moves to SAN notation - memoized so it only runs when puzzle changes
+  const solutionSequence = useMemo(() => {
+    return convertUCItoSAN(puzzle.FEN, movesArray);
+  }, [puzzle.FEN, puzzle.Moves]);
 
   // initialize state hooks
   const [chessPosition, setChessPosition] = useState(puzzle.FEN);
@@ -72,8 +112,7 @@ export function useChessPuzzle(
     setIsSolved(false);
 
     // initialize this state
-    const startEvent: PuzzleEvent = { type: "puzzle_started" };
-    setLastEvent(startEvent);
+    const startEvent: PuzzleEvent = "puzzle_started";
     onEvent?.(startEvent);
   }, [puzzle.PuzzleId]);
 
@@ -134,13 +173,9 @@ export function useChessPuzzle(
 
         if (puzzleSolved) {
           setIsSolved(true);
-          emitEvent({ type: "puzzle_solved" });
+          emitEvent("puzzle_solved");
         } else {
-          emitEvent({
-            type: "correct_move",
-            moveNumber: Math.floor(newMoveIndex / 2),
-            move: move.san,
-          });
+          emitEvent("correct_move");
 
           setTimeout(() => {
             makeComputerMove();
@@ -151,11 +186,7 @@ export function useChessPuzzle(
       } else {
         // wrong move, undo it
         chessGame.undo();
-        emitEvent({
-          type: "wrong_move",
-          attempted: move.san,
-          expected: expectedMove,
-        });
+        emitEvent("wrong_move");
         return false;
       }
     } catch {
@@ -181,7 +212,7 @@ export function useChessPuzzle(
     setCurrentMoveIndex(1);
     setIsSolved(false);
 
-    const resetEvent: PuzzleEvent = { type: "puzzle_reset" };
+    const resetEvent: PuzzleEvent = "puzzle_reset";
     emitEvent(resetEvent);
   };
 
@@ -199,6 +230,7 @@ export function useChessPuzzle(
     totalPlayerMoves,
     isSolved,
     lastEvent,
+    solutionSequence,
     puzzleInfo: {
       id: puzzle.PuzzleId,
       rating: puzzle.Rating,

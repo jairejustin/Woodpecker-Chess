@@ -31,7 +31,7 @@ export default function PuzzleExplorerPage() {
   }, []);
 
   const handlePuzzleEvent = useCallback((event: PuzzleEvent) => {
-    switch (event.type) {
+    switch (event) {
       case "wrong_move":
         setIsWrong(true);
         setTimeout(() => setIsWrong(false), 2000);
@@ -41,6 +41,9 @@ export default function PuzzleExplorerPage() {
         setIsWrong(false);
         break;
       case "puzzle_solved":
+        break;
+      case "show_hint":
+        // Hint logic is now handled in PuzzleExplorerContent
         break;
     }
   }, []);
@@ -112,18 +115,51 @@ function PuzzleExplorerContent({
   handleNextPuzzle: () => void;
   setIsWrong: (value: boolean) => void;
 }) {
-  const { turn, chessPosition, onPieceDrop, resetPuzzle, isSolved } = useChessPuzzle(
-    currentPuzzle,
-    handlePuzzleEvent
-  );
+  const { 
+    turn, 
+    chessPosition, 
+    onPieceDrop, 
+    resetPuzzle, 
+    isSolved,
+    solutionSequence,
+    currentMoveIndex 
+  } = useChessPuzzle(currentPuzzle, handlePuzzleEvent);
+
+  const [feedback, setFeedback] = useState<string>("");
+
+  // Update feedback based on puzzle state
+  useEffect(() => {
+    if (isWrong) {
+      setFeedback("Wrong");
+    } else if (isSolved) {
+      setFeedback("Solved");
+    } else {
+      const humanTurn = turn === "w" ? "White" : "Black";
+      setFeedback(`${humanTurn} to move`);
+    }
+  }, [isWrong, isSolved, turn]);
+
+  const handleShowHint = useCallback(() => {
+    if (currentMoveIndex < solutionSequence.length) {
+      const nextMove = solutionSequence[currentMoveIndex];
+      setFeedback(`Hint: ${nextMove}`);
+      // Restore normal feedback after 3 seconds
+      setTimeout(() => {
+        if (isSolved) {
+          setFeedback("Solved");
+        } else {
+          const humanTurn = turn === "w" ? "White" : "Black";
+          setFeedback(`${humanTurn} to move`);
+        }
+      }, 3000);
+    }
+  }, [currentMoveIndex, solutionSequence, turn, isSolved]);
 
   const handleResetPuzzle = useCallback(() => {
     resetPuzzle();
     setIsWrong(false);
   }, [resetPuzzle, setIsWrong]);
 
-  const humanTurn = turn === "w" ? "White" : "Black";
-  const feedback = isWrong ? "Wrong" : isSolved ? "Solved" : `${humanTurn} to move`;
   const boardOrientation = turn === "w" ? "white" : "black";
 
   return (
@@ -135,13 +171,13 @@ function PuzzleExplorerContent({
           onPieceDrop={onPieceDrop}
           onReset={handleResetPuzzle}
           onNext={handleNextPuzzle}
+          onHint={handleShowHint}
           boardOrientation={boardOrientation}
           showAnimations={showAnimations}
         />
       </div>
       <InfoCard
         Rating={currentPuzzle.Rating}
-        Opening={currentPuzzle.OpeningTags}
         Feedback={feedback}
       />
     </div>
