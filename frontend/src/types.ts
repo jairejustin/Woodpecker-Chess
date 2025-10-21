@@ -1,4 +1,12 @@
 export type Square = string;
+export type RawPuzzle = Record<string, unknown>;
+
+export type PuzzleEvent = 
+  | { type: 'correct_move'; moveNumber: number; move: string }
+  | { type: 'wrong_move'; attempted: string; expected: string }
+  | { type: 'puzzle_solved' }
+  | { type: 'puzzle_started' }
+  | { type: 'puzzle_reset' };
 
 export interface PieceDropHandlerArgs {
   piece: { isSparePiece: boolean, pieceType: string, position: string };
@@ -26,11 +34,3 @@ export interface LichessPuzzle {
   Themes: string;
   OpeningTags?: string | null;
 }
-
-
-export type PuzzleEvent = 
-  | { type: 'correct_move'; moveNumber: number; move: string }
-  | { type: 'wrong_move'; attempted: string; expected: string }
-  | { type: 'puzzle_solved' }
-  | { type: 'puzzle_started' }
-  | { type: 'puzzle_reset' };

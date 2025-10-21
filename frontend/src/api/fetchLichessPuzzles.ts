@@ -1,35 +1,95 @@
 import type { LichessPuzzle } from "../types";
+import type { RawPuzzle } from "../types";
+
+function toStringSafe(value: unknown): string | undefined {
+  if (value === null || value === undefined) return undefined;
+  const s = String(value).trim();
+  return s === "" ? undefined : s;
+}
+
+function toNumberSafe(value: unknown): number | undefined {
+  if (value === null || value === undefined) return undefined;
+  const n = Number(value);
+  return Number.isFinite(n) ? n : undefined;
+}
+
+function isValidPuzzleCandidate(candidate: Partial<LichessPuzzle>): candidate is LichessPuzzle {
+  return Boolean(candidate.PuzzleId && candidate.FEN && candidate.Moves);
+}
+
+function parseRawPuzzle(raw: RawPuzzle): LichessPuzzle | null {
+  const PuzzleId = toStringSafe(raw["PuzzleId"] ?? raw["puzzleId"] ?? raw["id"]);
+  const FEN = toStringSafe(raw["FEN"] ?? raw["fen"]);
+  const Moves = toStringSafe(raw["Moves"] ?? raw["moves"]);
+  const Rating = toNumberSafe(raw["Rating"] ?? raw["rating"]);
+  const Themes = toStringSafe(raw["Themes"] ?? raw["themes"]);
+  const OpeningTags = toStringSafe(raw["OpeningTags"] ?? raw["openingTags"]);
+
+  const candidate: Partial<LichessPuzzle> = {
+    PuzzleId,
+    FEN,
+    Moves,
+    Rating: Rating ?? 0, 
+    Themes,
+    OpeningTags,
+  };
+
+  if (!isValidPuzzleCandidate(candidate)) {
+    console.warn("Invalid puzzle skipped:", {
+      reason: [
+        candidate.PuzzleId ? undefined : "missing PuzzleId",
+        candidate.FEN ? undefined : "missing FEN",
+        candidate.Moves ? undefined : "missing Moves",
+      ].filter(Boolean),
+      rawPreview: { PuzzleId, FEN, Moves, Rating },
+    });
+    return null;
+  }
+
+  return candidate as LichessPuzzle;
+}
+
 
 export async function fetchSamplePuzzles(
   minRating: 1500 | 2000 | 2500 | 3000,
   maxRating: 1999 | 2499 | 2999 | 10000,
 ): Promise<LichessPuzzle[]> {
   const url = `/puzzles_sample_${minRating}_${maxRating}.json`;
-  console.log('Fetching puzzles from:', url);
-  
+  console.log("Fetching puzzles from:", url);
+
+  let res: Response;
   try {
-    const res = await fetch(url);
-    console.log('Response status:', res.status);
-    
-    if (!res.ok) {
-      throw new Error(`${url}: ${res.status} ${res.statusText}`);
-    }
-    
-    const data = await res.json();
-    console.log('Parsed:', data?.length || 0);
-    
-    return (data as any[])
-      .map((p): LichessPuzzle => ({
-        PuzzleId: String(p.PuzzleId),
-        FEN: String(p.FEN),
-        Moves: String(p.Moves),
-        Rating: Number(p.Rating),
-        Themes: String(p.Themes),
-        OpeningTags: p.OpeningTags ? String(p.OpeningTags) : undefined,
-      }))
-      .filter((p) => p.PuzzleId && p.FEN && p.Moves);
-  } catch (error) {
-    console.error('Error in fetchSamplePuzzles:', error);
-    throw error;
+    res = await fetch(url);
+  } catch (err) {
+    console.error("Network error while fetching puzzles:", err);
+    throw new Error(`Failed to fetch ${url}: ${String(err)}`);
   }
+
+  console.log("Response status:", res.status, res.statusText);
+
+  if (!res.ok) {
+    throw new Error(`${url}: ${res.status} ${res.statusText}`);
+  }
+
+  let data: unknown;
+  try {
+    data = await res.json();
+  } catch (err) {
+    throw new Error(`${url}: invalid JSON - ${String(err)}`);
+  }
+
+  if (!Array.isArray(data)) {
+    throw new Error(`${url}: expected an array`);
+  }
+
+  const parsed: LichessPuzzle[] = data
+    .map((item: unknown) => {
+      if (typeof item !== "object" || item === null) {
+        return null;
+      }
+      return parseRawPuzzle(item as RawPuzzle);
+    })
+    .filter((p): p is LichessPuzzle => p !== null);
+
+  return parsed;
 }
