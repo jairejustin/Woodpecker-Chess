@@ -2,6 +2,8 @@ export type Square = string;
 export type RawPuzzle = Record<string, unknown>;
 
 export type PuzzleEvent = string;
+export type LoadingState = "loading" | "error" | "success" | "empty";
+
 
 export interface PieceDropHandlerArgs {
   piece: { isSparePiece: boolean, pieceType: string, position: string };
@@ -28,4 +30,16 @@ export interface LichessPuzzle {
   Rating: number;
   Themes: string;
   OpeningTags?: string | null;
+}
+
+export interface PuzzleState {
+  puzzles: LichessPuzzle[];
+  currentIndex: number;
+  currentPuzzle: LichessPuzzle | null;
+}
+
+export interface UIState {
+  isWrong: boolean;
+  showAnimations: boolean;
+  feedback: string;
 }
