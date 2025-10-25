@@ -74,6 +74,9 @@ export function useChessPuzzle(
 
   const chessGameRef = useRef(new Chess());
   const chessGame = chessGameRef.current;
+  
+  // Use ref for move index to avoid stale closures
+  const currentMoveIndexRef = useRef(0);
 
   // parse moves from UCI format
   const movesArray = puzzle.Moves.split(" ").filter((m) => m.length > 0);
@@ -108,6 +111,7 @@ export function useChessPuzzle(
     }
 
     // update states
+    currentMoveIndexRef.current = 1;
     setCurrentMoveIndex(1);
     setIsSolved(false);
 
@@ -122,14 +126,15 @@ export function useChessPuzzle(
     onEvent?.(event);
   };
 
-  // arrow function to make the response from the solution
+  // arrow function to make the response from the solution (now synchronous)
   const makeComputerMove = () => {
-    const nextMoveIndex = currentMoveIndex + 1;
+    const nextMoveIndex = currentMoveIndexRef.current;
     if (nextMoveIndex < movesArray.length) {
       const computerMove = movesArray[nextMoveIndex];
       try {
         chessGame.move(computerMove);
         setChessPosition(chessGame.fen());
+        currentMoveIndexRef.current = nextMoveIndex + 1;
         setCurrentMoveIndex(nextMoveIndex + 1);
       } catch (error) {
         console.error("Invalid computer move in puzzle:", computerMove);
@@ -146,11 +151,14 @@ export function useChessPuzzle(
       return false;
     }
 
-    if (currentMoveIndex >= movesArray.length) {
+    // Use ref for synchronous access
+    const currentIndex = currentMoveIndexRef.current;
+
+    if (currentIndex >= movesArray.length) {
       return false;
     }
 
-    const expectedMove = movesArray[currentMoveIndex];
+    const expectedMove = movesArray[currentIndex];
 
     try {
       const move = chessGame.move({
@@ -165,7 +173,8 @@ export function useChessPuzzle(
       // check if this matches the expected move
       if (moveUCI === expectedMove) {
         setChessPosition(chessGame.fen());
-        const newMoveIndex = currentMoveIndex + 1;
+        const newMoveIndex = currentIndex + 1;
+        currentMoveIndexRef.current = newMoveIndex;
         setCurrentMoveIndex(newMoveIndex);
 
         // check if puzzle is solved 
@@ -209,6 +218,7 @@ export function useChessPuzzle(
       }
     }
 
+    currentMoveIndexRef.current = 1;
     setCurrentMoveIndex(1);
     setIsSolved(false);
 
