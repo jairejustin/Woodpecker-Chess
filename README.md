@@ -27,10 +27,10 @@ This is a web application project: a chess puzzle repetition trainer. Just somet
 * Playing puzzles using data from [Lichess puzzle database](https://database.lichess.org/#puzzles)
 * Custom hook (`useChessPuzzle`) for puzzle state management
 * Automatic opponent move responses after correct player moves
+* Hint system
 
 ### To-Do List
 * Rating-based puzzle filtering (1500-1999, 2000-2499, etc.)
-* Implement hint system
 * Some user results tracking and statistics
 * Spaced repetition algorithm: mark puzzles as `learned`/`needs review` and requeue accordingly
 * User playlists to save favorite puzzles
