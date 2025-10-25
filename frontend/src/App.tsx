@@ -1,5 +1,5 @@
 import { Sidebar } from "./components/Sidebar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import PuzzleExplorerPage from "./pages/PuzzleExplorerPage";
 import SettingsPage from "./pages/SettingsPage";
 import StatsPage from "./pages/StatsPage";
@@ -8,9 +8,12 @@ import HomePage from "./pages/HomePage";
 import './App.css';
 
 export default function App() {
+  const location = useLocation();
+  const showSidebar = location.pathname !== "/";
+
   return (
     <div className="layout">
-      <Sidebar />
+      {showSidebar && <Sidebar />}
       <main className="page-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
