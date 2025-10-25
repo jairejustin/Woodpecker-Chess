@@ -7,10 +7,6 @@ export function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-content">
-        <div className="logo">
-          <span className="logo-icon">♔</span> {/* temporary */}
-          <h1>Chess Puzzles</h1>
-        </div>
         <nav className="nav">
           <button className="nav-btn" onClick={() => navigate('/')}>
             <Home />

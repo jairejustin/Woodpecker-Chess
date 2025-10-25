@@ -5,7 +5,6 @@
   border-radius: 10px;
 }
 
-
 .control-panel {
   display: flex;
   gap: 1rem;
@@ -21,7 +20,7 @@
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   border: none;
-  border-radius:20px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.2s;
@@ -30,7 +29,8 @@
 
 .control-btn.reset {
   background-color: #3e3b38;
-  color: #ececec;
+  color: #fdf6e4;
+  border: 1px solid #4a4743;
 }
 
 .control-btn.reset:hover {
@@ -40,23 +40,21 @@
 }
 
 .control-btn.hint {
-  background-color: #e6a03c;
-  color: #262522;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
 }
 
 .control-btn.hint:hover {
-  background-color: #f0b04f;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(230, 160, 60, 0.4);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
 }
 
 .control-btn.next {
-  background-color: #81b64c;
-  color: #262522;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
 }
 
 .control-btn.next:hover {
-  background-color: #91c65c;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(129, 182, 76, 0.4);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
 }
