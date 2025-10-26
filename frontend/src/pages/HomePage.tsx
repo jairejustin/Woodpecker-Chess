@@ -1,5 +1,5 @@
 import { Puzzle, Target, Zap, Brain } from "lucide-react"
-import "./HomePage.css"
+import "./Pages.css"
 
 export default function HomePage() {
   const handleStartTraining = () => {

@@ -22,7 +22,7 @@ export function usePuzzleNavigation(
   const { puzzleState, setPuzzleState } = props;
   
   const [isWrong, setIsWrong] = useState<boolean>(false);
-  const [showAnimations, setShowAnimations] = useState<boolean>(false);
+  const [showAnimations, setShowAnimations] = useState<boolean>(true);
 
   const handlePuzzleEvent = useCallback((event: PuzzleEvent): void => {
     if (event === "wrong_move") {
