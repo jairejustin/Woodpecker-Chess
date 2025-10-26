@@ -48,5 +48,6 @@ body {
   .main-layout {
     align-items: center;
     padding: 1rem;
+    margin-top: 4rem;
   }
 }

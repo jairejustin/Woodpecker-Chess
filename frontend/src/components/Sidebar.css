@@ -2,7 +2,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 220px;
   background-color: #262522;
   border-right: 2px solid #3e3b38;
@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
 .sidebar-content {
@@ -37,7 +38,7 @@
   gap: 0.5rem;
 }
 
-.nav-btn {
+.nav-btn, .user-nav-btn {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -53,49 +54,87 @@
   width: 100%;
 }
 
-.nav-btn:hover {
+.nav-btn:hover, .user-nav-btn:hover {
   background-color: #3e3b38;
   color: #ececec;
 }
 
-.nav-btn svg {
+.nav-btn svg, .user-nav-btn svg {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+}
+
+.user-nav-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
 }
 
 .nav-btn span {
   font-size: 0.95rem;
 }
 
-@media (max-width: 768px) {
+/* Hamburger button - hidden on desktop */
+.hamburger-btn {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background-color: #262522;
+  border: 2px solid #3e3b38;
+  color: #fdf6e4;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hamburger-btn:hover {
+  background-color: #3e3b38;
+}
+
+.hamburger-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Overlay for mobile */
+.overlay {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  .hamburger-btn {
+    display: block;
+  }
+
   .sidebar {
-    width: 100%;
-    height: auto;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .user-nav-btn {
     position: relative;
-    border-right: none;
-    border-bottom: 2px solid #3e3b38;
-  }
-
-  .sidebar-content {
-    padding: 1rem;
-  }
-
-  .logo {
-    margin-bottom: 1rem;
-  }
-
-  .nav {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .nav-btn span {
-    display: none;
-  }
-
-  .nav-btn {
-    justify-content: center;
-    padding: 0.5rem;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    margin-top: auto;
   }
 }
