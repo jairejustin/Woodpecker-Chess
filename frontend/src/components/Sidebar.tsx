@@ -1,4 +1,4 @@
-import { Puzzle, BarChart3, Cog, Home, User2Icon, Menu, X } from 'lucide-react'
+import { Puzzle, BarChart3, Cog, Home, User2Icon, Menu, X , FolderOpenIcon} from 'lucide-react'
 import { useState } from 'react'
 import './Sidebar.css';
 import { useNavigate } from 'react-router-dom';
@@ -35,6 +35,10 @@ export function Sidebar() {
               <BarChart3 />
               <span>Stats</span>
             </button>
+            <button className="nav-btn">
+              <FolderOpenIcon />
+              <span>Playlists</span>
+            </button>
             <button className="nav-btn" onClick={() => handleNavigation('/settings')}>
               <Cog />
               <span>Settings</span>
@@ -46,7 +50,6 @@ export function Sidebar() {
           </nav>
         </div>
       </aside>
-      
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
     </>
   );

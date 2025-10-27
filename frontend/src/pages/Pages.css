@@ -89,6 +89,12 @@
   text-decoration: underline;
 }
 
+.password-toggle{
+  color: #ff6b6b;
+  position: absolute;
+  right: 15px;
+}
+
 .auth-btn {
   width: 100%;
   justify-content: center;
