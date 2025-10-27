@@ -1,3 +1,4 @@
+// src/App.tsx
 import { Sidebar } from "./components/Sidebar";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PuzzleExplorerPage from "./pages/PuzzleExplorerPage";
@@ -6,27 +7,64 @@ import StatsPage from "./pages/StatsPage";
 import ProfilePage from "./pages/ProfilePage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage"
+import RegisterPage from "./pages/RegisterPage";
+import RequireAuth from "./components/RequireAuth";
+import { useSession } from "./context/SessionContext";
 import './App.css';
 
 export default function App() {
   const location = useLocation();
-  const showSidebar = location.pathname === "/login" 
-  || location.pathname === "/register"
-  || location.pathname === "/";
+  const { user } = useSession();
+
+  // Hide sidebar on landing, login, register; show only when authenticated and not on excluded pages.
+  const excludedPaths = ["/", "/login", "/register"];
+  const showSidebar = !!user && !excludedPaths.includes(location.pathname);
 
   return (
     <div className="layout">
-      {!showSidebar && <Sidebar />}
+      {showSidebar && <Sidebar />}
       <main className="page-container">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/explore" element={<PuzzleExplorerPage />} />
-          <Route path="/settings" element={<SettingsPage />} />
-          <Route path="/stats" element={<StatsPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
+
+          {/* Protected routes — wrap each in RequireAuth */}
+          <Route
+            path="/explore"
+            element={
+              <RequireAuth>
+                <PuzzleExplorerPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/settings"
+            element={
+              <RequireAuth>
+                <SettingsPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/stats"
+            element={
+              <RequireAuth>
+                <StatsPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <RequireAuth>
+                <ProfilePage />
+              </RequireAuth>
+            }
+          />
+
+          {/* Public auth pages */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </main>
