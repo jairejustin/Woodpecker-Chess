@@ -43,3 +43,24 @@ export interface UIState {
   showAnimations: boolean;
   feedback: string;
 }
+
+export interface Playlist {
+  id: string;
+  name: string;
+  puzzleIds: string[];
+}
+
+export interface User {
+  id: string;
+  username: string;
+  email: string;
+  puzzlesSolved: string[];
+  playlists: Playlist[];
+  analytics: {
+    totalSolved: number;
+    avgRating: number;
+    streak: number;
+  };
+}
+
+
