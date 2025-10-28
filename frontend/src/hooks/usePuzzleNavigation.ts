@@ -13,6 +13,7 @@ interface UsePuzzleNavigationReturn {
   showAnimations: boolean;
   setIsWrong: (value: boolean) => void;
   handleNextPuzzle: () => void;
+  handlePreviousPuzzle: () => void;
   handlePuzzleEvent: (event: PuzzleEvent) => void;
 }
 
@@ -62,11 +63,37 @@ export function usePuzzleNavigation(
     }, PUZZLE_CONSTANTS.ANIMATION_DELAY);
   }, [puzzleState, setPuzzleState]);
 
+  const handlePreviousPuzzle = useCallback((): void => {
+    const { puzzles, currentIndex } = puzzleState;
+    
+    if (puzzles.length === 0) {
+      return;
+    }
+
+    setShowAnimations(false);
+    
+    const nextIndex = (currentIndex - 1) % puzzles.length;
+    const nextPuzzle = puzzles[nextIndex];
+    
+    setPuzzleState({
+      puzzles,
+      currentIndex: nextIndex,
+      currentPuzzle: nextPuzzle,
+    });
+    
+    setIsWrong(false);
+    
+    setTimeout(() => {
+      setShowAnimations(true);
+    }, PUZZLE_CONSTANTS.ANIMATION_DELAY);
+  }, [puzzleState, setPuzzleState]);
+
   return {
     isWrong,
     showAnimations,
     setIsWrong,
     handleNextPuzzle,
+    handlePreviousPuzzle,
     handlePuzzleEvent,
   };
 }

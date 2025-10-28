@@ -12,6 +12,7 @@ interface PuzzleExplorerContentProps {
   showAnimations: boolean;
   onPuzzleEvent: (event: PuzzleEvent) => void;
   onNextPuzzle: () => void;
+  onPreviousPuzzle: () => void;
   setIsWrong: (value: boolean) => void;
 }
 
@@ -22,6 +23,7 @@ export function PuzzleExplorerContent(props: PuzzleExplorerContentProps) {
     showAnimations,
     onPuzzleEvent,
     onNextPuzzle,
+    onPreviousPuzzle,
     setIsWrong,
   } = props;
 
@@ -74,6 +76,7 @@ export function PuzzleExplorerContent(props: PuzzleExplorerContentProps) {
           onPieceDrop={onPieceDrop}
           onReset={handleResetPuzzle}
           onNext={onNextPuzzle}
+          onPrevious={onPreviousPuzzle}
           onHint={handleShowHint}
           boardOrientation={boardOrientation}
           showAnimations={showAnimations}

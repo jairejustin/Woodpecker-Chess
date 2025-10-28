@@ -16,6 +16,7 @@ export default function PuzzleExplorerPage() {
     showAnimations,
     setIsWrong,
     handleNextPuzzle,
+    handlePreviousPuzzle,
     handlePuzzleEvent,
   } = usePuzzleNavigation({ puzzleState, setPuzzleState });
 
@@ -42,6 +43,7 @@ export default function PuzzleExplorerPage() {
       showAnimations={showAnimations}
       onPuzzleEvent={handlePuzzleEvent}
       onNextPuzzle={handleNextPuzzle}
+      onPreviousPuzzle={handlePreviousPuzzle}
       setIsWrong={setIsWrong}
     />
   );

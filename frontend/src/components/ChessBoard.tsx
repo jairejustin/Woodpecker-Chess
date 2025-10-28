@@ -1,8 +1,7 @@
 import { Chessboard } from "react-chessboard";
 import type { PieceDropHandlerArgs } from "../types";
-import { RotateCcw, Lightbulb, ChevronRight } from "lucide-react";
+import { RotateCcw, Lightbulb, ChevronRight, ChevronLeft } from "lucide-react";
 import "./ChessBoard.css";
-import { useState } from "react";
 
 interface ChessBoardProps {
   key: string;
@@ -12,6 +11,7 @@ interface ChessBoardProps {
   onReset?: () => void;
   onHint?: () => void;
   onNext?: () => void;
+  onPrevious?: () => void;
   showAnimations?: boolean;
 }
 
@@ -22,6 +22,7 @@ export function ChessBoard({
   onReset,
   onHint,
   onNext,
+  onPrevious,
   showAnimations,
 }: ChessBoardProps) {
   return (
@@ -37,7 +38,14 @@ export function ChessBoard({
 
       <div className="control-panel">
         <button
-          className="control-btn reset"
+          className="control-btn basic"
+          onClick={onPrevious}
+          title="Previous Puzzle"
+        >
+          <ChevronLeft size={20} />
+        </button>
+        <button
+          className="control-btn basic"
           onClick={onReset}
           title="Reset Puzzle"
         >
@@ -51,7 +59,7 @@ export function ChessBoard({
           <Lightbulb size={20} />
         </button>
         <button
-          className="control-btn next"
+          className="control-btn basic"
           onClick={onNext}
           title="Next Puzzle"
         >

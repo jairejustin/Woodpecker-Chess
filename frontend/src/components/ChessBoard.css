@@ -27,13 +27,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.control-btn.reset {
+.control-btn.basic {
   background-color: #3e3b38;
   color: #fdf6e4;
   border: 1px solid #4a4743;
 }
 
-.control-btn.reset:hover {
+.control-btn.basic:hover {
   background-color: #4a4743;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -41,7 +41,7 @@
 
 .control-btn.hint {
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-  color: white;
+  color: #fdf6e4;
 }
 
 .control-btn.hint:hover {
@@ -51,7 +51,7 @@
 
 .control-btn.next {
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-  color: white;
+  color: #fdf6e4;
 }
 
 .control-btn.next:hover {
