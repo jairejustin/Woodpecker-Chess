@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import RequireAuth from "./components/RequireAuth";
+import PlaylistsPage from "./pages/PlaylistsPage";
 import { useSession } from "./context/SessionContext";
 import './App.css';
 
@@ -57,6 +58,14 @@ export default function App() {
             element={
               <RequireAuth>
                 <ProfilePage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/playlists"
+            element={
+              <RequireAuth>
+                <PlaylistsPage />
               </RequireAuth>
             }
           />

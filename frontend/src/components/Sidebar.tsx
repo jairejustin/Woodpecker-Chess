@@ -35,7 +35,7 @@ export function Sidebar() {
               <BarChart3 />
               <span>Stats</span>
             </button>
-            <button className="nav-btn">
+            <button className="nav-btn" onClick={() => handleNavigation('/playlists')}>
               <FolderOpenIcon />
               <span>Playlists</span>
             </button>
