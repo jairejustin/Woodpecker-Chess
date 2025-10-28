@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { fetchSamplePuzzles } from "../api/fetchLichessPuzzles";
-import type { LichessPuzzle } from "../types";
+import { fetchPuzzles } from "../api/fetchPuzzles";
 import type { LoadingState, PuzzleState } from "../types";
-import { PUZZLE_CONSTANTS } from "../constants";
 
 interface UsePuzzleLoaderReturn {
   puzzleState: PuzzleState;
@@ -29,10 +27,7 @@ export function usePuzzleLoader(): UsePuzzleLoaderReturn {
     try {
       setLoadingState("loading");
       
-      const fetchedPuzzles = await fetchSamplePuzzles(
-        PUZZLE_CONSTANTS.RATING_MIN,
-        PUZZLE_CONSTANTS.RATING_MAX
-      );
+      const fetchedPuzzles = await fetchPuzzles();
       
       if (fetchedPuzzles.length === 0) {
         setLoadingState("empty");
