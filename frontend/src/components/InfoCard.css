@@ -77,3 +77,287 @@
   flex-direction: column;
   gap: 0.75rem;
 }
+
+
+/* Add these styles to your InfoCard.css */
+
+.add-to-playlist-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: #fdf6e4;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-to-playlist-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
+}
+
+.playlist-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.playlist-modal {
+  background: #312e2b;
+  border: 2px solid #ff6b6b;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 2px solid rgba(255, 107, 107, 0.2);
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fdf6e4;
+}
+
+.modal-close {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid rgba(255, 107, 107, 0.3);
+  border-radius: 6px;
+  color: #fdf6e4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #ff6b6b;
+  border-color: #ff6b6b;
+  transform: scale(1.1);
+}
+
+.modal-content {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.no-playlists {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(253, 246, 228, 0.6);
+  font-size: 1rem;
+}
+
+.playlists-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.playlist-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgba(49, 46, 43, 0.6);
+  border: 2px solid rgba(255, 107, 107, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.playlist-option:not(.in-playlist):hover {
+  border-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+  transform: translateX(4px);
+}
+
+.playlist-option.in-playlist {
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: rgba(253, 246, 228, 0.2);
+}
+
+.playlist-option.added {
+  border-color: #4caf50;
+  background: rgba(76, 175, 80, 0.1);
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.playlist-option-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.playlist-option-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fdf6e4;
+}
+
+.playlist-option-count {
+  font-size: 0.85rem;
+  color: rgba(253, 246, 228, 0.6);
+}
+
+.plus-icon {
+  color: #ff6b6b;
+  flex-shrink: 0;
+}
+
+.check-icon {
+  color: #4caf50;
+  flex-shrink: 0;
+}
+
+.already-added {
+  font-size: 0.85rem;
+  color: rgba(253, 246, 228, 0.5);
+  font-weight: 600;
+}
+
+.create-section {
+  padding-top: 1rem;
+  border-top: 2px solid rgba(255, 107, 107, 0.2);
+}
+
+.create-new-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem;
+  background: transparent;
+  border: 2px dashed rgba(255, 107, 107, 0.4);
+  border-radius: 8px;
+  color: #ff6b6b;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.create-new-btn:hover {
+  border-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.05);
+}
+
+.create-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.create-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem;
+  background: #262522;
+  border: 2px solid rgba(255, 107, 107, 0.3);
+  border-radius: 6px;
+  color: #fdf6e4;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.create-input:focus {
+  border-color: #ff6b6b;
+}
+
+.create-input::placeholder {
+  color: rgba(253, 246, 228, 0.4);
+}
+
+.create-confirm-btn {
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: #fdf6e4;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.create-confirm-btn:hover {
+  transform: translateY(-1px);
+}
+
+.create-cancel-btn {
+  padding: 0.75rem 1.25rem;
+  background: transparent;
+  border: 2px solid rgba(253, 246, 228, 0.3);
+  border-radius: 6px;
+  color: #fdf6e4;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.create-cancel-btn:hover {
+  border-color: rgba(253, 246, 228, 0.5);
+  background: rgba(253, 246, 228, 0.05);
+}
+
+@media (max-width: 768px) {
+  .playlist-modal {
+    max-width: 100%;
+    margin: 0 0.5rem;
+  }
+  
+  .create-form {
+    flex-direction: column;
+  }
+  
+  .create-input {
+    min-width: 100%;
+  }
+}

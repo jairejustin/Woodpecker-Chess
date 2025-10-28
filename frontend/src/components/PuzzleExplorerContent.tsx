@@ -81,6 +81,7 @@ export function PuzzleExplorerContent(props: PuzzleExplorerContentProps) {
       </div>
       
       <InfoCard
+        puzzleId={currentPuzzle.PuzzleId}
         Rating={currentPuzzle.Rating}
         Feedback={feedback}
       />
