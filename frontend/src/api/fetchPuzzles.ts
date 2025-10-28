@@ -29,7 +29,7 @@ function parseRawPuzzle(raw: RawPuzzle): LichessPuzzle | null {
     PuzzleId,
     FEN,
     Moves,
-    Rating: Rating ?? 0, 
+    Rating: Rating ?? 0,
     Themes,
     OpeningTags,
   };
@@ -49,12 +49,10 @@ function parseRawPuzzle(raw: RawPuzzle): LichessPuzzle | null {
   return candidate as LichessPuzzle;
 }
 
-
-export async function fetchSamplePuzzles(
-  minRating: 1500 | 2000 | 2500 | 3000,
-  maxRating: 1999 | 2499 | 2999 | 10000,
-): Promise<LichessPuzzle[]> {
-  const url = `/puzzles_sample_${minRating}_${maxRating}.json`;
+export async function fetchPuzzles(uri?: string): Promise<LichessPuzzle[]> {
+  // temp until there is a backend
+  const url = uri ?? "/puzzles_samples.json";
+  
   console.log("Fetching puzzles from:", url);
 
   let res: Response;
@@ -91,5 +89,26 @@ export async function fetchSamplePuzzles(
     })
     .filter((p): p is LichessPuzzle => p !== null);
 
+  console.log(`Successfully parsed ${parsed.length} puzzles from ${url}`);
+
   return parsed;
+}
+
+export async function fetchPuzzlesWithRating(
+  uri: string | undefined,
+  minRating?: number,
+  maxRating?: number
+): Promise<LichessPuzzle[]> {
+  const puzzles = await fetchPuzzles(uri);
+
+  if (minRating === undefined && maxRating === undefined) {
+    return puzzles;
+  }
+
+  return puzzles.filter((puzzle) => {
+    const rating = puzzle.Rating;
+    if (minRating !== undefined && rating < minRating) return false;
+    if (maxRating !== undefined && rating > maxRating) return false;
+    return true;
+  });
 }
