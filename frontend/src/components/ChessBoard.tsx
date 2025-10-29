@@ -26,7 +26,7 @@ export function ChessBoard({
   showAnimations,
 }: ChessBoardProps) {
   return (
-    <div style={{ maxWidth: "450px" }}>
+    <div style={{ maxWidth: "500px" }}>
       <Chessboard
         options={{
           position,

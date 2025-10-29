@@ -28,9 +28,8 @@ export function usePuzzleNavigation(
   const handlePuzzleEvent = useCallback((event: PuzzleEvent): void => {
     if (event === "wrong_move") {
       setIsWrong(true);
-      setTimeout(() => {
-        setIsWrong(false);
-      }, PUZZLE_CONSTANTS.WRONG_MOVE_DISPLAY_DURATION);
+      setTimeout(() => {setIsWrong(false);}
+      , PUZZLE_CONSTANTS.WRONG_MOVE_DISPLAY_DURATION);
     }
 
     if (event === "correct_move" || event === "puzzle_reset") {
@@ -66,13 +65,13 @@ export function usePuzzleNavigation(
   const handlePreviousPuzzle = useCallback((): void => {
     const { puzzles, currentIndex } = puzzleState;
     
-    if (puzzles.length === 0) {
+    if (puzzles.length === 0 || currentIndex === 0) {
       return;
     }
 
     setShowAnimations(false);
     
-    const nextIndex = (currentIndex - 1) % puzzles.length;
+    const nextIndex = currentIndex - 1;
     const nextPuzzle = puzzles[nextIndex];
     
     setPuzzleState({
