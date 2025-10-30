@@ -49,11 +49,9 @@ function parseRawPuzzle(raw: RawPuzzle): LichessPuzzle | null {
   return candidate as LichessPuzzle;
 }
 
-export async function fetchPuzzles(uri?: string): Promise<LichessPuzzle[]> {
+export async function fetchPuzzles(): Promise<LichessPuzzle[]> {
   // temp until there is a backend
-  const url = uri ?? "/puzzles_samples.json";
-  
-  console.log("Fetching puzzles from:", url);
+  const url = "/puzzles_samples.json";
 
   let res: Response;
   try {
@@ -99,7 +97,7 @@ export async function fetchPuzzlesWithRating(
   minRating?: number,
   maxRating?: number
 ): Promise<LichessPuzzle[]> {
-  const puzzles = await fetchPuzzles(uri);
+  const puzzles = await fetchPuzzles();
 
   if (minRating === undefined && maxRating === undefined) {
     return puzzles;
