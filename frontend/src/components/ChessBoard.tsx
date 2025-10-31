@@ -13,6 +13,7 @@ interface ChessBoardProps {
   onNext?: () => void;
   onPrevious?: () => void;
   showAnimations?: boolean;
+  isSolved?: boolean;
 }
 
 export function ChessBoard({
@@ -24,6 +25,7 @@ export function ChessBoard({
   onNext,
   onPrevious,
   showAnimations,
+  isSolved
 }: ChessBoardProps) {
   return (
     <div style={{ maxWidth: "500px" }}>
@@ -60,6 +62,7 @@ export function ChessBoard({
         </button>
         <button
           className="control-btn basic"
+          disabled={!isSolved}
           onClick={onNext}
           title="Next Puzzle"
         >

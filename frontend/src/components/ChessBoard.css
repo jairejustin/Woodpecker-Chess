@@ -39,6 +39,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.control-btn.basic:disabled {
+  background-color: #292725;
+}
+
 .control-btn.hint {
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
   color: #fdf6e4;

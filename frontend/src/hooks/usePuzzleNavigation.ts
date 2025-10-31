@@ -46,7 +46,7 @@ export function usePuzzleNavigation(
 
     setShowAnimations(false);
     
-    const nextIndex = (currentIndex + 1) % puzzles.length;
+    const nextIndex = (currentIndex + 1);
     const nextPuzzle = puzzles[nextIndex];
     
     setPuzzleState({

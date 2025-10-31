@@ -80,6 +80,7 @@ export function PuzzleExplorerContent(props: PuzzleExplorerContentProps) {
           onHint={handleShowHint}
           boardOrientation={boardOrientation}
           showAnimations={showAnimations}
+          isSolved={true}
         />
       </div>
       

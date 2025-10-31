@@ -85,6 +85,7 @@ export function TrainingContent(props: TrainingContentProps) {
           onHint={handleShowHint}
           boardOrientation={boardOrientation}
           showAnimations={showAnimations}
+          isSolved={isSolved}
         />
       </div>
       <TrainingInfo
