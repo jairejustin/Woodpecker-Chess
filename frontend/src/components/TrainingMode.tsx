@@ -3,6 +3,7 @@ import { LoadingState, ErrorState, EmptyState } from "./LoadingStates";
 import { TrainingContent } from "./TrainingContent";
 import { usePuzzleLoader } from "../hooks/usePuzzleLoader";
 import { usePuzzleNavigation } from "../hooks/usePuzzleNavigation";
+import './styles/TrainingMode.css'
 
 interface TrainingModeProps {
   playlistId: string;

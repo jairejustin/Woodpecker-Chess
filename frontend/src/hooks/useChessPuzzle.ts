@@ -4,6 +4,7 @@ import { Chess } from "chess.js";
 import type { PieceDropHandlerArgs } from "../types";
 import type { LichessPuzzle } from "../types";
 import type { PuzzleEvent } from "../types";
+import { convertUCItoSAN } from "../utils/puzzleHelpers";
 
 /**
  * Lichess Puzzle Database Format
@@ -33,39 +34,6 @@ interface UseChessPuzzleReturn {
   };
 }
 
-// Helper function to convert UCI moves to SAN notation
-function convertUCItoSAN(fen: string, uciMoves: string[]): string[] {
-  const tempGame = new Chess(fen);
-  const sanMoves: string[] = [];
-
-  for (const uciMove of uciMoves) {
-    try {
-      // Extract from, to, and promotion from UCI format
-      const from = uciMove.slice(0, 2);
-      const to = uciMove.slice(2, 4);
-      const promotion = uciMove.length > 4 ? uciMove[4] : undefined;
-
-      // Make the move and get SAN notation
-      const move = tempGame.move({
-        from,
-        to,
-        promotion,
-      });
-
-      if (move) {
-        sanMoves.push(move.san);
-      } else {
-        // If move fails, fall back to UCI
-        sanMoves.push(uciMove);
-      }
-    } catch (error) {
-      // If conversion fails, use UCI as fallback
-      sanMoves.push(uciMove);
-    }
-  }
-
-  return sanMoves;
-}
 
 export function useChessPuzzle(
   puzzle: LichessPuzzle,

@@ -1,4 +1,4 @@
-import "./TrainingInfo.css";
+import './styles/TrainingInfo.css'
 import { ArrowLeft } from "lucide-react";
 
 interface TrainingInfoProps {

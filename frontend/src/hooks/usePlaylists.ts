@@ -2,22 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSession } from "../context/SessionContext";
 import type { Playlist, LichessPuzzle } from "../types";
 import { fetchPuzzles } from "../api/fetchPuzzles";
-
-// ============================================================================
-// Utilities
-// ============================================================================
-
-function generateUniqueId(): string {
-  if (typeof crypto !== "undefined" && "randomUUID" in crypto) {
-    // @ts-ignore - TS sometimes complains about lib target
-    return crypto.randomUUID();
-  }
-  return `${Date.now()}-${Math.floor(Math.random() * 1e6)}`;
-}
-
-function createTimestamp(): string {
-  return new Date().toISOString();
-}
+import { createTimestamp, generateUniqueId } from "../utils/puzzleHelpers";
 
 // ============================================================================
 // Hook
@@ -62,14 +47,14 @@ export default function usePlaylists() {
   );
 
   const getPlaylistPuzzles = useCallback(
-    async (playlistId: string, uri?: string): Promise<LichessPuzzle[]> => {
+    async (playlistId: string): Promise<LichessPuzzle[]> => {
       const playlist = getPlaylistById(playlistId);
       if (!playlist) {
         return [];
       }
 
       // Fetch all available puzzles
-      const allPuzzles = await fetchPuzzles(uri);
+      const allPuzzles = await fetchPuzzles();
       const puzzleMap = new Map(allPuzzles.map((puzzle) => [puzzle.PuzzleId, puzzle]));
 
       // Map playlist puzzle IDs to actual puzzle objects, maintaining order
