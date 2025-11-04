@@ -40,7 +40,7 @@ export function usePuzzleNavigation(
   const handleNextPuzzle = useCallback((): void => {
     const { puzzles, currentIndex } = puzzleState;
     
-    if (puzzles.length === 0) {
+    if (puzzles.length === 0 || currentIndex+1 === puzzles.length ) {
       return;
     }
 
