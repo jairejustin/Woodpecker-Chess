@@ -1,7 +1,7 @@
 import { Chessboard } from "react-chessboard";
-import type { PieceDropHandlerArgs } from "../types";
+import type { PieceDropHandlerArgs } from "../../types";
 import { RotateCcw, Lightbulb, ChevronRight, ChevronLeft } from "lucide-react";
-import "./styles/ChessBoard.css";
+import "./Chessboard.css";
 
 interface ChessBoardProps {
   key: string;

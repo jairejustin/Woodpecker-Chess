@@ -1,5 +1,5 @@
-import { LoadingState, ErrorState, EmptyState } from "../components/LoadingStates";
-import { PuzzleExplorerContent } from "../components/PuzzleExplorerContent";
+import { LoadingState, ErrorState, EmptyState } from "../components/loadingStates/LoadingStates";
+import { PuzzleExplorerContent } from "../components/puzzleExplorerContent/PuzzleExplorerContent";
 import { usePuzzleLoader } from "../hooks/usePuzzleLoader";
 import { usePuzzleNavigation } from "../hooks/usePuzzleNavigation";
 

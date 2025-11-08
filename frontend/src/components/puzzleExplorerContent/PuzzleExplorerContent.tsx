@@ -1,10 +1,10 @@
 import { useState, useCallback, useEffect } from "react";
-import { ChessBoard } from "./ChessBoard";
-import { InfoCard } from "./InfoCard";
-import { useChessPuzzle } from "../hooks/useChessPuzzle";
-import type { LichessPuzzle, PuzzleEvent } from "../types";
-import { calculateFeedback, getBoardOrientation } from "../utils/puzzleHelpers";
-import { PUZZLE_CONSTANTS } from "../constants";
+import { ChessBoard } from "../chessboard/Chessboard";
+import { PuzzleDetails } from "../puzzleDetails/PuzzleDetails";
+import { useChessPuzzle } from "../../hooks/useChessPuzzle";
+import type { LichessPuzzle, PuzzleEvent } from "../../types";
+import { calculateFeedback, getBoardOrientation } from "../../utils/puzzleHelpers";
+import { PUZZLE_CONSTANTS } from "../../constants";
 
 interface PuzzleExplorerContentProps {
   currentPuzzle: LichessPuzzle;
@@ -84,7 +84,7 @@ export function PuzzleExplorerContent(props: PuzzleExplorerContentProps) {
         />
       </div>
       
-      <InfoCard
+      <PuzzleDetails
         puzzleId={currentPuzzle.PuzzleId}
         Rating={currentPuzzle.Rating}
         Feedback={feedback}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Edit2, Trash2, Play } from "lucide-react";
-import type { Playlist } from "../types";
+import type { Playlist } from "../../types";
 
 interface PlaylistGridProps {
   playlists: Playlist[];

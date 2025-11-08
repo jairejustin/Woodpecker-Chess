@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Plus, Check, X } from 'lucide-react';
-import usePlaylists from '../hooks/usePlaylists';
-import './styles/InfoCard.css'
+import usePlaylists from '../../hooks/usePlaylists';
+import './PuzzleDetails.css'
 
-export function InfoCard({
+export function PuzzleDetails({
   Rating,
   Feedback,
   puzzleId,

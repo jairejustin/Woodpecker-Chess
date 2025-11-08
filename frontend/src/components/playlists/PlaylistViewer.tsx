@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import usePlaylists from "../hooks/usePlaylists";
-import type { LichessPuzzle } from "../types";
+import usePlaylists from "../../hooks/usePlaylists";
+import type { LichessPuzzle } from "../../types";
 
 interface PlaylistViewerProps {
   playlistId: string;

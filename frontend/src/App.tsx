@@ -1,5 +1,5 @@
 // src/App.tsx
-import { Sidebar } from "./components/Sidebar";
+import { Sidebar } from "./components/sidebar/Sidebar";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PuzzleExplorerPage from "./pages/PuzzleExplorerPage";
 import SettingsPage from "./pages/SettingsPage";
@@ -8,7 +8,7 @@ import ProfilePage from "./pages/ProfilePage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import RequireAuth from "./components/RequireAuth";
+import RequireAuth from "./context/RequireAuth";
 import PlaylistsPage from "./pages/PlaylistsPage";
 import { useSession } from "./context/SessionContext";
 import './App.css';

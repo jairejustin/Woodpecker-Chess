@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
 import usePlaylists from "../hooks/usePlaylists";
-import { PlaylistGrid } from "../components/PlaylistGrid";
-import { PlaylistViewer } from "../components/PlaylistViewer";
-import { TrainingMode } from "../components/TrainingMode";
+import { PlaylistGrid } from "../components/playlists/PlaylistGrid";
+import { PlaylistViewer } from "../components/playlists/PlaylistViewer";
+import { TrainingMode } from "../components/training/TrainingMode";
 import "./Pages.css";
 
 type ViewMode = "list" | "viewer" | "training";

@@ -1,6 +1,6 @@
 import { Puzzle, BarChart3, Cog, Home, User2Icon, Menu, X , FolderOpenIcon} from 'lucide-react'
 import { useState } from 'react'
-import './styles/Sidebar.css';
+import './Sidebar.css';
 import { useNavigate } from 'react-router-dom';
 
 export function Sidebar() {

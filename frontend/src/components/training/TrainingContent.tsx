@@ -1,10 +1,10 @@
 import { useState, useCallback, useEffect } from "react";
-import { ChessBoard } from "./ChessBoard";
+import { ChessBoard } from "../chessboard/Chessboard";
 import TrainingInfo from "./TrainingInfo";
-import { useChessPuzzle } from "../hooks/useChessPuzzle";
-import type { LichessPuzzle, PuzzleEvent } from "../types";
-import { calculateFeedback, getBoardOrientation } from "../utils/puzzleHelpers";
-import { PUZZLE_CONSTANTS } from "../constants";
+import { useChessPuzzle } from "../../hooks/useChessPuzzle";
+import type { LichessPuzzle, PuzzleEvent } from "../../types";
+import { calculateFeedback, getBoardOrientation } from "../../utils/puzzleHelpers";
+import { PUZZLE_CONSTANTS } from "../../constants";
 
 interface TrainingContentProps {
   currentPuzzle: LichessPuzzle;
