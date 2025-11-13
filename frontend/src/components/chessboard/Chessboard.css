@@ -1,58 +1,69 @@
+/* block */
+.chessboard {
+  max-width: 500px;
+}
 
-.control-panel {
+/* elements */
+.chessboard__board {
+  border-radius: 10px;
+}
+
+.chessboard__controls {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-md);
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding: var(--space-sm) 0;
 }
 
-.control-btn {
-  display: flex;
+.chessboard__btn {
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 20px;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--btn-padding-vertical) var(--btn-padding-horizontal);
+  border: none;                    
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: var(--font-size-md);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  box-shadow: var(--shadow-sm);
+  background: transparent;
+  color: var(--btn-text-on-dark);
 }
 
-.control-btn.basic {
-  background-color: #3e3b38;
-  color: #fdf6e4;
-  border: 1px solid #4a4743;
+/* modifiers */
+.chessboard__btn--basic {
+  background-color: var(--color-surface);
+  color: var(--btn-text-on-dark);
+  border: 1px solid var(--btn-border-basic);
 }
 
-.control-btn.basic:hover {
-  background-color: #4a4743;
+.chessboard__btn--basic:hover {
+  background-color: var(--color-surface-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-md);
 }
 
-.control-btn.basic:disabled {
-  background-color: #292725;
+.chessboard__btn--basic:disabled,
+.chessboard__btn--basic[disabled] {
+  background-color: var(--color-surface-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  opacity: 0.9;
 }
 
-.control-btn.hint {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-  color: #fdf6e4;
+.chessboard__btn--hint,
+.chessboard__btn--next {
+  background: linear-gradient(135deg, var(--color-accent-start) 0%, var(--color-accent-end) 100%);
+  color: var(--btn-text-on-dark);
+  border: 1px solid transparent;
 }
 
-.control-btn.hint:hover {
+.chessboard__btn--hint:hover,
+.chessboard__btn--next:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
+  box-shadow: var(--color-accent-shadow), var(--shadow-md);
 }
 
-.control-btn.next {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-  color: #fdf6e4;
-}
-
-.control-btn.next:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
-}

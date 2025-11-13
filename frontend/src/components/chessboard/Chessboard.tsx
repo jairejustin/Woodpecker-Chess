@@ -25,43 +25,48 @@ export function ChessBoard({
   onNext,
   onPrevious,
   showAnimations,
-  isSolved
+  isSolved,
 }: ChessBoardProps) {
   return (
-    <div style={{ maxWidth: "500px" }}>
-      <Chessboard
-        options={{
-          position,
-          boardOrientation,
-          onPieceDrop,
-          showAnimations
-        }}
-      />
+    <div className="chessboard">
+      <div className="chessboard__board">
+        <Chessboard
+          options={{
+            position,
+            boardOrientation,
+            onPieceDrop,
+            showAnimations,
+          }}
+        />
+      </div>
 
-      <div className="control-panel">
+      <div className="chessboard__controls">
         <button
-          className="control-btn basic"
+          className="chessboard__btn chessboard__btn--basic"
           onClick={onPrevious}
           title="Previous Puzzle"
         >
           <ChevronLeft size={20} />
         </button>
+
         <button
-          className="control-btn basic"
+          className="chessboard__btn chessboard__btn--basic"
           onClick={onReset}
           title="Reset Puzzle"
         >
           <RotateCcw size={20} />
         </button>
+
         <button
-          className="control-btn hint"
+          className="chessboard__btn chessboard__btn--hint"
           onClick={onHint}
           title="Get Hint"
         >
           <Lightbulb size={20} />
         </button>
+
         <button
-          className="control-btn basic"
+          className="chessboard__btn chessboard__btn--basic"
           disabled={!isSolved}
           onClick={onNext}
           title="Next Puzzle"

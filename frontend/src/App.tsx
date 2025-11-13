@@ -1,4 +1,3 @@
-// src/App.tsx
 import { Sidebar } from "./components/sidebar/Sidebar";
 import { Route, Routes, useLocation } from "react-router-dom";
 import PuzzleExplorerPage from "./pages/PuzzleExplorerPage";
@@ -17,18 +16,16 @@ export default function App() {
   const location = useLocation();
   const { user } = useSession();
 
-  // Hide sidebar on landing, login, register; show only when authenticated and not on excluded pages.
   const excludedPaths = ["/", "/login", "/register"];
   const showSidebar = !!user && !excludedPaths.includes(location.pathname);
 
   return (
-    <div className="layout">
-      {showSidebar && <Sidebar />}
-      <main className="page-container">
-        <Routes>
+    <div className={`layout ${showSidebar ? "layout--with-sidebar" : ""}`}>
+    {showSidebar && <Sidebar/>}
+    <main className="layout__main">
+      <Routes>
           <Route path="/" element={<HomePage />} />
 
-          {/* Protected routes — wrap each in RequireAuth */}
           <Route
             path="/explore"
             element={
@@ -70,7 +67,6 @@ export default function App() {
             }
           />
 
-          {/* Public auth pages */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
 
