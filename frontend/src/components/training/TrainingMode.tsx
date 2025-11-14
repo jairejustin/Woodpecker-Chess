@@ -1,6 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import { LoadingState, ErrorState, EmptyState } from "../loadingStates/LoadingStates";
-import { TrainingContent } from "./TrainingContent";
+import { TrainingContentContainer } from "../../containers/trainingContentContainer/TrainingContentContainer";
 import { usePuzzleLoader } from "../../hooks/usePuzzleLoader";
 import { usePuzzleNavigation } from "../../hooks/usePuzzleNavigation";
 import './TrainingMode.css'
@@ -73,7 +73,7 @@ export function TrainingMode(props: TrainingModeProps) {
   return (
     <>
       <div className="main-content">
-        <TrainingContent
+        <TrainingContentContainer
           currentPuzzle={puzzleState.currentPuzzle}
           currentIndex={puzzleState.currentIndex}
           totalPuzzles={puzzleState.puzzles.length}

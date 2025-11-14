@@ -1,29 +1,38 @@
 import { useState, useCallback, useEffect } from "react";
-import { ChessBoard, PuzzleDetails } from "../../components";
+import ChessBoard from "../../components/chessboard/Chessboard";
+import TrainingInfo from "../../components/training/TrainingInfo";
 import { useChessPuzzle } from "../../hooks/useChessPuzzle";
 import type { LichessPuzzle, PuzzleEvent } from "../../types";
 import { calculateFeedback, getBoardOrientation } from "../../utils/puzzleHelpers";
 import { PUZZLE_CONSTANTS } from "../../constants";
 
-interface PuzzleExplorerProps {
+interface TrainingContentContainerProps {
   currentPuzzle: LichessPuzzle;
+  currentIndex: number;
+  totalPuzzles: number;
   isWrong: boolean;
   showAnimations: boolean;
   onPuzzleEvent: (event: PuzzleEvent) => void;
   onNextPuzzle: () => void;
   onPreviousPuzzle: () => void;
   setIsWrong: (value: boolean) => void;
+  playlistName: string;
+  onBack: () => void;
 }
 
-export default function PuzzleExplorer(props: PuzzleExplorerProps) {
+export function TrainingContentContainer(props: TrainingContentContainerProps) {
   const {
     currentPuzzle,
+    currentIndex,
+    totalPuzzles,
     isWrong,
     showAnimations,
     onPuzzleEvent,
     onNextPuzzle,
     onPreviousPuzzle,
     setIsWrong,
+    playlistName,
+    onBack
   } = props;
 
   const {
@@ -45,14 +54,11 @@ export default function PuzzleExplorer(props: PuzzleExplorerProps) {
 
   const handleShowHint = useCallback((): void => {
     const hasMoreMoves = currentMoveIndex < solutionSequence.length;
-    
     if (!hasMoreMoves) {
       return;
     }
-
     const nextMove = solutionSequence[currentMoveIndex];
     setFeedback(`Hint: ${nextMove}`);
-
     setTimeout(() => {
       const normalFeedback = calculateFeedback(false, isSolved, turn);
       setFeedback(normalFeedback);
@@ -79,14 +85,17 @@ export default function PuzzleExplorer(props: PuzzleExplorerProps) {
           onHint={handleShowHint}
           boardOrientation={boardOrientation}
           showAnimations={showAnimations}
-          isSolved={true}
+          isSolved={isSolved}
         />
       </div>
-      
-      <PuzzleDetails
-        puzzleId={currentPuzzle.PuzzleId}
-        Rating={currentPuzzle.Rating}
-        Feedback={feedback}
+      <TrainingInfo
+        puzzleNumber={currentIndex + 1}
+        totalPuzzles={totalPuzzles}
+        rating={currentPuzzle.Rating}
+        feedback={feedback}
+        isSolved={isSolved}
+        playlistName= {playlistName}
+        onBack={onBack}
       />
     </div>
   );
