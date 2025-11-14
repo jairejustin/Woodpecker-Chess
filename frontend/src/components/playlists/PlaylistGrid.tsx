@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Edit2, Trash2, Play } from "lucide-react";
 import type { Playlist } from "../../types";
+import "./Playlist.css";
 
 interface PlaylistGridProps {
   playlists: Playlist[];
@@ -35,56 +36,56 @@ export function PlaylistGrid(props: PlaylistGridProps) {
   return (
     <div>
       {playlists.map((playlist) => (
-        <div key={playlist.id} className="card playlist-card">
+        <div key={playlist.id} className="playlist-grid__card">
           {editingPlaylistId === playlist.id ? (
-            <div className="edit-form">
+            <div className="playlist-grid__edit-form">
               <input
                 type="text"
-                className="form-input"
+                className="playlist-grid__form-input"
                 value={editName}
                 onChange={(e) => setEditName(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSaveEdit()}
                 autoFocus
               />
-              <div className="edit-actions">
-                <button onClick={handleSaveEdit} className="btn btn-small">
+              <div className="playlist-grid__edit-actions">
+                <button onClick={handleSaveEdit} className="playlist-grid__btn playlist-grid__btn--save">
                   Save
                 </button>
-                <button onClick={handleCancelEdit} className="btn btn-secondary btn-small">
+                <button onClick={handleCancelEdit} className="playlist-grid__btn playlist-grid__btn--cancel">
                   Cancel
                 </button>
               </div>
             </div>
           ) : (
             <>
-              <div 
-                className="playlist-thumbnail"
+              <div
+                className="playlist-grid__thumbnail"
                 onClick={() => onViewPlaylist(playlist.id)}
                 style={{ cursor: 'pointer' }}
               >
                 {playlist.puzzleIds.length > 0 ? (
-                  <div className="puzzle-preview">
-                    <span className="puzzle-count">
+                  <div className="playlist-grid__puzzle-preview">
+                    <span className="playlist-grid__puzzle-count">
                       {playlist.puzzleIds.length}
                     </span>
                   </div>
                 ) : (
-                  <div className="empty-thumbnail">
+                  <div className="playlist-grid__empty-thumbnail">
                     <span>Empty</span>
                   </div>
                 )}
               </div>
 
-              <div className="playlist-info">
-                <h3>{playlist.name}</h3>
-                <p className="puzzle-stats">
+              <div className="playlist-grid__info">
+                <h3 className="playlist-grid__name">{playlist.name}</h3>
+                <p className="playlist-grid__puzzle-stats">
                   {playlist.puzzleIds.length} {playlist.puzzleIds.length === 1 ? 'puzzle' : 'puzzles'}
                 </p>
               </div>
 
-              <div className="playlist-actions">
+              <div className="playlist-grid__actions">
                 <button
-                  className="action-btn play-btn"
+                  className="playlist-grid__action-btn playlist-grid__action-btn--play"
                   onClick={() => onTrainPlaylist(playlist.id)}
                   title="Train with this playlist"
                   disabled={playlist.puzzleIds.length === 0}
@@ -92,14 +93,14 @@ export function PlaylistGrid(props: PlaylistGridProps) {
                   <Play size={16} />
                 </button>
                 <button
-                  className="action-btn edit-btn"
+                  className="playlist-grid__action-btn playlist-grid__action-btn--edit"
                   onClick={() => handleStartEdit(playlist.id, playlist.name)}
                   title="Rename playlist"
                 >
                   <Edit2 size={16} />
                 </button>
                 <button
-                  className="action-btn delete-btn"
+                  className="playlist-grid__action-btn playlist-grid__action-btn--delete"
                   onClick={() => onDeletePlaylist(playlist.id)}
                   title="Delete playlist"
                 >

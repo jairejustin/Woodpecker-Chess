@@ -1,4 +1,4 @@
-.infocard {
+.puzzle-details {
   width: 300px;
   background-color: #262522;
   border-right: 2px solid #3e3b38;
@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 768px) {
-  .sidebar {
+  .puzzle-details { /* Changed from .sidebar to .puzzle-details */
     width: 100%;
     border-right: none;
     border-top: 2px solid #3e3b38;
@@ -23,7 +23,7 @@
   }
 }
 
-.infocard-title {
+.puzzle-details__title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -32,13 +32,13 @@
   color: #fdf6e4;
 }
 
-.puzzle-stats {
+.puzzle-details__stats {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.stat-item {
+.puzzle-details__stat-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,18 +50,18 @@
 }
 
 
-.stat-label {
+.puzzle-details__stat-label {
   color: #b8b8b8;
   font-size: 0.9rem;
 }
 
-.stat-value {
+.puzzle-details__stat-value {
   color: #fdf6e4;
   font-weight: 600;
   font-size: 1rem;
 }
 
-.puzzle-progress {
+.puzzle-details__progress {
   background-color: #1f1f1f;
   padding: 1rem;
   border-radius: 8px;
@@ -72,16 +72,14 @@
   color: #fdf6e4;
 }
 
-.progress-stats {
+.puzzle-details__progress-stats {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
 
-/* Add these styles to your InfoCard.css */
-
-.add-to-playlist-btn {
+.puzzle-details__add-to-playlist-btn {
   width: 100%;
   display: flex;
   align-items: center;
@@ -99,12 +97,12 @@
   transition: all 0.2s ease;
 }
 
-.add-to-playlist-btn:hover {
+.puzzle-details__add-to-playlist-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
 }
 
-.playlist-modal-overlay {
+.puzzle-details__modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -118,7 +116,7 @@
   padding: 1rem;
 }
 
-.playlist-modal {
+.puzzle-details__modal {
   background: #312e2b;
   border: 2px solid #ff6b6b;
   border-radius: 12px;
@@ -130,7 +128,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.modal-header {
+.puzzle-details__modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,14 +136,14 @@
   border-bottom: 2px solid rgba(255, 107, 107, 0.2);
 }
 
-.modal-title {
+.puzzle-details__modal-title {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
   color: #fdf6e4;
 }
 
-.modal-close {
+.puzzle-details__modal-close {
   width: 32px;
   height: 32px;
   display: flex;
@@ -159,33 +157,33 @@
   transition: all 0.2s ease;
 }
 
-.modal-close:hover {
+.puzzle-details__modal-close:hover {
   background: #ff6b6b;
   border-color: #ff6b6b;
   transform: scale(1.1);
 }
 
-.modal-content {
+.puzzle-details__modal-content {
   padding: 1.5rem;
   overflow-y: auto;
   flex: 1;
 }
 
-.no-playlists {
+.puzzle-details__no-playlists {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(253, 246, 228, 0.6);
   font-size: 1rem;
 }
 
-.playlists-list {
+.puzzle-details__playlists-list {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
-.playlist-option {
+.puzzle-details__playlist-option {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -199,19 +197,19 @@
   width: 100%;
 }
 
-.playlist-option:not(.in-playlist):hover {
+.puzzle-details__playlist-option:not(.puzzle-details__playlist-option--in-playlist):hover {
   border-color: #ff6b6b;
   background: rgba(255, 107, 107, 0.1);
   transform: translateX(4px);
 }
 
-.playlist-option.in-playlist {
+.puzzle-details__playlist-option--in-playlist {
   cursor: not-allowed;
   opacity: 0.6;
   border-color: rgba(253, 246, 228, 0.2);
 }
 
-.playlist-option.added {
+.puzzle-details__playlist-option--added {
   border-color: #4caf50;
   background: rgba(76, 175, 80, 0.1);
   animation: pulse 0.3s ease;
@@ -226,46 +224,46 @@
   }
 }
 
-.playlist-option-info {
+.puzzle-details__playlist-option-info {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
 }
 
-.playlist-option-name {
+.puzzle-details__playlist-option-name {
   font-size: 1rem;
   font-weight: 600;
   color: #fdf6e4;
 }
 
-.playlist-option-count {
+.puzzle-details__playlist-option-count {
   font-size: 0.85rem;
   color: rgba(253, 246, 228, 0.6);
 }
 
-.plus-icon {
+.puzzle-details__plus-icon {
   color: #ff6b6b;
   flex-shrink: 0;
 }
 
-.check-icon {
+.puzzle-details__check-icon {
   color: #4caf50;
   flex-shrink: 0;
 }
 
-.already-added {
+.puzzle-details__already-added {
   font-size: 0.85rem;
   color: rgba(253, 246, 228, 0.5);
   font-weight: 600;
 }
 
-.create-section {
+.puzzle-details__create-section {
   padding-top: 1rem;
   border-top: 2px solid rgba(255, 107, 107, 0.2);
 }
 
-.create-new-btn {
+.puzzle-details__create-new-btn {
   width: 100%;
   display: flex;
   align-items: center;
@@ -282,18 +280,18 @@
   transition: all 0.2s ease;
 }
 
-.create-new-btn:hover {
+.puzzle-details__create-new-btn:hover {
   border-color: #ff6b6b;
   background: rgba(255, 107, 107, 0.05);
 }
 
-.create-form {
+.puzzle-details__create-form {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.create-input {
+.puzzle-details__create-input {
   flex: 1;
   min-width: 200px;
   padding: 0.75rem;
@@ -306,15 +304,15 @@
   transition: border-color 0.2s;
 }
 
-.create-input:focus {
+.puzzle-details__create-input:focus {
   border-color: #ff6b6b;
 }
 
-.create-input::placeholder {
+.puzzle-details__create-input::placeholder {
   color: rgba(253, 246, 228, 0.4);
 }
 
-.create-confirm-btn {
+.puzzle-details__create-confirm-btn {
   padding: 0.75rem 1.25rem;
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
   color: #fdf6e4;
@@ -326,11 +324,11 @@
   transition: transform 0.2s;
 }
 
-.create-confirm-btn:hover {
+.puzzle-details__create-confirm-btn:hover {
   transform: translateY(-1px);
 }
 
-.create-cancel-btn {
+.puzzle-details__create-cancel-btn {
   padding: 0.75rem 1.25rem;
   background: transparent;
   border: 2px solid rgba(253, 246, 228, 0.3);
@@ -342,22 +340,22 @@
   transition: all 0.2s;
 }
 
-.create-cancel-btn:hover {
+.puzzle-details__create-cancel-btn:hover {
   border-color: rgba(253, 246, 228, 0.5);
   background: rgba(253, 246, 228, 0.05);
 }
 
 @media (max-width: 768px) {
-  .playlist-modal {
+  .puzzle-details__modal {
     max-width: 100%;
     margin: 0 0.5rem;
   }
   
-  .create-form {
+  .puzzle-details__create-form {
     flex-direction: column;
   }
   
-  .create-input {
+  .puzzle-details__create-input {
     min-width: 100%;
   }
 }

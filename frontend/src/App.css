@@ -10,7 +10,7 @@
   padding-left: 240px;
 }
 
-.layout__sidebar {
+.layout__sidebar { /* This class is no longer directly used in Sidebar.tsx, but might be used in the layout itself */
   flex-shrink: 0;
 }
 

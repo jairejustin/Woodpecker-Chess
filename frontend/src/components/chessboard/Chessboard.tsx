@@ -16,7 +16,7 @@ interface ChessBoardProps {
   isSolved?: boolean;
 }
 
-export function ChessBoard({
+export default function ChessBoard({
   position,
   onPieceDrop,
   boardOrientation = "white",

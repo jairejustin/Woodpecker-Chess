@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import usePlaylists from "../../hooks/usePlaylists";
 import type { LichessPuzzle } from "../../types";
+import "./Playlist.css";
 
 interface PlaylistViewerProps {
   playlistId: string;
@@ -26,27 +27,27 @@ export function PlaylistViewer(props: PlaylistViewerProps) {
   }, [playlistId, getPlaylistPuzzles]);
 
   return (
-    <div className="puzzle-viewer">
-      <div className="viewer-header">
-        <h2 className="home-subtitle">{playlistName}</h2>
-        <button 
-          className="close-viewer"
+    <div className="playlist-viewer">
+      <div className="playlist-viewer__header">
+        <h2 className="playlist-viewer__title">{playlistName}</h2>
+        <button
+          className="playlist-viewer__close-btn"
           onClick={onClose}
         >
           ×
         </button>
       </div>
       {isLoading ? (
-        <div className="loading">Loading puzzles...</div>
+        <div className="playlist-viewer__loading">Loading puzzles...</div>
       ) : puzzles.length === 0 ? (
-        <div className="no-puzzles">No puzzles in this playlist</div>
+        <div className="playlist-viewer__empty">No puzzles in this playlist</div>
       ) : (
-        <div className="puzzles-list">
+        <div className="playlist-viewer__puzzles-list">
           {puzzles.map((puzzle) => (
-            <div key={puzzle.PuzzleId} className="puzzle-item">
-              <span className="puzzle-id">{puzzle.PuzzleId}</span>
-              <span className="puzzle-rating">Rating: {puzzle.Rating}</span>
-              <span className="puzzle-themes">{puzzle.Themes}</span>
+            <div key={puzzle.PuzzleId} className="playlist-viewer__puzzle-item">
+              <span className="playlist-viewer__puzzle-id">{puzzle.PuzzleId}</span>
+              <span className="playlist-viewer__puzzle-rating">Rating: {puzzle.Rating}</span>
+              <span className="playlist-viewer__puzzle-themes">{puzzle.Themes}</span>
             </div>
           ))}
         </div>

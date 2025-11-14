@@ -16,41 +16,41 @@ export function Sidebar() {
 
   return (
     <>
-      <button className="hamburger-btn" onClick={toggleMenu}>
+      <button className="sidebar__hamburger-btn" onClick={toggleMenu}>
         {isOpen ? <X /> : <Menu />}
       </button>
       
-      <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
-        <div className="sidebar-content">
-          <nav className="nav">
-            <button className="nav-btn" onClick={() => handleNavigation('/')}>
+      <aside className={`sidebar ${isOpen ? 'sidebar--open' : ''}`}>
+        <div className="sidebar__content">
+          <nav className="sidebar__nav">
+            <button className="sidebar__nav-btn" onClick={() => handleNavigation('/')}>
               <Home />
               <span>Home</span>
             </button>
-            <button className="nav-btn" onClick={() => handleNavigation('/explore')}>
+            <button className="sidebar__nav-btn" onClick={() => handleNavigation('/explore')}>
               <Puzzle />
               <span>Puzzles</span>
             </button>
-            <button className="nav-btn" onClick={() => handleNavigation('/stats')}>
+            <button className="sidebar__nav-btn" onClick={() => handleNavigation('/stats')}>
               <BarChart3 />
               <span>Stats</span>
             </button>
-            <button className="nav-btn" onClick={() => handleNavigation('/playlists')}>
+            <button className="sidebar__nav-btn" onClick={() => handleNavigation('/playlists')}>
               <FolderOpenIcon />
               <span>Playlists</span>
             </button>
-            <button className="nav-btn" onClick={() => handleNavigation('/settings')}>
+            <button className="sidebar__nav-btn" onClick={() => handleNavigation('/settings')}>
               <Cog />
               <span>Settings</span>
             </button>
-            <button className='user-nav-btn' onClick={() => handleNavigation('/profile')}>
+            <button className='sidebar__user-nav-btn' onClick={() => handleNavigation('/profile')}>
               <User2Icon />
               <span>User</span>
             </button>
           </nav>
         </div>
       </aside>
-      {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
+      {isOpen && <div className="sidebar__overlay" onClick={toggleMenu}></div>}
     </>
   );
 }

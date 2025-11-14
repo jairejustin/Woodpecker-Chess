@@ -4,8 +4,8 @@ interface LoadingStateProps {
 
 export function LoadingState({ message }: LoadingStateProps) {
   return (
-    <div className="flex items-center justify-center h-screen text-gray-400">
-      {message}
+    <div className="loading-state loading-state--loading">
+      <p className="loading-state__message">{message}</p>
     </div>
   );
 }
@@ -16,17 +16,17 @@ interface ErrorStateProps {
 
 export function ErrorState({ errorMessage }: ErrorStateProps) {
   return (
-    <div className="flex flex-col items-center justify-center h-screen text-red-400">
-      <p className="text-xl mb-2">Error loading puzzles</p>
-      <p className="text-sm">{errorMessage}</p>
+    <div className="loading-state loading-state--error">
+      <p className="loading-state__title">Error loading puzzles</p>
+      <p className="loading-state__message">{errorMessage}</p>
     </div>
   );
 }
 
 export function EmptyState() {
   return (
-    <div className="flex items-center justify-center h-screen text-gray-400">
-      No puzzles available
+    <div className="loading-state loading-state--empty">
+      <p className="loading-state__message">No puzzles available</p>
     </div>
   );
 }

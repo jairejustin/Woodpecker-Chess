@@ -3,7 +3,7 @@ import { Plus, Check, X } from 'lucide-react';
 import usePlaylists from '../../hooks/usePlaylists';
 import './PuzzleDetails.css'
 
-export function PuzzleDetails({
+export default function PuzzleDetails({
   Rating,
   Feedback,
   puzzleId,
@@ -56,20 +56,20 @@ export function PuzzleDetails({
 
   return (
     <>
-      <aside className="infocard">
-        <div className="infocard-content">
-          <h2 className="infocard-title">Puzzle Info</h2>
-          <div className="puzzle-progress">
-            <h3 className="progress-title">{Feedback}</h3>
+      <aside className="puzzle-details">
+        <div className="puzzle-details__content">
+          <h2 className="puzzle-details__title">Puzzle Info</h2>
+          <div className="puzzle-details__progress">
+            <h3 className="puzzle-details__progress-title">{Feedback}</h3>
           </div>
-          <div className="puzzle-stats">
-            <div className="stat-item">
-              <span className="stat-label">Rating</span>
-              <span className="stat-value">{Rating}</span>
+          <div className="puzzle-details__stats">
+            <div className="puzzle-details__stat-item">
+              <span className="puzzle-details__stat-label">Rating</span>
+              <span className="puzzle-details__stat-value">{Rating}</span>
             </div>
           </div>
           <button
-            className="add-to-playlist-btn"
+            className="puzzle-details__add-to-playlist-btn"
             onClick={() => setShowPlaylistModal(true)}
           >
             <Plus size={18} />
@@ -79,25 +79,25 @@ export function PuzzleDetails({
       </aside>
 
       {showPlaylistModal && (
-        <div className="playlist-modal-overlay" onClick={() => setShowPlaylistModal(false)}>
-          <div className="playlist-modal" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-header">
-              <h2 className="modal-title">Add to Playlist</h2>
+        <div className="puzzle-details__modal-overlay" onClick={() => setShowPlaylistModal(false)}>
+          <div className="puzzle-details__modal" onClick={(e) => e.stopPropagation()}>
+            <div className="puzzle-details__modal-header">
+              <h2 className="puzzle-details__modal-title">Add to Playlist</h2>
               <button
-                className="modal-close"
+                className="puzzle-details__modal-close"
                 onClick={() => setShowPlaylistModal(false)}
               >
                 <X size={20} />
               </button>
             </div>
 
-            <div className="modal-content">
+            <div className="puzzle-details__modal-content">
               {playlists.length === 0 ? (
-                <div className="no-playlists">
+                <div className="puzzle-details__no-playlists">
                   <p>No playlists yet. Create one to get started!</p>
                 </div>
               ) : (
-                <div className="playlists-list">
+                <div className="puzzle-details__playlists-list">
                   {playlists.map((playlist) => {
                     const isInPlaylist = isPuzzleInPlaylist(playlist.id);
                     const wasJustAdded = addedToPlaylists.has(playlist.id);
@@ -105,22 +105,22 @@ export function PuzzleDetails({
                     return (
                       <button
                         key={playlist.id}
-                        className={`playlist-option ${isInPlaylist ? 'in-playlist' : ''} ${wasJustAdded ? 'added' : ''}`}
+                        className={`puzzle-details__playlist-option ${isInPlaylist ? 'puzzle-details__playlist-option--in-playlist' : ''} ${wasJustAdded ? 'puzzle-details__playlist-option--added' : ''}`}
                         onClick={() => !isInPlaylist && handleAddToPlaylist(playlist.id)}
                         disabled={isInPlaylist && !wasJustAdded}
                       >
-                        <div className="playlist-option-info">
-                          <span className="playlist-option-name">{playlist.name}</span>
-                          <span className="playlist-option-count">
+                        <div className="puzzle-details__playlist-option-info">
+                          <span className="puzzle-details__playlist-option-name">{playlist.name}</span>
+                          <span className="puzzle-details__playlist-option-count">
                             {playlist.puzzleIds.length} puzzle{playlist.puzzleIds.length !== 1 ? 's' : ''}
                           </span>
                         </div>
                         {wasJustAdded ? (
-                          <Check size={18} className="check-icon" />
+                          <Check size={18} className="puzzle-details__check-icon" />
                         ) : isInPlaylist ? (
-                          <span className="already-added">Already added</span>
+                          <span className="puzzle-details__already-added">Already added</span>
                         ) : (
-                          <Plus size={18} className="plus-icon" />
+                          <Plus size={18} className="puzzle-details__plus-icon" />
                         )}
                       </button>
                     );
@@ -128,9 +128,9 @@ export function PuzzleDetails({
                 </div>
               )}
 
-              <div className="create-section">
+              <div className="puzzle-details__create-section">
                 {showCreateForm ? (
-                  <div className="create-form">
+                  <div className="puzzle-details__create-form">
                     <input
                       type="text"
                       placeholder="Playlist name..."
@@ -138,9 +138,9 @@ export function PuzzleDetails({
                       onChange={(e) => setNewPlaylistName(e.target.value)}
                       onKeyDown={(e) => e.key === 'Enter' && handleCreateAndAdd()}
                       autoFocus
-                      className="create-input"
+                      className="puzzle-details__create-input"
                     />
-                    <button onClick={handleCreateAndAdd} className="create-confirm-btn">
+                    <button onClick={handleCreateAndAdd} className="puzzle-details__create-confirm-btn">
                       Create
                     </button>
                     <button
@@ -148,14 +148,14 @@ export function PuzzleDetails({
                         setShowCreateForm(false);
                         setNewPlaylistName('');
                       }}
-                      className="create-cancel-btn"
+                      className="puzzle-details__create-cancel-btn"
                     >
                       Cancel
                     </button>
                   </div>
                 ) : (
                   <button
-                    className="create-new-btn"
+                    className="puzzle-details__create-new-btn"
                     onClick={() => setShowCreateForm(true)}
                   >
                     <Plus size={18} />
