@@ -1,12 +1,11 @@
 import { useState, useCallback, useEffect } from "react";
-import { ChessBoard } from "../chessboard/Chessboard";
-import { PuzzleDetails } from "../puzzleDetails/PuzzleDetails";
+import { ChessBoard, PuzzleDetails } from "../../components";
 import { useChessPuzzle } from "../../hooks/useChessPuzzle";
 import type { LichessPuzzle, PuzzleEvent } from "../../types";
 import { calculateFeedback, getBoardOrientation } from "../../utils/puzzleHelpers";
 import { PUZZLE_CONSTANTS } from "../../constants";
 
-interface PuzzleExplorerContentProps {
+interface PuzzleExplorerProps {
   currentPuzzle: LichessPuzzle;
   isWrong: boolean;
   showAnimations: boolean;
@@ -16,7 +15,7 @@ interface PuzzleExplorerContentProps {
   setIsWrong: (value: boolean) => void;
 }
 
-export function PuzzleExplorerContent(props: PuzzleExplorerContentProps) {
+export default function PuzzleExplorer(props: PuzzleExplorerProps) {
   const {
     currentPuzzle,
     isWrong,

@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
-import { ChessBoard } from "../chessboard/Chessboard";
+import ChessBoard from "../chessboard/Chessboard";
 import TrainingInfo from "./TrainingInfo";
 import { useChessPuzzle } from "../../hooks/useChessPuzzle";
 import type { LichessPuzzle, PuzzleEvent } from "../../types";

@@ -1,5 +1,5 @@
 import { LoadingState, ErrorState, EmptyState } from "../components/loadingStates/LoadingStates";
-import { PuzzleExplorerContent } from "../components/puzzleExplorerContent/PuzzleExplorerContent";
+import { PuzzleExplorer } from "../containers";
 import { usePuzzleLoader } from "../hooks/usePuzzleLoader";
 import { usePuzzleNavigation } from "../hooks/usePuzzleNavigation";
 
@@ -37,7 +37,7 @@ export default function PuzzleExplorerPage() {
 
   // Render main content
   return (
-    <PuzzleExplorerContent
+    <PuzzleExplorer
       currentPuzzle={puzzleState.currentPuzzle}
       isWrong={isWrong}
       showAnimations={showAnimations}
