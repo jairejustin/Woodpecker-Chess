@@ -43,8 +43,8 @@ export function TrainingMode(props: TrainingModeProps) {
   if (loadingState === "error" && errorMessage) {
     return (
       <div className="main-content">
-        <div className="training-header-nav">
-          <button onClick={onBack} className="btn btn-secondary">
+        <div className="training-mode__header-nav">
+          <button onClick={onBack} className="btn btn-secondary training-mode__action-btn">
             <ArrowLeft size={20} />
             Back to Playlists
           </button>
@@ -58,8 +58,8 @@ export function TrainingMode(props: TrainingModeProps) {
   if (loadingState === "empty" || puzzleState.currentPuzzle === null) {
     return (
       <div className="main-content">
-        <div className="training-header-nav">
-          <button onClick={onBack} className="btn btn-secondary">
+        <div className="training-mode__header-nav">
+          <button onClick={onBack} className="btn btn-secondary training-mode__action-btn">
             <ArrowLeft size={20} />
             Back to Playlists
           </button>

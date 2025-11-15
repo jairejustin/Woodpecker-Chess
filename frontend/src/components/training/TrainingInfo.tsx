@@ -18,32 +18,32 @@ export default function TrainingInfo(props: TrainingInfoProps) {
 
   return (
     <div className="training-info">
-      <button onClick={onBack} className="back-button">
+      <button onClick={onBack} className="training-info__back-button">
         <ArrowLeft size={30} />
       </button>
       <div className="training-header">
-        <h2 className="training-title">{playlistName}</h2>
-        <div className="puzzle-progress">
-          <span className="progress-text">
+        <h2 className="training-info__title">{playlistName}</h2>
+        <div className="training-info__puzzle-progress">
+          <span className="training-info__progress-text">
             Puzzle {puzzleNumber} of {totalPuzzles}
           </span>
-          <div className="progress-bar">
+          <div className="training-info__progress-bar">
             <div
-              className="progress-fill"
+              className="training-info__progress-fill"
               style={{ width: `${progressPercentage}%` }}
             />
           </div>
         </div>
       </div>
 
-      <div className="training-stats">
-        <div className="stat-item">
-          <span className="stat-value">Rating: {rating}</span>
+      <div className="training-info__stats">
+        <div className="training-info__stat-item">
+          <span className="training-info__stat-value">Rating: {rating}</span>
         </div>
       </div>
 
-      <div className={`feedback-section ${isSolved ? "solved" : ""}`}>
-        <p className="feedback-text">{feedback}</p>
+      <div className={`training-info__feedback-section ${isSolved ? "training-info__feedback-section--solved" : ""}`}>
+        <p className="training-info__feedback-text">{feedback}</p>
       </div>
     </div>
   );

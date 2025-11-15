@@ -12,7 +12,7 @@
   transition: all 0.3s ease;
 }
 
-.back-button {
+.training-info__back-button {
   color: #fdf6e4;
   border-radius: 10px;
   padding: 5px;
@@ -22,7 +22,7 @@
   background-color: #3e3b38;
 }
 
-.training-title {
+.training-info__title {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -33,19 +33,19 @@
   background-clip: text;
 }
 
-.puzzle-progress {
+.training-info__puzzle-progress {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.progress-text {
+.training-info__progress-text {
   font-size: 0.9rem;
   color: rgba(253, 246, 228, 0.6);
   font-weight: 600;
 }
 
-.progress-bar {
+.training-info__progress-bar {
   width: 100%;
   height: 8px;
   background: rgba(49, 46, 43, 0.6);
@@ -54,7 +54,7 @@
   border: 1px solid rgba(255, 107, 107, 0.2);
 }
 
-.progress-fill {
+.training-info__progress-fill {
   height: 100%;
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
   border-radius: 8px;
@@ -62,20 +62,20 @@
   box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
 }
 
-.training-stats {
+.training-info__stats {
   display: flex;
   gap: 1.5rem;
   justify-content: space-around;
 }
 
-.stat-item {
+.training-info__stat-item {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   align-items: center;
 }
 
-.stat-label {
+.training-info__stat-label {
   font-size: 0.85rem;
   color: rgba(253, 246, 228, 0.6);
   text-transform: uppercase;
@@ -83,23 +83,23 @@
   font-weight: 600;
 }
 
-.stat-value {
+.training-info__stat-value {
   font-size: 1.25rem;
   font-weight: 700;
   color: #fdf6e4;
 }
 
-.stat-value.solved {
+.training-info__stat-value--solved {
   color: #4caf50;
   text-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 }
 
-.stat-value.pending {
+.training-info__stat-value--pending {
   color: #ffa726;
   text-shadow: 0 0 8px rgba(255, 167, 38, 0.5);
 }
 
-.feedback-section {
+.training-info__feedback-section {
   background: rgba(49, 46, 43, 0.6);
   border-radius: 8px;
   padding: 1rem;
@@ -111,13 +111,13 @@
   transition: all 0.3s ease;
 }
 
-.feedback-section.solved {
+.training-info__feedback-section--solved {
   border-color: #4caf50;
   background: rgba(76, 175, 80, 0.1);
   box-shadow: 0 0 12px rgba(76, 175, 80, 0.2);
 }
 
-.feedback-text {
+.training-info__feedback-text {
   margin: 0;
   font-size: 1rem;
   text-align: center;
@@ -133,19 +133,19 @@
     padding: 1rem;
   }
 
-  .training-title {
+  .training-info__title {
     font-size: 1.25rem;
   }
 
-  .training-stats {
+  .training-info__stats {
     gap: 1rem;
   }
 
-  .stat-value {
+  .training-info__stat-value {
     font-size: 1.1rem;
   }
 
-  .feedback-text {
+  .training-info__feedback-text {
     font-size: 0.9rem;
   }
 }

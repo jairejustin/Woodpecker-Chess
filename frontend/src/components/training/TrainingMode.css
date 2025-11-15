@@ -1,6 +1,6 @@
 /* Training Mode Navigation Styles */
 
-.training-header-nav {
+.training-mode__header-nav {
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -11,7 +11,7 @@
   border: 2px solid rgba(255, 107, 107, 0.2);
 }
 
-.training-playlist-name {
+.training-mode__playlist-name {
   font-size: 1.5rem;
   font-weight: 700;
   color: #fdf6e4;
@@ -23,18 +23,18 @@
 }
 
 /* Adjust button styling in training mode */
-.training-header-nav .btn {
+.training-mode__header-nav .btn {
   padding: 0.625rem 1.25rem;
   font-size: 0.9rem;
   white-space: nowrap;
 }
 
-.training-header-nav .btn-secondary {
+.training-mode__header-nav .btn-secondary {
   background: transparent;
   border: 2px solid rgba(253, 246, 228, 0.3);
 }
 
-.training-header-nav .btn-secondary:hover {
+.training-mode__header-nav .btn-secondary:hover {
   background: rgba(253, 246, 228, 0.05);
   border-color: rgba(253, 246, 228, 0.5);
   transform: translateY(-1px);
@@ -42,7 +42,7 @@
 }
 
 /* Disable styling for empty playlists */
-.action-btn:disabled {
+.training-mode__action-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
   pointer-events: none;
@@ -50,17 +50,17 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .training-header-nav {
+  .training-mode__header-nav {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
 
-  .training-playlist-name {
+  .training-mode__playlist-name {
     font-size: 1.25rem;
   }
 
-  .training-header-nav .btn {
+  .training-mode__header-nav .btn {
     width: 100%;
     justify-content: center;
   }
