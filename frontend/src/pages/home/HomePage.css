@@ -1,0 +1,206 @@
+.home-page__hero-section {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home-page__title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--color-accent-start) 0%, var(--color-accent-end) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-page__subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.home-page__description {
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.home-page__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-page__button--primary {
+  background: linear-gradient(135deg, var(--color-accent-start) 0%, var(--color-accent-end) 100%);
+  color: var(--btn-text-on-dark);
+}
+
+.home-page__button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-hover-shadow);
+}
+
+.home-page__button-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Features Grid */
+.home-page__features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home-page__feature-card {
+  background: var(--color-text);
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-page__feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--color-accent-start);
+}
+
+.home-page__feature-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent-start);
+  flex-shrink: 0;
+}
+
+.home-page__feature-content {
+  flex: 1;
+}
+
+.home-page__feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-surface-hover);
+  margin-bottom: 0.25rem;
+}
+
+.home-page__feature-description {
+  font-size: 0.9rem;
+  color: var(--form-icon-color);
+  line-height: 1.4;
+}
+
+
+.how-it-works-section {
+  padding: var(--space-xl) var(--space-lg);
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%); /* Specific gradient */
+  border-radius: 16px;
+  margin: var(--space-lg) auto;
+  max-width: 1000px;
+}
+
+.how-it-works-section__title {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: var(--space-lg);
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; 
+  padding: 0.75rem 1.25rem; 
+  background: white; 
+  border-radius: var(--btn-border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.step-number {
+  width: 36px; /* Specific size */
+  height: 36px; /* Specific size */
+  background: linear-gradient(135deg, var(--color-accent-start) 0%, var(--color-accent-end) 100%);
+  color: white; /* Specific color */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.step-arrow {
+  font-size: 1.5rem; 
+  color: var(--color-accent-start);
+  font-weight: 700;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-page__title {
+    font-size: 2.2rem;
+  }
+
+  .home-page__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .home-page__features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page__hero-section {
+    padding: 1.5rem 1rem;
+  }
+  .how-it-works-section__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .steps-container {
+    flex-direction: column;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+  }
+
+  .how-it-works {
+    padding: var(--space-lg) var(--space-md);
+  }
+}

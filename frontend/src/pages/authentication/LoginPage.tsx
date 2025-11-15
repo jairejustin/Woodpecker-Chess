@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Mail, Lock, LogIn, Eye, EyeOff } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useSession } from "../context/SessionContext";
-import "./Pages.css";
+import { useSession } from "../../context/SessionContext";
+import "./AuthPage.css";
+import "../../index.css";
 
 export default function LoginPage() {
   const { user, login } = useSession();
@@ -78,22 +79,22 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="main-layout">
-      <div className="main-content">
-        <div className="card auth-card">
-          <div className="auth-container">
-            <h2 className="auth-title">Welcome Back</h2>
+    <div className="layout">
+      <div className="layout__main">
+        <div className="card auth-page__card">
+          <div className="auth-page__container">
+            <h2 className="auth-page__title">Welcome Back</h2>
 
-            <form className="auth-form" onSubmit={handleSubmit} aria-describedby="login-error">
+            <form className="auth-page__form" onSubmit={handleSubmit} aria-describedby="login-error">
               <div className="form-group">
-                <label htmlFor="email" className="form-label">Email Address</label>
-                <div className="input-wrapper">
-                  <Mail className="input-icon" />
+                <label htmlFor="email" className="auth-page__form-label">Email Address</label>
+                <div className="auth-page__form-input-wrapper">
+                  <Mail className="auth-page__form-input-icon" />
                   <input
                     id="email"
                     placeholder="Enter your Email"
                     type="email"
-                    className="form-input"
+                    className="auth-page__form-input"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -104,14 +105,14 @@ export default function LoginPage() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="password" className="form-label">Password</label>
-                <div className="input-wrapper">
-                  <Lock className="input-icon" />
+                <label htmlFor="password" className="auth-page__form-label">Password</label>
+                <div className="auth-page__form-input-wrapper">
+                  <Lock className="auth-page__form-input-icon" />
                   <input
                     id="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="Enter your password"
-                    className="form-input"
+                    className="auth-page__form-input"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
@@ -120,7 +121,7 @@ export default function LoginPage() {
                   />
                   <button
                     type="button"
-                    className="password-toggle"
+                    className="auth-page__form-password-toggle"
                     onClick={() => setShowPassword((s) => !s)}
                     aria-label={showPassword ? "Hide password" : "Show password"}
                   >
@@ -129,8 +130,8 @@ export default function LoginPage() {
                 </div>
               </div>
 
-              <div className="forgot-password-wrapper">
-                <a href="#" className="forgot-password-link">
+              <div className="auth-page__form-forgot-password-wrapper">
+                <a href="#" className="auth-page__form-forgot-password-link">
                   Forgot password?
                 </a>
               </div>
@@ -138,7 +139,7 @@ export default function LoginPage() {
               <div style={{ marginTop: 8 }}>
                 <button
                   type="submit"
-                  className="btn auth-btn"
+                  className="btn auth-page__form-button"
                   disabled={loading}
                   aria-disabled={loading}
                 >
@@ -149,21 +150,21 @@ export default function LoginPage() {
 
               {/* Inline error */}
               <div role="status" aria-live="polite" id="login-error" style={{ minHeight: 20 }}>
-                {error && <p className="error-text">{error}</p>}
+                {error && <p className="auth-page__form-error-message">{error}</p>}
               </div>
 
-              <div className="divider">
-                <span className="divider-text">OR</span>
+              <div className="auth-page__oauth-divider">
+                <span className="auth-page__oauth-divider-text">OR</span>
               </div>
 
-              <div className="oauth-buttons">
+              <div className="auth-page__oauth-buttons">
                 <button
                   type="button"
-                  className="oauth-btn google"
+                  className="auth-page__oauth-button auth-page__oauth-button--google"
                   onClick={() => handleOAuth("google")}
                   disabled={loading}
                 >
-                  <svg className="oauth-icon" viewBox="0 0 24 24" aria-hidden>
+                  <svg className="auth-page__oauth-button-icon" viewBox="0 0 24 24" aria-hidden>
                     <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                     <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
                     <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
@@ -174,11 +175,11 @@ export default function LoginPage() {
 
                 <button
                   type="button"
-                  className="oauth-btn github"
+                  className="auth-page__oauth-button auth-page__oauth-button--github"
                   onClick={() => handleOAuth("github")}
                   disabled={loading}
                 >
-                  <svg className="oauth-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                  <svg className="auth-page__oauth-button-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
                   Continue with GitHub
@@ -186,9 +187,9 @@ export default function LoginPage() {
               </div>
             </form>
 
-            <div className="auth-prompt">
+            <div className="auth-page__prompt">
               No account?{" "}
-              <a href="/register" className="auth-link">
+              <a href="/register" className="auth-page__prompt-link">
                 Register
               </a>
             </div>

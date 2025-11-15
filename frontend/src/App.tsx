@@ -1,14 +1,14 @@
 import { Sidebar } from "./components/sidebar/Sidebar";
 import { Route, Routes, useLocation } from "react-router-dom";
-import PuzzleExplorerPage from "./pages/PuzzleExplorerPage";
-import SettingsPage from "./pages/SettingsPage";
-import StatsPage from "./pages/StatsPage";
-import ProfilePage from "./pages/ProfilePage";
-import HomePage from "./pages/HomePage";
-import LoginPage from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage";
+import PuzzleExplorerPage from "./pages/explore/PuzzleExplorerPage";
+import SettingsPage from "./pages/options/SettingsPage";
+import StatsPage from "./pages/stats/StatsPage";
+import ProfilePage from "./pages/profile/ProfilePage";
+import HomePage from "./pages/home/HomePage";
+import LoginPage from "./pages/authentication/LoginPage";
+import RegisterPage from "./pages/authentication/RegisterPage";
 import RequireAuth from "./context/RequireAuth";
-import PlaylistsPage from "./pages/PlaylistsPage";
+import PlaylistsPage from "./pages/playlists/PlaylistsPage";
 import { useSession } from "./context/SessionContext";
 import './App.css';
 

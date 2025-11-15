@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
-import usePlaylists from "../hooks/usePlaylists";
-import { PlaylistGrid } from "../components/playlists/PlaylistGrid";
-import { PlaylistViewer } from "../components/playlists/PlaylistViewer";
-import { TrainingMode } from "../components/training/TrainingMode";
-import "./Pages.css";
+import usePlaylists from "../../hooks/usePlaylists";
+import { PlaylistGrid } from "../../components/playlists/PlaylistGrid";
+import { PlaylistViewer } from "../../components/playlists/PlaylistViewer";
+import { TrainingMode } from "../../components/training/TrainingMode";
+import "./PlaylistsPage.css";
 
 type ViewMode = "list" | "viewer" | "training";
 
@@ -66,11 +66,11 @@ export default function PlaylistsPage() {
 
   // List and viewer mode view
   return (
-    <div className="main-content">
-      <div className="playlists-page">
-        <div className="playlists-header">
-          <h1 className="home-title">My Playlists</h1>
-          <button 
+    <div className="layout__main">
+      <div className="playlist-page">
+        <div className="playlist-page__header">
+          <h1 className="playlist-page__title">My Playlists</h1>
+          <button
             className="btn"
             onClick={() => setShowCreateInput(!showCreateInput)}
           >
@@ -79,10 +79,10 @@ export default function PlaylistsPage() {
         </div>
 
         {showCreateInput && (
-          <div className="card create-playlist-form">
+          <div className="card playlist-page__create-form">
             <input
               type="text"
-              className="form-input playlist-input"
+              className="form-input playlist-page__create-form-input"
               placeholder="Enter playlist name..."
               value={newPlaylistName}
               onChange={(e) => setNewPlaylistName(e.target.value)}
@@ -99,7 +99,7 @@ export default function PlaylistsPage() {
         )}
 
         {isEmpty ? (
-          <div className="empty-state">
+          <div className="playlist-page__empty-state">
             <p>No playlists yet. Create your first playlist to get started!</p>
           </div>
         ) : (

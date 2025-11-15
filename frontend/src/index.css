@@ -18,17 +18,50 @@
   /* Button specifics */
   --btn-text-on-dark: var(--color-text);
   --btn-border-basic: #4a4743;
+  --btn-padding-y: 0.875rem;
+  --btn-padding-x: 1.75rem;
+  --btn-font-size: 1rem;
+  --btn-font-weight: 600;
+  --btn-border-radius: 8px;
+  --btn-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --btn-hover-shadow: 0 4px 8px var(--color-accent-shadow);
+
+  /* Card specifics */
+  --card-border-color: var(--color-accent-start);
+  --card-border-radius: 12px;
+  --card-padding: 1.25rem;
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  /* Form specifics */
+  --form-input-border: 2px solid #e2e8f0;
+  --form-input-border-focus: var(--color-accent-start);
+  --form-input-padding-y: 0.75rem;
+  --form-input-padding-x: 0.75rem;
+  --form-input-font-size: 1rem;
+  --form-input-border-radius: 8px;
+  --form-label-color: var(--color-text);
+  --form-label-font-size: 0.9rem;
+  --form-label-font-weight: 600;
+  --form-icon-color: #718096;
 
   /* Spacing */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
+  --space-xl: 2rem;
 
   /* sizes / shadows */
+  --font-size-sm: 0.9rem;
   --font-size-md: 1rem;
-  --btn-padding-vertical: 0.75rem;
-  --btn-padding-horizontal: 1.5rem;
+  --font-size-lg: 1.1rem;
+  --font-size-xl: 1.2rem;
+  --font-size-2xl: 1.25rem;
+  --font-size-3xl: 1.8rem;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 2.2rem;
+  --font-size-6xl: 2.8rem;
+
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.2);
   --shadow-md: 0 4px 8px rgba(0,0,0,0.3);
 
@@ -44,4 +77,126 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Global classes */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  border: none;
+  border-radius: var(--btn-border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--btn-shadow);
+  background: linear-gradient(135deg, var(--color-accent-start) 0%, var(--color-accent-end) 100%);
+  color: var(--btn-text-on-dark);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-hover-shadow);
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-sm);
+}
+
+.btn-secondary {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--btn-border-basic);
+}
+
+.btn-secondary:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-surface-hover);
+  box-shadow: var(--btn-shadow);
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--card-border-color);
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--form-label-font-size);
+  font-weight: var(--form-label-font-weight);
+  color: var(--form-label-color);
+  margin-bottom: var(--space-sm);
+}
+
+.form-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input-icon {
+  position: absolute;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  color: var(--form-icon-color);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--form-input-padding-y) var(--form-input-padding-x) var(--form-input-padding-y) 2.5rem;
+  font-size: var(--form-input-font-size);
+  border: var(--form-input-border);
+  border-radius: var(--form-input-border-radius);
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.form-input:focus {
+  border-color: var(--form-input-border-focus);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: var(--space-lg) 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.divider-text {
+  padding: 0 var(--space-md);
+  color: #718096;
+  font-size: 0.875rem;
+  font-weight: var(--btn-font-weight);
+}
+
+.error-text {
+  padding: var(--form-input-padding-y);
+  background-color: #fee;
+  border: 1px solid var(--color-accent-start);
+  border-radius: var(--form-input-border-radius);
+  color: #c53030;
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-md);
 }

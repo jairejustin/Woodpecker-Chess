@@ -1,7 +1,7 @@
-import { LoadingState, ErrorState, EmptyState } from "../components/loadingStates/LoadingStates";
-import PuzzleExplorerContainer from "../containers/puzzleExplorerContainer/PuzzleExplorer.Container";
-import { usePuzzleLoader } from "../hooks/usePuzzleLoader";
-import { usePuzzleNavigation } from "../hooks/usePuzzleNavigation";
+import { LoadingState, ErrorState, EmptyState } from "../../components/loadingStates/LoadingStates";
+import PuzzleExplorerContainer from "../../containers/puzzleExplorerContainer/PuzzleExplorer.Container";
+import { usePuzzleLoader } from "../../hooks/usePuzzleLoader";
+import { usePuzzleNavigation } from "../../hooks/usePuzzleNavigation";
 
 export default function PuzzleExplorerPage() {
   const {
