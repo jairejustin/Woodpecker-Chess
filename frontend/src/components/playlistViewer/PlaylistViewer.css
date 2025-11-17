@@ -1,0 +1,101 @@
+.playlist-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-viewer__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.playlist-viewer__modal {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80%;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.playlist-viewer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.playlist-viewer__title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #fff;
+}
+
+.playlist-viewer__close-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.playlist-viewer__close-btn:hover {
+  color: #fff;
+}
+
+/* Status messages */
+.playlist-viewer__status {
+  padding: 20px 0;
+  text-align: center;
+  color: #bbb;
+}
+
+.playlist-viewer__status--empty {
+  color: #888;
+}
+
+.playlist-viewer__status--loading {
+  color: #bbb;
+}
+
+/* Puzzle list */
+.playlist-viewer__list {
+  overflow-y: auto;
+  padding-right: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Puzzle item */
+.playlist-viewer__item {
+  background: #2a2a2a;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.playlist-viewer__item-id {
+  font-weight: 600;
+  color: #fff;
+}
+
+.playlist-viewer__item-rating,
+.playlist-viewer__item-themes {
+  color: #aaa;
+  font-size: 0.9rem;
+}

@@ -1,6 +1,7 @@
 /* block */
 .chessboard {
   max-width: 500px;
+  padding-top: 10px;
 }
 
 /* elements */
@@ -17,19 +18,17 @@
 }
 
 .chessboard__btn {
-  display: inline-flex;
+  display: flex;
+  padding: 0.75rem 1.5rem;
   align-items: center;
   justify-content: center;
-  gap: var(--space-sm);
-  padding: var(--btn-padding-vertical) var(--btn-padding-horizontal);
   border: none;                    
   border-radius: 10px;
+  font-size: 1rem;
+  gap: 0.5rem;
   cursor: pointer;
-  font-size: var(--font-size-md);
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  transition: all 0.2s;
   box-shadow: var(--shadow-sm);
-  background: transparent;
-  color: var(--btn-text-on-dark);
 }
 
 /* modifiers */

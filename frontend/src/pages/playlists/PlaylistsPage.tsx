@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Plus } from "lucide-react";
 import usePlaylists from "../../hooks/usePlaylists";
-import { PlaylistGrid } from "../../components/playlists/PlaylistGrid";
-import { PlaylistViewer } from "../../components/playlists/PlaylistViewer";
-import { TrainingMode } from "../../components/training/TrainingMode";
+import { Playlists } from "../../components/playlists/Playlists";
+import { PlaylistViewer } from "../../components/playlistViewer/PlaylistViewer";
 import "./PlaylistsPage.css";
+import { TrainingContentContainer } from "../../containers/trainingContentContainer/TrainingContentContainer";
 
 type ViewMode = "list" | "viewer" | "training";
 
@@ -56,17 +56,19 @@ export default function PlaylistsPage() {
   // Training mode view
   if (viewMode === "training" && selectedPlaylistId) {
     return (
-      <TrainingMode
-        playlistId={selectedPlaylistId}
-        playlistName={playlists.find(p => p.id === selectedPlaylistId)?.name || "Playlist"}
-        onBack={handleBackToList}
-      />
+      <div className="layout__main">
+        <TrainingContentContainer
+          playlistId={selectedPlaylistId}
+          playlistName={playlists.find(p => p.id === selectedPlaylistId)?.name || "Playlist"}
+          onBack={handleBackToList}
+        />
+      </div>
     );
   }
 
   // List and viewer mode view
   return (
-    <div className="layout__main">
+    <div className="layout__content">
       <div className="playlist-page">
         <div className="playlist-page__header">
           <h1 className="playlist-page__title">My Playlists</h1>
@@ -103,7 +105,7 @@ export default function PlaylistsPage() {
             <p>No playlists yet. Create your first playlist to get started!</p>
           </div>
         ) : (
-          <PlaylistGrid
+          <Playlists
             playlists={playlists}
             onViewPlaylist={handleViewPlaylist}
             onTrainPlaylist={handleTrainPlaylist}

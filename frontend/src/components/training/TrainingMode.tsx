@@ -1,93 +1,102 @@
-import { ArrowLeft } from "lucide-react";
-import { LoadingState, ErrorState, EmptyState } from "../loadingStates/LoadingStates";
-import { TrainingContentContainer } from "../../containers/trainingContentContainer/TrainingContentContainer";
-import { usePuzzleLoader } from "../../hooks/usePuzzleLoader";
-import { usePuzzleNavigation } from "../../hooks/usePuzzleNavigation";
-import './TrainingMode.css'
+import { useState, useCallback, useEffect } from "react";
+import ChessBoard from "../../components/chessboard/Chessboard";
+import TrainingDetails from "./TrainingDetails";
+import { useChessPuzzle } from "../../hooks/useChessPuzzle";
+import type { LichessPuzzle, PuzzleEvent } from "../../types";
+import { calculateFeedback, getBoardOrientation } from "../../utils/puzzleHelpers";
+import { PUZZLE_CONSTANTS } from "../../constants";
 
 interface TrainingModeProps {
-  playlistId: string;
+  currentPuzzle: LichessPuzzle;
+  currentIndex: number;
+  totalPuzzles: number;
+  isWrong: boolean;
+  showAnimations: boolean;
+  onPuzzleEvent: (event: PuzzleEvent) => void;
+  onNextPuzzle: () => void;
+  onPreviousPuzzle: () => void;
+  setIsWrong: (value: boolean) => void;
   playlistName: string;
   onBack: () => void;
 }
 
 export function TrainingMode(props: TrainingModeProps) {
-  const { playlistId, playlistName, onBack } = props;
-
   const {
-    puzzleState,
-    loadingState,
-    errorMessage,
-    setPuzzleState,
-  } = usePuzzleLoader(playlistId);
-
-  const {
+    currentPuzzle,
+    currentIndex,
+    totalPuzzles,
     isWrong,
     showAnimations,
+    onPuzzleEvent,
+    onNextPuzzle,
+    onPreviousPuzzle,
     setIsWrong,
-    handleNextPuzzle,
-    handlePreviousPuzzle,
-    handlePuzzleEvent,
-  } = usePuzzleNavigation({ puzzleState, setPuzzleState });
+    playlistName,
+    onBack
+  } = props;
 
-  // Render loading state
-  if (loadingState === "loading") {
-    return (
-      <div className="main-content">
-        <LoadingState message="Loading training puzzles..." />
-      </div>
-    );
-  }
+  const {
+    turn,
+    chessPosition,
+    onPieceDrop,
+    resetPuzzle,
+    isSolved,
+    solutionSequence,
+    currentMoveIndex,
+  } = useChessPuzzle(currentPuzzle, onPuzzleEvent);
 
-  // Render error state
-  if (loadingState === "error" && errorMessage) {
-    return (
-      <div className="main-content">
-        <div className="training-mode__header-nav">
-          <button onClick={onBack} className="btn btn-secondary training-mode__action-btn">
-            <ArrowLeft size={20} />
-            Back to Playlists
-          </button>
-        </div>
-        <ErrorState errorMessage={errorMessage} />
-      </div>
-    );
-  }
+  const [feedback, setFeedback] = useState<string>("");
 
-  // Render empty state
-  if (loadingState === "empty" || puzzleState.currentPuzzle === null) {
-    return (
-      <div className="main-content">
-        <div className="training-mode__header-nav">
-          <button onClick={onBack} className="btn btn-secondary training-mode__action-btn">
-            <ArrowLeft size={20} />
-            Back to Playlists
-          </button>
-        </div>
-        <EmptyState />
-      </div>
-    );
-  }
+  useEffect(() => {
+    const newFeedback = calculateFeedback(isWrong, isSolved, turn);
+    setFeedback(newFeedback);
+  }, [isWrong, isSolved, turn]);
 
-  // Render training content
+  const handleShowHint = useCallback((): void => {
+    const hasMoreMoves = currentMoveIndex < solutionSequence.length;
+    if (!hasMoreMoves) {
+      return;
+    }
+    const nextMove = solutionSequence[currentMoveIndex];
+    setFeedback(`Hint: ${nextMove}`);
+    setTimeout(() => {
+      const normalFeedback = calculateFeedback(false, isSolved, turn);
+      setFeedback(normalFeedback);
+    }, PUZZLE_CONSTANTS.HINT_DISPLAY_DURATION);
+  }, [currentMoveIndex, solutionSequence, turn, isSolved]);
+
+  const handleResetPuzzle = useCallback((): void => {
+    resetPuzzle();
+    setIsWrong(false);
+  }, [resetPuzzle, setIsWrong]);
+
+  const boardOrientation = getBoardOrientation(turn);
+
   return (
-    <>
-      <div className="main-content">
-        <TrainingContentContainer
-          currentPuzzle={puzzleState.currentPuzzle}
-          currentIndex={puzzleState.currentIndex}
-          totalPuzzles={puzzleState.puzzles.length}
-          isWrong={isWrong}
+    <div className="layout__main">
+      <div className="layout__content">
+        <ChessBoard
+          key={currentPuzzle.PuzzleId}
+          position={chessPosition}
+          onPieceDrop={onPieceDrop}
+          onReset={handleResetPuzzle}
+          onNext={onNextPuzzle}
+          onPrevious={onPreviousPuzzle}
+          onHint={handleShowHint}
+          boardOrientation={boardOrientation}
           showAnimations={showAnimations}
-          onPuzzleEvent={handlePuzzleEvent}
-          onNextPuzzle={handleNextPuzzle}
-          onPreviousPuzzle={handlePreviousPuzzle}
-          setIsWrong={setIsWrong}
-          playlistName={playlistName}
+          isSolved={isSolved}
+        />
+        <TrainingDetails
+          puzzleNumber={currentIndex + 1}
+          totalPuzzles={totalPuzzles}
+          rating={currentPuzzle.Rating}
+          feedback={feedback}
+          isSolved={isSolved}
+          playlistName= {playlistName}
           onBack={onBack}
         />
       </div>
-    </>
-
+    </div>
   );
 }

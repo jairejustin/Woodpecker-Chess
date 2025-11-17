@@ -68,8 +68,7 @@ export default function PuzzleExplorerContainer(props: PuzzleExplorerProps) {
   const boardOrientation = getBoardOrientation(turn);
 
   return (
-    <div className="main-layout">
-      <div className="main-content">
+    <div className="layout__content">
         <ChessBoard
           key={currentPuzzle.PuzzleId}
           position={chessPosition}
@@ -82,7 +81,6 @@ export default function PuzzleExplorerContainer(props: PuzzleExplorerProps) {
           showAnimations={showAnimations}
           isSolved={true}
         />
-      </div>
       
       <PuzzleDetails
         puzzleId={currentPuzzle.PuzzleId}

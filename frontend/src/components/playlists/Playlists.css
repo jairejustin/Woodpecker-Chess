@@ -1,0 +1,148 @@
+
+.button--small {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.button--secondary {
+  background: transparent;
+  border: 2px solid rgba(253, 246, 228, 0.3);
+}
+
+.button--secondary:hover {
+  background: rgba(253, 246, 228, 0.05);
+  border-color: rgba(253, 246, 228, 0.5);
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+
+.playlist {
+  flex-direction: column;
+  background: rgba(49, 46, 43, 0.8);
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 2px solid #ff6b64;
+}
+
+.playlist:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 107, 107, 0.2);
+  border-color: rgba(255, 107, 107, 0.8);
+}
+
+.playlist__thumbnail {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(238, 90, 36, 0.1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.playlist__puzzle-count {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.playlist__thumbnail--empty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(49, 46, 43, 0.4);
+}
+
+.playlist__thumbnail--empty-text {
+  font-size: 1.2rem;
+  color: rgba(253, 246, 228, 0.3);
+  font-weight: 600;
+}
+
+.playlist__info {
+  padding: 1rem 1.25rem;
+}
+
+.playlist__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fdf6e4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlist__stats {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(253, 246, 228, 0.6);
+}
+
+.playlist__actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1.25rem 1rem 1.25rem;
+  justify-content: flex-end;
+}
+
+.playlist__action-btn {
+  padding: 0.5rem;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: 6px;
+  color: #ff6b6b;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist__action-btn:hover {
+  background: rgba(255, 107, 107, 0.2);
+  border-color: #ff6b6b;
+  transform: scale(1.1);
+}
+
+.playlist__action-btn--play:hover {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: #fdf6e4;
+}
+
+.playlist__action-btn--delete:hover {
+  background: #d63031;
+  border-color: #d63031;
+  color: #fdf6e4;
+}
+
+.playlist-edit {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.playlist-edit__input {
+  margin-bottom: 1rem;
+}
+
+.playlist-edit__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .playlists {
+    padding: 1rem;
+  }
+
+}

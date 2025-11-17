@@ -1,18 +1,20 @@
-.training-info {
-  background: #262522;
-  border: 2px solid #ff6b6b;
-  border-radius: 12px;
-  padding: 1.5rem;
+.training-details {
+  width: 300px;
+  background-color: #262522;
+  border-right: 2px solid #3e3b38;
+  padding: 2rem 1.5rem;
   color: #fdf6e4;
+  font-weight: 600;
+  overflow-y: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  min-width: 300px;
-  box-shadow: 0 4px 8px #0000001a;
-  transition: all 0.3s ease;
+  gap: 2rem;
+  border: 2px solid #3e3b38;
+  border-radius: 10px;
 }
 
-.training-info__back-button {
+.training-details__back-button {
   color: #fdf6e4;
   border-radius: 10px;
   padding: 5px;
@@ -22,7 +24,7 @@
   background-color: #3e3b38;
 }
 
-.training-info__title {
+.training-details__title {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -33,19 +35,19 @@
   background-clip: text;
 }
 
-.training-info__puzzle-progress {
+.training-details__puzzle-progress {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.training-info__progress-text {
+.training-details__progress-text {
   font-size: 0.9rem;
   color: rgba(253, 246, 228, 0.6);
   font-weight: 600;
 }
 
-.training-info__progress-bar {
+.training-details__progress-bar {
   width: 100%;
   height: 8px;
   background: rgba(49, 46, 43, 0.6);
@@ -54,7 +56,7 @@
   border: 1px solid rgba(255, 107, 107, 0.2);
 }
 
-.training-info__progress-fill {
+.training-details__progress-fill {
   height: 100%;
   background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
   border-radius: 8px;
@@ -62,20 +64,20 @@
   box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
 }
 
-.training-info__stats {
+.training-details__stats {
   display: flex;
   gap: 1.5rem;
   justify-content: space-around;
 }
 
-.training-info__stat-item {
+.training-details__stat-item {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
   align-items: center;
 }
 
-.training-info__stat-label {
+.training-details__stat-label {
   font-size: 0.85rem;
   color: rgba(253, 246, 228, 0.6);
   text-transform: uppercase;
@@ -83,23 +85,23 @@
   font-weight: 600;
 }
 
-.training-info__stat-value {
+.training-details__stat-value {
   font-size: 1.25rem;
   font-weight: 700;
   color: #fdf6e4;
 }
 
-.training-info__stat-value--solved {
+.training-details__stat-value--solved {
   color: #4caf50;
   text-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 }
 
-.training-info__stat-value--pending {
+.training-details__stat-value--pending {
   color: #ffa726;
   text-shadow: 0 0 8px rgba(255, 167, 38, 0.5);
 }
 
-.training-info__feedback-section {
+.training-details__feedback-section {
   background: rgba(49, 46, 43, 0.6);
   border-radius: 8px;
   padding: 1rem;
@@ -111,13 +113,13 @@
   transition: all 0.3s ease;
 }
 
-.training-info__feedback-section--solved {
+.training-details__feedback-section--solved {
   border-color: #4caf50;
   background: rgba(76, 175, 80, 0.1);
   box-shadow: 0 0 12px rgba(76, 175, 80, 0.2);
 }
 
-.training-info__feedback-text {
+.training-details__feedback-text {
   margin: 0;
   font-size: 1rem;
   text-align: center;
@@ -128,24 +130,24 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .training-info {
+  .training-details {
     max-width: 100%;
     padding: 1rem;
   }
 
-  .training-info__title {
+  .training-details__title {
     font-size: 1.25rem;
   }
 
-  .training-info__stats {
+  .training-details__stats {
     gap: 1rem;
   }
 
-  .training-info__stat-value {
+  .training-details__stat-value {
     font-size: 1.1rem;
   }
 
-  .training-info__feedback-text {
+  .training-details__feedback-text {
     font-size: 0.9rem;
   }
 }
