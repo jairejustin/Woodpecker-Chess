@@ -3,7 +3,7 @@
 
 The Woodpecker Method, introduced by Axel Smith in his book **The Woodpecker Method**, is a chess training approach that involves repeatedly solving the same set of tactical puzzles to strengthen pattern recognition and calculation speed. The approach is like spaced repetition but opposite, you complete the set of puzzles (lets say a set of 200 difficult puzzles) with decreasing intervals instead of increasing.
 
-While the project is very far from the projected, polished version of the application (not even a minimum viable product) below shows my progress so far.
+While the project is not even a minimum viable product, below shows my progress so far.
 
 ---
 
@@ -96,7 +96,7 @@ interface LichessPuzzle {
 ```bash
 # Clone the repository
 git clone <repo-url>
-cd woodpecker
+cd <repo-name>
 
 # Install dependencies
 npm install

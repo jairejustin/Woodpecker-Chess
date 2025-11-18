@@ -1,5 +1,5 @@
-import type { LichessPuzzle } from "../types";
-import type { RawPuzzle } from "../types";
+import type { LichessPuzzle } from "../../types";
+import type { RawPuzzle } from "../../types";
 
 function toStringSafe(value: unknown): string | undefined {
   if (value === null || value === undefined) return undefined;

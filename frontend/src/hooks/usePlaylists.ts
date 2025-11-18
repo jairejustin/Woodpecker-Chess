@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSession } from "../context/SessionContext";
 import type { Playlist, LichessPuzzle } from "../types";
-import { fetchPuzzles } from "../api/fetchPuzzles";
+import { fetchPuzzles } from "../services/api/fetchPuzzles";
 import { createTimestamp, generateUniqueId } from "../utils/puzzleHelpers";
 
 // ============================================================================

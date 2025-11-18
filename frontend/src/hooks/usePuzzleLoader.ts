@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { fetchPuzzles } from "../api/fetchPuzzles";
-import { fetchPlaylistPuzzles } from "../api/fetchPlaylistPuzzles";
+import { fetchPuzzles } from "../services/api/fetchPuzzles";
+import { fetchPlaylistPuzzles } from "../services/api/fetchPlaylistPuzzles";
 import { useSession } from "../context/SessionContext";
 import type { LoadingState, PuzzleState } from "../types";
 
