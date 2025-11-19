@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import usePlaylists from "../../hooks/usePlaylists";
 import type { LichessPuzzle } from "../../types";
+import { X } from "lucide-react";
 import "./PlaylistViewer.css";
 
 interface PlaylistViewerProps {
@@ -32,7 +33,9 @@ export function PlaylistViewer({ playlistId, playlistName, onClose }: PlaylistVi
       <div className="playlist-viewer__modal">
         <div className="playlist-viewer__header">
           <h2 className="playlist-viewer__title">{playlistName}</h2>
-          <button className="playlist-viewer__close-btn" onClick={onClose}>×</button>
+          <button className="playlist-viewer__close-btn" onClick={onClose}>
+            <X />
+          </button>
         </div>
 
         {isLoading ? (
