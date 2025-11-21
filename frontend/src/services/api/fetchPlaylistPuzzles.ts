@@ -1,4 +1,4 @@
-import type { LichessPuzzle, User, Playlist } from "../../types";
+import type { LichessPuzzle, User, Playlist } from "@/types";
 import { fetchPuzzles } from "./fetchPuzzles";
 
 export async function fetchPlaylistPuzzles(

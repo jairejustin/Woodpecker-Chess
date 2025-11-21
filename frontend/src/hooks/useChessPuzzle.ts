@@ -156,7 +156,7 @@ export function useChessPuzzle(
 
           setTimeout(() => {
             makeComputerMove();
-          }, 500);
+          }, 100);
         }
 
         return true;

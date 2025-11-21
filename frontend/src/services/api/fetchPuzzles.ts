@@ -1,5 +1,5 @@
-import type { LichessPuzzle } from "../../types";
-import type { RawPuzzle } from "../../types";
+import type { LichessPuzzle } from "@/types";
+import type { RawPuzzle } from "@/types";
 
 function toStringSafe(value: unknown): string | undefined {
   if (value === null || value === undefined) return undefined;
@@ -87,12 +87,10 @@ export async function fetchPuzzles(): Promise<LichessPuzzle[]> {
     })
     .filter((p): p is LichessPuzzle => p !== null);
 
-  console.log(`Successfully parsed ${parsed.length} puzzles from ${url}`);
-
   return parsed;
 }
 
-export async function fetchPuzzlesWithRating(
+export async function fetchPuzzlesWithRatingFilter(
   uri: string | undefined,
   minRating?: number,
   maxRating?: number

@@ -3,3 +3,6 @@ export const PUZZLE_CONSTANTS = {
   HINT_DISPLAY_DURATION: 3000,
   ANIMATION_DELAY: 300,
 } as const;
+
+
+export const excludedPaths = ["/", "/login", "/register"];

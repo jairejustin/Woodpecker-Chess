@@ -10,13 +10,13 @@ import RegisterPage from "./pages/authentication/RegisterPage";
 import RequireAuth from "./context/RequireAuth";
 import PlaylistsPage from "./pages/playlists/PlaylistsPage";
 import { useSession } from "./context/SessionContext";
+import { excludedPaths } from "./constants";
 import './App.css';
 
 export default function App() {
   const location = useLocation();
   const { user } = useSession();
 
-  const excludedPaths = ["/", "/login", "/register"];
   const showSidebar = !!user && !excludedPaths.includes(location.pathname);
 
   return (
